@@ -17,6 +17,11 @@ MultiVerse allows users to:
 - [ ] Favorite completed poems
 - [ ] Comment on completed poems
 
+## Design Docs
+
+* [Wireframes](./docs/views.md)
+* [Database Schema](./docs/schema.md)
+
 ## Implementation Timeline
 
 ### Phase 1: User Authentication, Poem/Stanza Models, JSON API (2 days)
