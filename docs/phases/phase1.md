@@ -1,4 +1,4 @@
-### Phase 1: User Authentication, Poem/Stanza Models, JSON API (1 day)
+### Phase 1: User Authentication, Poem/Stanza Models, JSON API
 
 ## Models
 * User
@@ -9,6 +9,7 @@
 * UsersController (create, new)
 * SessionsController (create, new, destroy)
 * Api::PoemsController (index, create, show, destroy)
+* Api::StanzasController (create, destroy)
 
 ## Rails Views
 * users/new.html.erb

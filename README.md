@@ -8,7 +8,8 @@ Possibilities in Poetry
 
 ## Minimum Viable Product
 
-MultiVerse is a web application for collaborative poetry writing built using
+MultiVerse is a web application for collaborative poetry writing (based on the
+  "Exquisite Corpse" method) built using
 Ruby on Rails and React.js.
 
 MultiVerse allows users to:
@@ -22,16 +23,14 @@ MultiVerse allows users to:
 
 ## Implementation Timeline
 
-### Phase 1: User Authentication, Poem/Stanza Models, JSON API (1 day)
+### Phase 1: User Authentication, Poem/Stanza Models, JSON API (2 days)
 * BCrypt authentication and sessions
 * Login page and basic home page after login (empty container, temporary logout
   button)
-* Poem and Stanza models in Rails
-* API controller for Poems
+* Rails models for Poems, Stanzas
+* API controller for Poems, Stanzas
 
-*At the end of Phase 1, users can sign up and login/logout.*  
-No Stanzas controller; they will only be fetched as part of their associated
-Poem.  
+*At the end of Phase 1, users can sign up and login/logout.*   
 When a Poem is created, it uses the contents of its "first_stanza" column to
 create a new Stanza object. "first_stanza" will also serve as a preview when the
 poem is completed.  
@@ -39,11 +38,7 @@ Stanzas will keep track of their "last_line."
 Poems and Stanzas cannot be edited after creation, although Poems can be deleted
 entirely.  
 
-[More details](./docs/phases/phase1.md)  
-Relevant wireframes:
-* [Sign up](./docs/wireframes/new_user.png)
-* [Login](./docs/wireframes/new_session.png)
-
+[Component details.](./docs/phases/phase1.md)
 
 ### Phase 2: Flux Architecture, React views (3 days)
 * React router
@@ -56,34 +51,29 @@ Home page (Index) shows all poems created by or involving the user.
 No distinction is yet made between complete and incomplete poems, though users
 still specify poem length on creation.  
 
-[More details](./docs/phases/phase2.md)  
-Relevant wireframes:
-* [New poem](./docs/wireframes/new_poem.png)
-* [New stanza](./docs/wireframes/new_stanza.png)
+[Component details.](./docs/phases/phase2.md)
 
-### Phase 3: Navigation, Archive, Page Styles (2 days)
+
+### Phase 3: Navigation and Page Style (1 day)
 * Persistent navigation sidebar: Home, Archive, New, Logout
-* Archive page showing completed poems
+* Separate archive and home pages
 * Endless scrolling for homepage
 * Basic page design and arrangement
 
 *At the end of Phase 3, Poems are separated by completion status (in Home or
   Archive).*  
-Users can read archived poems and contribute to incomplete poems.  
+Users can read archived poems and contribute stanzas to incomplete poems.  
 
-[More details](./docs/phases/phase3.md)  
-Relevant wireframes:
-* [Home page](./docs/wireframes/home.png)
-* [Archive page](./docs/wireframes/archive.png)
+A NavBar React component is the only new component required for Phase 3.
 
 ### Phase 4: Favorites, Comments (1 day)
-* Favorite, comment functionality for completed poems
+* Favorite, Comment models in Rails
 * Favorites tab in Archive page
 * Comments shown below completed poems
 
-[More details](./docs/phases/phase4.md)  
-
 *At the end of Phase 4, users can comment on and favorite completed poems.*
+
+[Component details.](./docs/phases/phase4.md)
 
 ### Phase 5: Detailed Styling and Seeding (1 day)
 * Create seed data
@@ -92,10 +82,12 @@ Relevant wireframes:
 *At the end of Phase 5, the application is complete and self-contained.*
 
 ### Phase 6: Bonus Features (1 day)
-* Attempt to complete one ore more bonus features
+*At the end of Phase 6, one or more bonus features is complete.*
 
-### Bonus Features
+Bonus Features:  
 - [ ] Notifications for contributions, favorites, and comments
-- [ ] Toggle on/off to show authors and separation of each Stanza in a Poem
+- [ ] Toggle on/off to show authors and separation of each stanza in a poem
 - [ ] Users can customize font for their authored stanzas
 - [ ] Users can "branch" completed poems by reverting to an incomplete stage and
+ adding new stanzas at that stage
+- [ ] Decorative quotes for login screen

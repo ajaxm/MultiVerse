@@ -1,22 +1,23 @@
-### Phase 2: Flux Architecture, React views (3 days)
+### Phase 2: Flux Architecture, React views
 
 ## React Components
 * Index
   - Poem
     - Stanza
+    - StanzaForm
 * PoemForm
-* StanzaForm
 
 ## Stores
 * Poem
 
-## ApiActions
+## Actions
 * .receiveAllPoems
 * .receiveOnePoem
 * .deletePoem
 
 ## ApiUtil
-* .fetchAllPoems (include *first* associated Stanza)
+* .fetchAllPoems(status) (include *all* associated stanzas; argument indicates completion status)
 * .fetchOnePoem (include *all* associated Stanzas)
 * .createPoem
 * .destroyPoem
+* .createStanza

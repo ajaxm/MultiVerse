@@ -16,7 +16,7 @@ title        | string    | not null, indexed
 author_id    | integer   | not null, foreign key (references users), indexed
 first_stanza | text      | not null
 num_stanzas  | integer   | not null, default: 6
-complete     | boolean   | not null, default: false
+complete     | boolean   | not null, indexed, default: false
 
 ## stanzas
 column name | data type | details
