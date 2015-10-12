@@ -14,9 +14,11 @@ Archive:
 ![archive]
 
 ## New Poem
+If the "New 'Verse" tab is clicked on:  
 ![new-poem]
 
 ## New Stanza
+If a poem on the home page is clicked on:  
 ![new-stanza]
 
 [new-user]: ./wireframes/new_user.JPG
