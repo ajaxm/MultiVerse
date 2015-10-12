@@ -1,0 +1,22 @@
+"MultiVerse"
+
+A collaborative poetry-writing application. An online take on the classic game of writing a few lines, covering up all but the last line, and passing the paper on to the next writer. (The game is often called "Exquisite Corpse," a thoroughly unpleasant name.)
+
+Basic Features:
+1. Users can sign up or sign in. Guest login included; guest accounts refer to well-known poets.
+2. Basic description: Users create and view poems. Users create stanzas (min: 2 lines, max: 3). Stanzas belong to the associated poem.
+3. A user creates a poem and writes the poem's first stanza. The user also specifies the number of stanzas for which the poem will be in play. Other users can then contribute stanzas until that number is reached and the poem is declared complete.
+4. A user's home page shows the title and first line of all completed poems in which the user participated, including those that the user created. The home page is ordered by most recent. Clicking a title on the home page expands it to show the whole poem.
+5. An "in-progress" feed shows the title and last line of each poem currently in play and accessible to the user.
+6. Clicking on the last line of a poem in the "in-progress" feed expands a text field in which the user can contribute a stanza. Users may do so multiple times on the same poem (including their own), but not successively.
+7. Adequate seed data will ensure that there are several examples of both completed poems and in-progress poems for a guest user to view or participate in. This will include examples with just one stanza remaining, so a guest user can experience the completion of a poem.
+
+Additional Features:
+The above is a complete application by itself, if a little bare. Additional features will be added depending on time available. These are, in (tentative) order of priority:
+1. Users can favorite and comment on completed poems.
+2. In the expanded view of a completed poem, an indication system can be toggled on/off to show which users contributed which lines. Additionally, users can choose their own font and text-color, which will serve as an aesthetic indication of authorship on the poems in which they participate.
+3. Users receive notifications when others contribute to, comment on, or favorite their poems.
+4. Users can set a poem to be private; only some set of approved collaborators may participate in such a poem. Other users may request to be added as collaborators.
+5. Upon completion of a poem, a contributing user can look back at the poem's "in-progress" state at the end of some intermediate stanza, and add a new stanza at that stage. This will lead to a new poem branching off from the original. (Hence, the "MultiVerse.") A visual tree structure allows users to keep track of branches from their root poems.
+
+Note: The Additional Features, except perhaps the last one, are not "bonus features" and are intrinsic parts of the application. However, they are arranged to be modular so that, at any point after the completion of Basic Feature #7, the application can be considered complete if necessary. This will allow enough time to ensure that the application is well-designed and polished in appearance.
