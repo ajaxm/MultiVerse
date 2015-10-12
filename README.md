@@ -2,7 +2,7 @@
 
 Possibilities in Poetry
 
-[Heroku link][heroku]
+[Heroku link will be here by the end of October 12th.][heroku]
 
 [heroku]: http://www.herokuapp.com
 
@@ -28,7 +28,7 @@ MultiVerse allows users to:
 * Login page and basic home page after login (empty container, temporary logout
   button)
 * Rails models for Poems, Stanzas
-* API controller for Poems, Stanzas
+* API controllers for Poems, Stanzas
 
 *At the end of Phase 1, users can sign up and login/logout.*   
 When a Poem is created, it uses the contents of its "first_stanza" column to
@@ -67,7 +67,8 @@ Users can read archived poems and contribute stanzas to incomplete poems.
 A NavBar React component is the only new component required for Phase 3.
 
 ### Phase 4: Favorites, Comments (1 day)
-* Favorite, Comment models in Rails
+* Rails models for Favorites, Comments
+* API Controllers for Favorites, Comments
 * Favorites tab in Archive page
 * Comments shown below completed poems
 
@@ -78,6 +79,7 @@ A NavBar React component is the only new component required for Phase 3.
 ### Phase 5: Detailed Styling and Seeding (1 day)
 * Create seed data
 * Finalize page appearance, polish
+* Decorative quotes for login screen
 
 *At the end of Phase 5, the application is complete and self-contained.*
 
@@ -90,4 +92,3 @@ Bonus Features:
 - [ ] Users can customize font for their authored stanzas
 - [ ] Users can "branch" completed poems by reverting to an incomplete stage and
  adding new stanzas at that stage
-- [ ] Decorative quotes for login screen

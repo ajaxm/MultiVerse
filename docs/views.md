@@ -16,9 +16,9 @@
 ## New Stanza
 ![new-stanza]
 
-[new-user]: ./docs/wireframes/new_user.JPG
+[new-user]: ./wireframes/new_user.JPG
 [new-session]: ./docs/wireframes/new_session.JPG
-[homepage]: ./docs/wireframes/home.JPG
-[archive]: ./docs/wireframes/archive.JPG
-[new-poem]: ./docs/wireframes/new_poem.JPG
-[new-stanza]: ./docs.wireframes/new_stanza.JPG
+[homepage]: ./wireframes/home.JPG
+[archive]: ./wireframes/archive.JPG
+[new-poem]: ./wireframes/new_poem.JPG
+[new-stanza]: ./wireframes/new_stanza.JPG
