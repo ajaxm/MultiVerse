@@ -7,7 +7,10 @@
 ![new-session]
 
 ## Home / Archive (Poems Index)
-![homepage]
+Home:
+![homepage]  
+
+Archive:
 ![archive]
 
 ## New Poem
@@ -17,7 +20,7 @@
 ![new-stanza]
 
 [new-user]: ./wireframes/new_user.JPG
-[new-session]: ./docs/wireframes/new_session.JPG
+[new-session]: ./wireframes/new_session.JPG
 [homepage]: ./wireframes/home.JPG
 [archive]: ./wireframes/archive.JPG
 [new-poem]: ./wireframes/new_poem.JPG

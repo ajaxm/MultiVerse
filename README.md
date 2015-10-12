@@ -1,10 +1,6 @@
 # MultiVerse
 
-Possibilities in Poetry
-
-[Heroku link will be here by the end of October 12th.][heroku]
-
-[heroku]: http://www.herokuapp.com
+[Heroku link.](http://multi-verse.herokuapp.com)
 
 ## Minimum Viable Product
 
@@ -57,8 +53,8 @@ still specify poem length on creation.
 ### Phase 3: Navigation and Page Style (1 day)
 * Persistent navigation sidebar: Home, Archive, New, Logout
 * Separate archive and home pages
-* Endless scrolling for homepage
-* Basic page design and arrangement
+* Endless scrolling implementation
+* Basic cleanup of page design
 
 *At the end of Phase 3, Poems are separated by completion status (in Home or
   Archive).*  
@@ -86,7 +82,7 @@ A NavBar React component is the only new component required for Phase 3.
 ### Phase 6: Bonus Features (1 day)
 *At the end of Phase 6, one or more bonus features is complete.*
 
-Bonus Features:  
+Bonus Features (tentative order of priority):  
 - [ ] Notifications for contributions, favorites, and comments
 - [ ] Toggle on/off to show authors and separation of each stanza in a poem
 - [ ] Users can customize font for their authored stanzas
