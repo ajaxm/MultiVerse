@@ -14,16 +14,14 @@ column name  | data type | details
 id           | integer   | not null, primary key
 title        | string    | not null, indexed
 author_id    | integer   | not null, foreign key (references users), indexed
-first_stanza | text      | not null
 num_stanzas  | integer   | not null, default: 6
-complete     | boolean   | not null, indexed, default: false
 
 ## stanzas
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
 body        | text      | not null
-last_line   | string    | not null
+order       | integer   | not null
 poem_id     | integer   | not null, foreign key (references poems), indexed
 author_id   | integer   | not null, foreign key (references users), indexed
 
