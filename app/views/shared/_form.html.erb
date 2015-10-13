@@ -1,8 +1,9 @@
 <% user_action = ((source === 'new_session') ? 'Sign in' : 'Sign up') %>
+<% url = ((source === 'new_session') ? session_url : users_url)%>
 
-<h2><%= user_action %> to the Multiverse!</h2>
+<h2><%= user_action %> to the MultiVerse!</h2>
 
-<form action="<%= users_url %>" method="post">
+<form action="<%= url %>" method="post">
   <%= auth_token %>
   <label>
     Username

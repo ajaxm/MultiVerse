@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     @user = User.create(user_params)
     if @user.save
       log_in(@user)
-      render json: "user created!", status: 200
+      redirect_to '/'
     else
       flash.now[:msg] = @user.errors.full_messages
       render :new

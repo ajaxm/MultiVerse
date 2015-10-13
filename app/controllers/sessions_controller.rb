@@ -9,8 +9,7 @@ class SessionsController < ApplicationController
     )
     if @user
       log_in(@user)
-      # redirect to poems index
-      render json: "logged in!", status: 200
+      redirect_to '/'
     else
       flash.now[:msg] = ["Invalid login credentials."]
       @user = User.new(username: params[:user][:username])
