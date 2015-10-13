@@ -9,8 +9,7 @@ class UsersController < ApplicationController
       log_in(@user)
       render json: "user created!", status: 200
     else
-      flash.now[:msg] = @user.errors.full_messages,
-                        status: :unprocessible_entity
+      flash.now[:msg] = @user.errors.full_messages
       render :new
     end
   end
