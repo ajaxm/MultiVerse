@@ -10,8 +10,8 @@ Ruby on Rails and React.js.
 
 MultiVerse allows users to:
 
-- [ ] Create an account
-- [ ] Log in / Log out
+- [x] Create an account
+- [x] Log in / Log out
 - [ ] Create, read, and delete poems
 - [ ] Contribute stanzas to poems
 - [ ] Favorite completed poems
@@ -32,10 +32,8 @@ MultiVerse allows users to:
 * API controllers for Poems, Stanzas
 
 *At the end of Phase 1, users can sign up and login/logout.*   
-When a Poem is created, it uses the contents of its "first_stanza" column to
-create a new Stanza object. "first_stanza" will also serve as a preview when the
-poem is completed.  
-Stanzas will keep track of their "last_line."  
+When a Poem is created, it uses the contents of the "first_stanza" param to
+create a new Stanza object.  
 Poems and Stanzas cannot be edited after creation, although Poems can be deleted
 entirely.  
 

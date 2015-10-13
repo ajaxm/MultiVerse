@@ -18,6 +18,12 @@ class User < ActiveRecord::Base
 
   after_initialize :ensure_sesion_token
 
+  has_many(
+    :poems,
+    class_name: "Poem",
+    foreign_key: :author_id
+  )
+
   def self.find_by_credentials(username, password)
     user = User.find_by_username(username)
     user if user && user.is_password?(password)
