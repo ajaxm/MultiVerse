@@ -6,10 +6,11 @@ class Api::PoemsController < ApplicationController
 
   def create
     @poem = current_user.poems.new(poem_params)
-    if @poem.save
+    if @poem.save!
       render json: @poem
     else
-      render  json: @poem, status: :unprocessible_entity
+      render  json: @poem.errors.full_messages,
+              status: :unprocessible_entity
     end
   end
 

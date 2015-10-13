@@ -3,8 +3,9 @@ class Poem < ActiveRecord::Base
 
   validates :title, :author_id, :num_stanzas, presence: true
   validates :first_stanza, length: { allow_nil: true, minimum: 1 }
+  after_create :ensure_first_stanza
 
-  has_many :stanzas
+  has_many :stanzas, inverse_of: :poem, dependent: :destroy
 
   belongs_to(
     :author,
@@ -13,9 +14,17 @@ class Poem < ActiveRecord::Base
   )
 
   def first_stanza=(first_stanza)
-    @first_stanza = first_stanza
-    current_user.stanzas.create!(
-      poem: self, body: first_stanza, order: 1
+    @first_stanza_content = first_stanza
+  end
+
+  def length
+    self.stanzas.count
+  end
+
+  def ensure_first_stanza
+    first_stanza = Stanza.new(
+      body: @first_stanza_content, order: 1, author_id: author_id, poem_id: id
     )
+    first_stanza.save!
   end
 end
