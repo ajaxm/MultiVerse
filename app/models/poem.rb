@@ -26,17 +26,13 @@ class Poem < ActiveRecord::Base
   )
 
   def self.get_by_status(completion_status)
-    all_poems = Poem.includes(:author, :stanzas)
     if completion_status == :complete
-      poems = all_poems.select { |poem|
-        poem.length == poem.num_stanzas
-      }
-    elsif completion_status == :incomplete
-      poems = all_poems.select { |poem|
-        poem.length < poem.num_stanzas
-      }
+      Poem.joins(:stanzas).group("poems.id")
+          .having("poems.num_stanzas = COUNT(stanzas.id)")
+    else
+      Poem.joins(:stanzas).group("poems.id")
+          .having("poems.num_stanzas > COUNT(stanzas.id)")
     end
-    poems
   end
 
   def first_stanza=(first_stanza)
