@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: stanzas
+#
+#  id         :integer          not null, primary key
+#  body       :text             not null
+#  order      :integer          not null
+#  poem_id    :integer          not null
+#  author_id  :integer          not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 class Stanza < ActiveRecord::Base
   validates :body, :order, :poem_id, :author_id, presence: true
   validate :stanza_order_cannot_exceed_num_stanzas_of_poem
