@@ -1,10 +1,11 @@
 (function(root) {
   var CHANGE_EVENT = 'CHANGE_EVENT';
   var _poems = [];
-  var _singlePoem = null;
+  var _singlePoem;
 
   var _resetPoems = function(poems) {
     _poems = poems;
+    _singlePoem = undefined;
   };
 
   var _setSelectedPoem = function(poem) {
@@ -38,6 +39,9 @@
           _setSelectedPoem(action.poem);
           PoemStore.emit(CHANGE_EVENT);
           break;
+        case PoemConstants.RETURN_TO_INDEX:
+          _setSelectedPoem();
+          PoemStore.emit(CHANGE_EVENT);
       }
     })
   });

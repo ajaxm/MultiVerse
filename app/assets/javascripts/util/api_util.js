@@ -10,7 +10,7 @@ var ApiUtil = {
       }
     });
   },
-  
+
   fetchOnePoem: function(poem_id) {
     $.ajax({
       url: 'api/poems/' + poem_id,
