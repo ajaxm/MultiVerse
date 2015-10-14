@@ -45,33 +45,33 @@ Stanza.create([
       the jazz cap and one hand on the wheel.",
     author: billycollins,
     poem: summerday,
-    order: summerday.length + 1
+    order: 2
   },
   { body: "I don't know exactly what a prayer is.
       I do know how to pay attention, how to fall down
       into the grass, how to kneel down in the grass,",
     author: maryoliver,
     poem: summerday,
-    order: summerday.length + 1
+    order: 3
   },
   { body: "but my heart is always propped up
       in a field on its tripod,
       ready for the next arrow.",
     author: billycollins,
     poem: summerday,
-    order: summerday.length + 1
+    order: 4
   },
   { body: "or the owl arranging all of the night,
       which is his wisdom, or the poem
       filling your pillow with its blue feathers.",
     author: mstrand,
     poem: aimlesslove,
-    order: aimlesslove.length + 1
+    order: 2
   },
   { body: "Tell me, what else should I have done?
       Doesn't everything die at last, and too soon?",
     author: maryoliver,
     poem: aimlesslove,
-    order: aimlesslove.length + 1
+    order: 3
   }
 ])

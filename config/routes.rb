@@ -6,6 +6,6 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: {format: :json} do
     resources :poems, only: [:index, :create, :show, :destroy]
-    resources :stanzas, only: [:create, :destroy]
+    resources :stanzas, only: [:create, :show, :destroy]
   end
 end

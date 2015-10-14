@@ -1,7 +1,6 @@
 class Api::PoemsController < ApplicationController
   def index
-    @poems = Poem.all
-    render json: @poems
+    @poems = Poem.includes(:author, :stanzas)
   end
 
   def create
@@ -14,9 +13,12 @@ class Api::PoemsController < ApplicationController
   end
 
   def show
-    @poem = Poem.find_by_id(params[:id])
+    @poem = Poem.includes(:author, :stanzas)
+                .includes(stanzas: :author)
+                .where('id = ?', params[:id])
+                .first
     if @poem
-      render json: @poem
+      render :show
     else
       render json: "Poem not found.", status: :unprocessible_entity
     end
