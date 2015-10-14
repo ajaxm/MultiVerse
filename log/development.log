@@ -9401,3 +9401,151 @@ Processing by Api::PoemsController#show as JSON
   [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (12, 13)
   Rendered api/poems/show.json.jbuilder (22.0ms)
 Completed 200 OK in 257ms (Views: 30.6ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/" for ::1 at 2015-10-13 19:25:09 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "/9xtNU3IEWKmIfrrk0+Sdg=="]]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as :ensure_login rendered or redirected
+Completed 302 Found in 23ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/session/new" for ::1 at 2015-10-13 19:25:09 -0700
+Processing by SessionsController#new as HTML
+  Rendered shared/_form.html.erb (5.6ms)
+  Rendered sessions/new.html.erb within layouts/application (53.7ms)
+Completed 200 OK in 1645ms (Views: 1639.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2015-10-13 19:25:13 -0700
+Processing by UsersController#new as HTML
+  Rendered shared/_form.html.erb (12.6ms)
+  Rendered users/new.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 503ms (Views: 497.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new" for ::1 at 2015-10-13 19:25:15 -0700
+Processing by SessionsController#new as HTML
+  Rendered shared/_form.html.erb (2.8ms)
+  Rendered sessions/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 491ms (Views: 484.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2015-10-13 19:25:16 -0700
+Processing by UsersController#new as HTML
+  Rendered shared/_form.html.erb (2.8ms)
+  Rendered users/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 488ms (Views: 482.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new" for ::1 at 2015-10-13 19:25:17 -0700
+Processing by SessionsController#new as HTML
+  Rendered shared/_form.html.erb (2.7ms)
+  Rendered sessions/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 489ms (Views: 483.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2015-10-13 19:25:18 -0700
+Processing by UsersController#new as HTML
+  Rendered shared/_form.html.erb (2.7ms)
+  Rendered users/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 487ms (Views: 481.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new" for ::1 at 2015-10-13 19:25:20 -0700
+Processing by SessionsController#new as HTML
+  Rendered shared/_form.html.erb (2.9ms)
+  Rendered sessions/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 488ms (Views: 483.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2015-10-13 19:25:21 -0700
+Processing by UsersController#new as HTML
+  Rendered shared/_form.html.erb (11.1ms)
+  Rendered users/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 490ms (Views: 484.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new" for ::1 at 2015-10-13 19:25:22 -0700
+Processing by SessionsController#new as HTML
+  Rendered shared/_form.html.erb (2.9ms)
+  Rendered sessions/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 496ms (Views: 483.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2015-10-13 19:25:24 -0700
+Processing by UsersController#new as HTML
+  Rendered shared/_form.html.erb (10.9ms)
+  Rendered users/new.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 492ms (Views: 487.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new" for ::1 at 2015-10-13 19:25:25 -0700
+Processing by SessionsController#new as HTML
+  Rendered shared/_form.html.erb (2.8ms)
+  Rendered sessions/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 486ms (Views: 481.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2015-10-13 19:25:26 -0700
+Processing by UsersController#new as HTML
+  Rendered shared/_form.html.erb (3.6ms)
+  Rendered users/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 495ms (Views: 482.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new" for ::1 at 2015-10-13 19:25:27 -0700
+Processing by SessionsController#new as HTML
+  Rendered shared/_form.html.erb (2.9ms)
+  Rendered sessions/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 499ms (Views: 485.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2015-10-13 19:25:29 -0700
+Processing by UsersController#new as HTML
+  Rendered shared/_form.html.erb (2.8ms)
+  Rendered users/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 497ms (Views: 482.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new" for ::1 at 2015-10-13 19:25:30 -0700
+Processing by SessionsController#new as HTML
+  Rendered shared/_form.html.erb (2.9ms)
+  Rendered sessions/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 508ms (Views: 503.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2015-10-13 19:25:31 -0700
+Processing by UsersController#new as HTML
+  Rendered shared/_form.html.erb (3.1ms)
+  Rendered users/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 497ms (Views: 491.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new" for ::1 at 2015-10-13 19:25:32 -0700
+Processing by SessionsController#new as HTML
+  Rendered shared/_form.html.erb (2.9ms)
+  Rendered sessions/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 516ms (Views: 510.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2015-10-13 19:25:33 -0700
+Processing by UsersController#new as HTML
+  Rendered shared/_form.html.erb (3.0ms)
+  Rendered users/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 506ms (Views: 501.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/session/new" for ::1 at 2015-10-13 19:25:35 -0700
+Processing by SessionsController#new as HTML
+  Rendered shared/_form.html.erb (2.8ms)
+  Rendered sessions/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 508ms (Views: 502.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2015-10-13 19:25:37 -0700
+Processing by UsersController#new as HTML
+  Rendered shared/_form.html.erb (2.9ms)
+  Rendered users/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 512ms (Views: 498.6ms | ActiveRecord: 0.0ms)
