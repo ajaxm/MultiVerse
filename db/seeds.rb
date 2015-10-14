@@ -5,3 +5,73 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+User.destroy_all
+Poem.destroy_all
+
+maryoliver = User.create(
+  username: 'maryoliver',
+  password: 'thesummerday'
+)
+billycollins = User.create(
+  username: 'billycollins',
+  password: 'aimlesslove'
+)
+mstrand = User.create(
+  username: 'mstrand',
+  password: 'thedress'
+)
+
+##########
+
+summerday = Poem.create(
+  title: 'The Summer Day',
+  author: maryoliver,
+  first_stanza: "Who made the world?
+    Who made the swan, and the black bear?"
+)
+aimlesslove = Poem.create(
+  title: 'Aimless Love',
+  author: billycollins,
+  first_stanza: "This morning as I walked along the lakeshore,
+    I fell in love with a wren",
+  num_stanzas: 8
+)
+
+##########
+
+Stanza.create([
+  { body: "The love of the chestnut,
+      the jazz cap and one hand on the wheel.",
+    author: billycollins,
+    poem: summerday,
+    order: summerday.length + 1
+  },
+  { body: "I don't know exactly what a prayer is.
+      I do know how to pay attention, how to fall down
+      into the grass, how to kneel down in the grass,",
+    author: maryoliver,
+    poem: summerday,
+    order: summerday.length + 1
+  },
+  { body: "but my heart is always propped up
+      in a field on its tripod,
+      ready for the next arrow.",
+    author: billycollins,
+    poem: summerday,
+    order: summerday.length + 1
+  },
+  { body: "or the owl arranging all of the night,
+      which is his wisdom, or the poem
+      filling your pillow with its blue feathers.",
+    author: mstrand,
+    poem: aimlesslove,
+    order: aimlesslove.length + 1
+  },
+  { body: "Tell me, what else should I have done?
+      Doesn't everything die at last, and too soon?",
+    author: maryoliver,
+    poem: aimlesslove,
+    order: aimlesslove.length + 1
+  }
+])

@@ -4189,3 +4189,262 @@ Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f4
   [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
   [1m[35mPoem Load (0.8ms)[0m  SELECT "poems".* FROM "poems"
   [1m[36mStanza Load (0.8ms)[0m  [1mSELECT "stanzas".* FROM "stanzas"[0m
+  [1m[35mPoem Load (0.5ms)[0m  SELECT "poems".* FROM "poems"
+  [1m[36mStanza Load (0.8ms)[0m  [1mSELECT "stanzas".* FROM "stanzas"[0m
+  [1m[35mPoem Load (0.8ms)[0m  SELECT "poems".* FROM "poems"
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mStanza Load (0.6ms)[0m  SELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  [["poem_id", 16]]
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "stanzas" WHERE "stanzas"."id" = $1[0m  [["id", 4]]
+  [1m[35mSQL (0.6ms)[0m  DELETE FROM "poems" WHERE "poems"."id" = $1  [["id", 16]]
+  [1m[36m (451.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mPoem Load (0.9ms)[0m  SELECT "poems".* FROM "poems"
+  [1m[36mStanza Load (0.8ms)[0m  [1mSELECT "stanzas".* FROM "stanzas"[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "poems" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Boxcar"], ["author_id", 5], ["created_at", "2015-10-13 23:33:18.806141"], ["updated_at", "2015-10-13 23:33:18.806141"]]
+  [1m[35mPoem Load (0.7ms)[0m  SELECT  "poems".* FROM "poems" WHERE "poems"."id" = $1 LIMIT 1  [["id", 17]]
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "stanzas" ("body", "order", "author_id", "poem_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "Black as snow & ice as cool"], ["order", 1], ["author_id", 5], ["poem_id", 17], ["created_at", "2015-10-13 23:33:18.852958"], ["updated_at", "2015-10-13 23:33:18.852958"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36mStanza Load (0.9ms)[0m  [1mSELECT "stanzas".* FROM "stanzas"[0m
+  [1m[35mPoem Load (1.0ms)[0m  SELECT  "poems".* FROM "poems"  ORDER BY "poems"."id" ASC LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "stanzas" WHERE "stanzas"."poem_id" = $1[0m  [["poem_id", 17]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "stanzas" ("body", "order", "author_id", "poem_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "Miles stood horn-handed"], ["order", 2], ["author_id", 5], ["poem_id", 17], ["created_at", "2015-10-13 23:37:06.252640"], ["updated_at", "2015-10-13 23:37:06.252640"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "stanzas" WHERE "stanzas"."poem_id" = $1[0m  [["poem_id", 17]]
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "stanzas" ("body", "order", "author_id", "poem_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "while John so&soloed"], ["order", 3], ["author_id", 5], ["poem_id", 17], ["created_at", "2015-10-13 23:37:40.485187"], ["updated_at", "2015-10-13 23:37:40.485187"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+
+
+Started GET "/" for ::1 at 2015-10-13 16:37:50 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "/9xtNU3IEWKmIfrrk0+Sdg=="]]
+  Rendered static_pages/root.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 2643ms (Views: 2565.0ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-13 16:37:53 -0700
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-13 16:37:53 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-13 16:37:53 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-13 16:37:53 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-13 16:37:53 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-13 16:37:53 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-13 16:37:53 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-13 16:37:53 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-13 16:37:53 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-13 16:37:53 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-13 16:37:53 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-13 16:37:53 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-13 16:37:53 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-13 16:37:53 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-10-13 16:37:53 -0700
+
+
+Started GET "/api/poems/17" for ::1 at 2015-10-13 16:38:03 -0700
+Processing by Api::PoemsController#show as JSON
+  Parameters: {"id"=>"17"}
+  [1m[36mPoem Load (0.8ms)[0m  [1mSELECT  "poems".* FROM "poems" WHERE "poems"."id" = $1 LIMIT 1[0m  [["id", 17]]
+Completed 200 OK in 89ms (Views: 0.8ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/api/stanzas/9" for ::1 at 2015-10-13 16:38:11 -0700
+
+ActionController::RoutingError (No route matches [GET] "/api/stanzas/9"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Adi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/Adi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/Adi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (16.5ms)
+  Rendered /Users/Adi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/Adi/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (120.5ms)
+  Rendered /Users/Adi/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/Adi/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Adi/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Adi/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Adi/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (70.9ms)
+  Rendered /Users/Adi/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Adi/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/Adi/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (176.7ms)
+
+
+Started GET "/api/poems" for ::1 at 2015-10-13 16:39:01 -0700
+Processing by Api::PoemsController#index as JSON
+  [1m[35mPoem Load (0.4ms)[0m  SELECT "poems".* FROM "poems"
+Completed 200 OK in 13ms (Views: 6.3ms | ActiveRecord: 3.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "users" WHERE "users"."id" = $1  [["id", 5]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mPoem Load (0.7ms)[0m  SELECT "poems".* FROM "poems"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mStanza Load (0.6ms)[0m  SELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  [["poem_id", 17]]
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "stanzas" WHERE "stanzas"."id" = $1[0m  [["id", 7]]
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "stanzas" WHERE "stanzas"."id" = $1  [["id", 8]]
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "stanzas" WHERE "stanzas"."id" = $1[0m  [["id", 9]]
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "poems" WHERE "poems"."id" = $1  [["id", 17]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("username", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "maryoliver"], ["password_digest", "$2a$10$PQ3WJqtlI9Nn7KX9F1XVIOnIVe2N1Oycw//8cSEPOBGEJ10DlU4pi"], ["session_token", "Gp7y6oRL13QG242gDTLbvw=="], ["created_at", "2015-10-14 00:05:55.356090"], ["updated_at", "2015-10-14 00:05:55.356090"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("username", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["username", "billycollins"], ["password_digest", "$2a$10$499VL2sk7X1R0drK1I8k..MO62ddr/b03/iuehvCrXnmoXmvwbU2C"], ["session_token", "P7d57l8eX4NfYPtU9DE7kw=="], ["created_at", "2015-10-14 00:05:55.437388"], ["updated_at", "2015-10-14 00:05:55.437388"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("username", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "mstrand"], ["password_digest", "$2a$10$PDUCWQfXMeB1O1nZPxQUnONPa5kb2jmnegtQXhEVVFpM7t6BFAE06"], ["session_token", "gHjlrskki87B8xSRwqAnMA=="], ["created_at", "2015-10-14 00:05:55.519092"], ["updated_at", "2015-10-14 00:05:55.519092"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "poems" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "The Summer Day"], ["author_id", 6], ["created_at", "2015-10-14 00:05:55.522691"], ["updated_at", "2015-10-14 00:05:55.522691"]]
+  [1m[36mPoem Load (0.3ms)[0m  [1mSELECT  "poems".* FROM "poems" WHERE "poems"."id" = $1 LIMIT 1[0m  [["id", 18]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "stanzas" ("body", "order", "author_id", "poem_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["body", "Who made the world?\n    Who made the swan, and the black bear?"], ["order", 1], ["author_id", 6], ["poem_id", 18], ["created_at", "2015-10-14 00:05:55.526863"], ["updated_at", "2015-10-14 00:05:55.526863"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "poems" ("title", "author_id", "num_stanzas", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Aimless Love"], ["author_id", 7], ["num_stanzas", 8], ["created_at", "2015-10-14 00:05:55.530171"], ["updated_at", "2015-10-14 00:05:55.530171"]]
+  [1m[35mPoem Load (0.3ms)[0m  SELECT  "poems".* FROM "poems" WHERE "poems"."id" = $1 LIMIT 1  [["id", 19]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "stanzas" ("body", "order", "author_id", "poem_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "This morning as I walked along the lakeshore,\n    I fell in love with a wren"], ["order", 1], ["author_id", 7], ["poem_id", 19], ["created_at", "2015-10-14 00:05:55.532627"], ["updated_at", "2015-10-14 00:05:55.532627"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "users" WHERE "users"."id" = $1  [["id", 6]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "users" WHERE "users"."id" = $1  [["id", 8]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mPoem Load (0.7ms)[0m  SELECT "poems".* FROM "poems"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mStanza Load (0.5ms)[0m  SELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  [["poem_id", 18]]
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "stanzas" WHERE "stanzas"."id" = $1[0m  [["id", 10]]
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "poems" WHERE "poems"."id" = $1  [["id", 18]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStanza Load (0.2ms)[0m  [1mSELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1[0m  [["poem_id", 19]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "stanzas" WHERE "stanzas"."id" = $1  [["id", 11]]
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "poems" WHERE "poems"."id" = $1[0m  [["id", 19]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("username", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["username", "maryoliver"], ["password_digest", "$2a$10$J3HVaZImI45oU33iOBhlVOSbUcMIpf..O9o2qRrH8LsK5iLgqT3Eq"], ["session_token", "+2/lAHqxUnYZH5UAQ044Aw=="], ["created_at", "2015-10-14 00:07:23.581382"], ["updated_at", "2015-10-14 00:07:23.581382"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("username", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "billycollins"], ["password_digest", "$2a$10$xsWsTkLgeIyujcwZ9UNeCOU83TukmEwLf.y.ccBIa2.x7a9vmkD.S"], ["session_token", "5M32T5tKgPcNDvhw4LUwnA=="], ["created_at", "2015-10-14 00:07:23.661879"], ["updated_at", "2015-10-14 00:07:23.661879"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("username", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["username", "mstrand"], ["password_digest", "$2a$10$wsmsw6I/FK4wRRZZDaWGbuooM5SseaLe5Fyos2cnwhYAp8S/YEi1i"], ["session_token", "2GqSPwxRmK/1EFyIsU2rqA=="], ["created_at", "2015-10-14 00:07:23.742590"], ["updated_at", "2015-10-14 00:07:23.742590"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "poems" ("title", "author_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "The Summer Day"], ["author_id", 9], ["created_at", "2015-10-14 00:07:23.746599"], ["updated_at", "2015-10-14 00:07:23.746599"]]
+  [1m[35mPoem Load (0.3ms)[0m  SELECT  "poems".* FROM "poems" WHERE "poems"."id" = $1 LIMIT 1  [["id", 20]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stanzas" ("body", "order", "author_id", "poem_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "Who made the world?\n    Who made the swan, and the black bear?"], ["order", 1], ["author_id", 9], ["poem_id", 20], ["created_at", "2015-10-14 00:07:23.751504"], ["updated_at", "2015-10-14 00:07:23.751504"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "poems" ("title", "author_id", "num_stanzas", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["title", "Aimless Love"], ["author_id", 10], ["num_stanzas", 8], ["created_at", "2015-10-14 00:07:23.754602"], ["updated_at", "2015-10-14 00:07:23.754602"]]
+  [1m[36mPoem Load (0.3ms)[0m  [1mSELECT  "poems".* FROM "poems" WHERE "poems"."id" = $1 LIMIT 1[0m  [["id", 21]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "stanzas" ("body", "order", "author_id", "poem_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["body", "This morning as I walked along the lakeshore,\n    I fell in love with a wren"], ["order", 1], ["author_id", 10], ["poem_id", 21], ["created_at", "2015-10-14 00:07:23.757170"], ["updated_at", "2015-10-14 00:07:23.757170"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "stanzas" WHERE "stanzas"."poem_id" = $1  [["poem_id", 20]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "stanzas" WHERE "stanzas"."poem_id" = $1[0m  [["poem_id", 20]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "stanzas" WHERE "stanzas"."poem_id" = $1  [["poem_id", 20]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "stanzas" WHERE "stanzas"."poem_id" = $1[0m  [["poem_id", 21]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "stanzas" WHERE "stanzas"."poem_id" = $1  [["poem_id", 21]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "stanzas" ("body", "author_id", "poem_id", "order", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["body", "The love of the chestnut,\n      the jazz cap and one hand on the wheel."], ["author_id", 10], ["poem_id", 20], ["order", 2], ["created_at", "2015-10-14 00:07:23.765796"], ["updated_at", "2015-10-14 00:07:23.765796"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "stanzas" ("body", "author_id", "poem_id", "order", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "I don't know exactly what a prayer is.\n      I do know how to pay attention, how to fall down\n      into the grass, how to kneel down in the grass,"], ["author_id", 9], ["poem_id", 20], ["order", 2], ["created_at", "2015-10-14 00:07:23.768720"], ["updated_at", "2015-10-14 00:07:23.768720"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "stanzas" ("body", "author_id", "poem_id", "order", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["body", "but my heart is always propped up\n      in a field on its tripod,\n      ready for the next arrow."], ["author_id", 10], ["poem_id", 20], ["order", 2], ["created_at", "2015-10-14 00:07:23.771149"], ["updated_at", "2015-10-14 00:07:23.771149"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "stanzas" ("body", "author_id", "poem_id", "order", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "or the owl arranging all of the night,\n      which is his wisdom, or the poem\n      filling your pillow with its blue feathers."], ["author_id", 11], ["poem_id", 21], ["order", 2], ["created_at", "2015-10-14 00:07:23.773665"], ["updated_at", "2015-10-14 00:07:23.773665"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "stanzas" ("body", "author_id", "poem_id", "order", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["body", "Tell me, what else should I have done?\n      Doesn't everything die at last, and too soon?"], ["author_id", 9], ["poem_id", 21], ["order", 2], ["created_at", "2015-10-14 00:07:23.776097"], ["updated_at", "2015-10-14 00:07:23.776097"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[36mPoem Load (0.8ms)[0m  [1mSELECT "poems".* FROM "poems"[0m
+
+
+Started GET "/api/poems" for ::1 at 2015-10-13 17:08:25 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::PoemsController#index as JSON
+  [1m[35mPoem Load (0.8ms)[0m  SELECT "poems".* FROM "poems"
+Completed 200 OK in 38ms (Views: 10.9ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/api/poems/21" for ::1 at 2015-10-13 17:08:38 -0700
+Processing by Api::PoemsController#show as JSON
+  Parameters: {"id"=>"21"}
+  [1m[36mPoem Load (0.5ms)[0m  [1mSELECT  "poems".* FROM "poems" WHERE "poems"."id" = $1 LIMIT 1[0m  [["id", 21]]
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 0.7ms)
