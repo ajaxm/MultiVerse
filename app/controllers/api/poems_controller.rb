@@ -1,6 +1,6 @@
 class Api::PoemsController < ApplicationController
   def index
-    @poems = Poem.includes(:author, :stanzas)
+    @poems = Poem.get_by_status(params[:status])
   end
 
   def create

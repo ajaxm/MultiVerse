@@ -25,12 +25,26 @@ class Poem < ActiveRecord::Base
     foreign_key: :author_id
   )
 
+  def self.get_by_status(completion_status)
+    all_poems = Poem.includes(:author, :stanzas)
+    if completion_status == :complete
+      poems = all_poems.select { |poem|
+        poem.length == poem.num_stanzas
+      }
+    elsif completion_status == :incomplete
+      poems = all_poems.select { |poem|
+        poem.length < poem.num_stanzas
+      }
+    end
+    poems
+  end
+
   def first_stanza=(first_stanza)
     @first_stanza_content = first_stanza
   end
 
   def length
-    self.stanzas.count
+    @length ||= self.stanzas.count ### database query each time?
   end
 
   def ensure_first_stanza

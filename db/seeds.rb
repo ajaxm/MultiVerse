@@ -17,9 +17,13 @@ billycollins = User.create(
   username: 'billycollins',
   password: 'aimlesslove'
 )
-mstrand = User.create(
-  username: 'mstrand',
+markstrand = User.create(
+  username: 'markstrand',
   password: 'thedress'
+)
+richardsiken = User.create(
+  username: 'richardsiken',
+  password: 'scheherazade'
 )
 
 ##########
@@ -61,10 +65,28 @@ Stanza.create([
     poem: summerday,
     order: 4
   },
+  {
+    body: "And the days were bright red,
+      and every time we kissed there was
+      another apple to slice into pieces.",
+    author: richardsiken,
+    poem: summerday,
+    order: 5
+  },
+  {
+    body: "Tell me, what is it you plan to do
+      with your one wild and precious life?",
+    author: maryoliver,
+    poem: summerday,
+    order: 6
+  }
+  ])
+
+  Stanza.create([
   { body: "or the owl arranging all of the night,
       which is his wisdom, or the poem
       filling your pillow with its blue feathers.",
-    author: mstrand,
+    author: markstrand,
     poem: aimlesslove,
     order: 2
   },
