@@ -1,5 +1,5 @@
 var ApiUtil = {
-  fetchPoems: function(status) { 
+  fetchPoems: function(status) {
     $.ajax({
       url: 'api/poems',
       type: 'GET',

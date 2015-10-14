@@ -1,6 +1,6 @@
 class Api::PoemsController < ApplicationController
   def index
-    @poems = Poem.get_by_status(params[:status])
+    @poems = Poem.get_by_status(params[:status].to_sym)
   end
 
   def create
