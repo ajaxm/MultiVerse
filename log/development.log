@@ -16069,3 +16069,1171 @@ Processing by Api::PoemsController#index as JSON
   [1m[36mStanza Load (1.0ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 29]]
   Rendered api/poems/index.json.jbuilder (79.6ms)
 Completed 200 OK in 103ms (Views: 88.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2015-10-14 16:34:08 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 3990ms (Views: 3915.0ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:34:13 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:34:13 -0700
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:34:14 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 16:34:14 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:34:14 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:34:14 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 16:34:14 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 16:34:14 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 16:34:15 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 16:34:15 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 16:34:15 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 16:34:15 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 16:34:15 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 16:34:15 -0700
+
+
+Started GET "/assets/components/index.self-2566b3cde1aeff9966ed61eb1ee3dd2d894dda0c853886f3869b65e0556881a1.js?body=1" for ::1 at 2015-10-14 16:34:16 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 16:34:16 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 16:34:16 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:34:16 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 16:34:16 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:34:16 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 16:34:17 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 16:34:17 -0700
+
+
+Started GET "/assets/multiverse.self-268d02a0fd0a892c430c8c94095875d97e5ffa0be85826ef0189edaa9fe8e3f6.js?body=1" for ::1 at 2015-10-14 16:34:17 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:34:17 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:34:17 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 16:34:17 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:34:17 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 16:34:18 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 16:34:18 -0700
+
+
+Started GET "/" for ::1 at 2015-10-14 16:34:32 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 4295ms (Views: 4144.9ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:34:37 -0700
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:34:38 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:34:38 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 16:34:38 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:34:38 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:34:38 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 16:34:38 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 16:34:39 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 16:34:39 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 16:34:39 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 16:34:39 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 16:34:39 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 16:34:40 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 16:34:40 -0700
+
+
+Started GET "/assets/components/index.self-2566b3cde1aeff9966ed61eb1ee3dd2d894dda0c853886f3869b65e0556881a1.js?body=1" for ::1 at 2015-10-14 16:34:40 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 16:34:40 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 16:34:40 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 16:34:40 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:34:40 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:34:41 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 16:34:41 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 16:34:41 -0700
+
+
+Started GET "/assets/multiverse.self-d491543537dc93c1eeb367ac701ec64e9d89c0727eecf9ac5c1302d90f380d86.js?body=1" for ::1 at 2015-10-14 16:34:41 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:34:41 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:34:42 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 16:34:42 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:34:42 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 16:34:42 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 16:34:42 -0700
+
+
+Started GET "/" for ::1 at 2015-10-14 16:35:41 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 3001ms (Views: 2907.0ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:35:45 -0700
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:35:45 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:35:45 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:35:45 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:35:45 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 16:35:46 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 16:35:46 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 16:35:46 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 16:35:46 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 16:35:46 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 16:35:47 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 16:35:47 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 16:35:47 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 16:35:47 -0700
+
+
+Started GET "/assets/components/index.self-2566b3cde1aeff9966ed61eb1ee3dd2d894dda0c853886f3869b65e0556881a1.js?body=1" for ::1 at 2015-10-14 16:35:47 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 16:35:48 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 16:35:48 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 16:35:48 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:35:48 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:35:48 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 16:35:48 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 16:35:49 -0700
+
+
+Started GET "/assets/multiverse.self-b0c23f53d7345b0172f87c4876e95f4dec409bc1e3688f3bfc796266ae474f77.js?body=1" for ::1 at 2015-10-14 16:35:49 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:35:49 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:35:49 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 16:35:49 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:35:49 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 16:35:49 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 16:35:50 -0700
+
+
+Started GET "/" for ::1 at 2015-10-14 16:37:48 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 3695ms (Views: 3617.2ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:37:53 -0700
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:37:53 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:37:53 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:37:53 -0700
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:37:53 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 16:37:54 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 16:37:54 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 16:37:54 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 16:37:54 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 16:37:54 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 16:37:54 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 16:37:54 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 16:37:55 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 16:37:55 -0700
+
+
+Started GET "/assets/components/index.self-2566b3cde1aeff9966ed61eb1ee3dd2d894dda0c853886f3869b65e0556881a1.js?body=1" for ::1 at 2015-10-14 16:37:55 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 16:37:55 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 16:37:55 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 16:37:55 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:37:55 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 16:37:56 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:37:56 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 16:37:56 -0700
+
+
+Started GET "/assets/multiverse.self-1b4895e1fe566dc025cab5004d57322ed4eabe788971ef7523f3bd80dd954ec2.js?body=1" for ::1 at 2015-10-14 16:37:56 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:37:56 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:37:56 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 16:37:56 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:37:57 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 16:37:57 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 16:37:57 -0700
+
+
+Started GET "/" for ::1 at 2015-10-14 16:38:13 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 4003ms (Views: 3873.6ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/" for ::1 at 2015-10-14 16:38:18 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 1566ms (Views: 1549.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-10-14 16:38:20 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 1418ms (Views: 1404.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/multiverse.self-f4b02f879b176e5b20f0b8fed0a51286549c1ab5209078ded9ee161ee50e7731.js?body=1" for ::1 at 2015-10-14 16:38:22 -0700
+
+
+Started GET "/" for ::1 at 2015-10-14 16:40:41 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 2715ms (Views: 2641.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/multiverse.self-5ef929c401d24141147bcd1c217e94b0559dd8b71cd706cddac65fc12e5d3f3a.js?body=1" for ::1 at 2015-10-14 16:40:45 -0700
+
+
+Started GET "/" for ::1 at 2015-10-14 16:45:53 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 2801ms (Views: 2725.4ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:45:57 -0700
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:45:57 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:45:57 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:45:57 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:45:57 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 16:45:57 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 16:45:58 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 16:45:58 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 16:45:58 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 16:45:58 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 16:45:58 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 16:45:58 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 16:45:59 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 16:45:59 -0700
+
+
+Started GET "/assets/components/index.self-2566b3cde1aeff9966ed61eb1ee3dd2d894dda0c853886f3869b65e0556881a1.js?body=1" for ::1 at 2015-10-14 16:45:59 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 16:45:59 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 16:45:59 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 16:45:59 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:45:59 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:46:00 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 16:46:00 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 16:46:00 -0700
+
+
+Started GET "/assets/multiverse.self-246293fade8399a66dc653b41830af5efb4ed5dafcc609cf17dc3458b6bcbcf8.js?body=1" for ::1 at 2015-10-14 16:46:00 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:46:00 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:46:00 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 16:46:00 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:46:01 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 16:46:01 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 16:46:01 -0700
+
+
+Started GET "/" for ::1 at 2015-10-14 16:46:07 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 2017ms (Views: 1996.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2015-10-14 16:46:18 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 2028ms (Views: 1996.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-10-14 16:48:07 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 1956ms (Views: 1895.8ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:48:09 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:48:09 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:48:09 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 16:48:10 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:48:10 -0700
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:48:10 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 16:48:10 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 16:48:10 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 16:48:10 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 16:48:11 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 16:48:11 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 16:48:11 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 16:48:11 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 16:48:11 -0700
+
+
+Started GET "/assets/components/index.self-2566b3cde1aeff9966ed61eb1ee3dd2d894dda0c853886f3869b65e0556881a1.js?body=1" for ::1 at 2015-10-14 16:48:11 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 16:48:11 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 16:48:12 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 16:48:12 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:48:12 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:48:12 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 16:48:12 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 16:48:12 -0700
+
+
+Started GET "/assets/multiverse.self-b0c23f53d7345b0172f87c4876e95f4dec409bc1e3688f3bfc796266ae474f77.js?body=1" for ::1 at 2015-10-14 16:48:12 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:48:13 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:48:13 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 16:48:13 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:48:13 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 16:48:13 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 16:48:13 -0700
+
+
+Started GET "/api/poems?status=incomplete" for ::1 at 2015-10-14 16:48:17 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"incomplete"}
+  [1m[35mPoem Load (1.4ms)[0m  SELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas > COUNT(stanzas.id)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 24]]
+  [1m[35mStanza Load (1.1ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 29]]
+  Rendered api/poems/index.json.jbuilder (317.6ms)
+Completed 200 OK in 421ms (Views: 337.1ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/api/poems?status=complete" for ::1 at 2015-10-14 16:48:19 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"complete"}
+  [1m[36mPoem Load (1.3ms)[0m  [1mSELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas = COUNT(stanzas.id)[0m
+  [1m[35mUser Load (14.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 23]]
+  [1m[36mStanza Load (0.9ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 28]]
+  Rendered api/poems/index.json.jbuilder (77.6ms)
+Completed 200 OK in 99ms (Views: 72.8ms | ActiveRecord: 16.7ms)
+
+
+Started GET "/" for ::1 at 2015-10-14 16:51:45 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 2958ms (Views: 2881.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:51:48 -0700
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:51:49 -0700
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:51:49 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:51:49 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:51:49 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 16:51:49 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 16:51:49 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 16:51:50 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 16:51:50 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 16:51:50 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 16:51:50 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 16:51:50 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 16:51:51 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 16:51:51 -0700
+
+
+Started GET "/assets/components/index.self-2566b3cde1aeff9966ed61eb1ee3dd2d894dda0c853886f3869b65e0556881a1.js?body=1" for ::1 at 2015-10-14 16:51:51 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 16:51:51 -0700
+
+
+Started GET "/assets/multiverse.self-e223df518569ff1c0ceba50f2a8da344d256ceae66da561c1993301974b55305.js?body=1" for ::1 at 2015-10-14 16:51:51 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 16:51:51 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 16:51:51 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:51:52 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:51:52 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 16:51:52 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 16:51:52 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:51:52 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:51:52 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 16:51:52 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:51:53 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 16:51:53 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 16:51:53 -0700
+
+
+Started GET "/api/poems?status=complete" for ::1 at 2015-10-14 16:51:57 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"complete"}
+  [1m[36mPoem Load (1.6ms)[0m  [1mSELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas = COUNT(stanzas.id)[0m
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 23]]
+  [1m[36mStanza Load (1.0ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 28]]
+  Rendered api/poems/index.json.jbuilder (309.0ms)
+Completed 200 OK in 375ms (Views: 313.7ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/" for ::1 at 2015-10-14 16:56:07 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 1278ms (Views: 1207.0ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:56:09 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:56:09 -0700
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:56:09 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:56:09 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:56:09 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 16:56:10 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 16:56:10 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 16:56:10 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 16:56:10 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 16:56:10 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 16:56:11 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 16:56:11 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 16:56:11 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 16:56:11 -0700
+
+
+Started GET "/assets/components/index.self-2566b3cde1aeff9966ed61eb1ee3dd2d894dda0c853886f3869b65e0556881a1.js?body=1" for ::1 at 2015-10-14 16:56:11 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 16:56:12 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 16:56:12 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 16:56:12 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:56:12 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:56:12 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 16:56:12 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 16:56:13 -0700
+
+
+Started GET "/assets/multiverse.self-b0c23f53d7345b0172f87c4876e95f4dec409bc1e3688f3bfc796266ae474f77.js?body=1" for ::1 at 2015-10-14 16:56:13 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:56:13 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:56:13 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 16:56:13 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:56:13 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 16:56:13 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 16:56:14 -0700
+
+
+Started GET "/" for ::1 at 2015-10-14 16:56:24 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 2185ms (Views: 2165.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 16:56:26 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:56:27 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:56:27 -0700
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:56:27 -0700
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:56:27 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:56:27 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 16:56:27 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 16:56:27 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 16:56:28 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 16:56:28 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 16:56:28 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 16:56:28 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 16:56:28 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 16:56:29 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 16:56:29 -0700
+
+
+Started GET "/assets/components/index.self-2566b3cde1aeff9966ed61eb1ee3dd2d894dda0c853886f3869b65e0556881a1.js?body=1" for ::1 at 2015-10-14 16:56:29 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 16:56:29 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 16:56:29 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 16:56:29 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:56:30 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:56:30 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 16:56:30 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 16:56:30 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:56:30 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:56:31 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 16:56:31 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:56:31 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 16:56:31 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 16:56:31 -0700
+
+
+Started GET "/assets/multiverse.self-b0c23f53d7345b0172f87c4876e95f4dec409bc1e3688f3bfc796266ae474f77.js?body=1" for ::1 at 2015-10-14 16:56:31 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:56:32 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 16:56:32 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:56:32 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 16:56:32 -0700
+
+
+Started GET "/" for ::1 at 2015-10-14 16:58:22 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 2896ms (Views: 2820.5ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:58:25 -0700
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:58:26 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:58:26 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:58:26 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 16:58:26 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 16:58:26 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 16:58:26 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 16:58:26 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 16:58:27 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 16:58:27 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 16:58:27 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 16:58:27 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 16:58:27 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 16:58:27 -0700
+
+
+Started GET "/assets/components/index.self-2566b3cde1aeff9966ed61eb1ee3dd2d894dda0c853886f3869b65e0556881a1.js?body=1" for ::1 at 2015-10-14 16:58:28 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 16:58:28 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 16:58:28 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 16:58:28 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:58:28 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:58:28 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 16:58:28 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 16:58:28 -0700
+
+
+Started GET "/assets/multiverse.self-4768f27ecc55e72fbd30ee18093d8ebb7b98fc37c59fbed593873e1f07cad3af.js?body=1" for ::1 at 2015-10-14 16:58:29 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:58:29 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:58:29 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 16:58:29 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 16:58:29 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 16:58:29 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 16:58:29 -0700
+
+
+Started GET "/api/poems?status=complete" for ::1 at 2015-10-14 16:59:43 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"complete"}
+  [1m[36mPoem Load (1.2ms)[0m  [1mSELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas = COUNT(stanzas.id)[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 23]]
+  [1m[36mStanza Load (0.6ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 28]]
+  Rendered api/poems/index.json.jbuilder (135.0ms)
+Completed 200 OK in 163ms (Views: 136.2ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/api/poems?status=incomplete" for ::1 at 2015-10-14 16:59:48 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"incomplete"}
+  [1m[35mPoem Load (1.3ms)[0m  SELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas > COUNT(stanzas.id)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 24]]
+  [1m[35mStanza Load (0.7ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 29]]
+  Rendered api/poems/index.json.jbuilder (45.2ms)
+Completed 200 OK in 60ms (Views: 51.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2015-10-14 17:06:05 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 2673ms (Views: 2600.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:06:08 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:06:08 -0700
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:06:08 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:06:08 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:06:08 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 17:06:09 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 17:06:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 17:06:09 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 17:06:09 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 17:06:09 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 17:06:09 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 17:06:10 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 17:06:10 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 17:06:10 -0700
+
+
+Started GET "/assets/components/index.self-2566b3cde1aeff9966ed61eb1ee3dd2d894dda0c853886f3869b65e0556881a1.js?body=1" for ::1 at 2015-10-14 17:06:10 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 17:06:10 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 17:06:10 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 17:06:10 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:06:11 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:06:11 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 17:06:11 -0700
+
+
+Started GET "/assets/multiverse.self-9b03d48aaa4b1576644fd218959f4d8ac43280590ba601fc163b8ed80ebf1b7d.js?body=1" for ::1 at 2015-10-14 17:06:11 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 17:06:11 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:06:11 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:06:11 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 17:06:12 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:06:12 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 17:06:12 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 17:06:12 -0700
+
+
+Started GET "/api/poems?status=incomplete" for ::1 at 2015-10-14 17:06:15 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"incomplete"}
+  [1m[35mPoem Load (1.9ms)[0m  SELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas > COUNT(stanzas.id)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 24]]
+  [1m[35mStanza Load (1.0ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 29]]
+  Rendered api/poems/index.json.jbuilder (273.4ms)
+Completed 200 OK in 338ms (Views: 277.6ms | ActiveRecord: 21.7ms)
+
+
+Started GET "/api/poems/29" for ::1 at 2015-10-14 17:06:18 -0700
+Processing by Api::PoemsController#show as JSON
+  Parameters: {"id"=>"29"}
+  [1m[36mPoem Load (1.3ms)[0m  [1mSELECT  "poems".* FROM "poems" WHERE (id = '29')  ORDER BY "poems"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (24)
+  [1m[36mStanza Load (1.0ms)[0m  [1mSELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" IN (29)[0m
+  [1m[35mUser Load (1.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (24, 25, 23)
+  Rendered api/poems/show.json.jbuilder (21.2ms)
+Completed 200 OK in 214ms (Views: 74.8ms | ActiveRecord: 4.8ms)
