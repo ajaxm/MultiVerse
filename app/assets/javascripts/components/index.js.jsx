@@ -5,6 +5,7 @@ var Index = React.createClass({
 
   componentDidMount: function() {
     PoemStore.addChangeListener(this._onChangeEvent);
+    ApiUtil.fetchPoems({'status': 'incomplete'});
   },
 
   componentWillUnmount: function() {
@@ -16,10 +17,10 @@ var Index = React.createClass({
   },
 
   _buildPoemIndex: function() {
-    var thisIndex = this;
+    var that = this;
     var poemList = this.state.poems.map(function(poem){
       return (
-        <li onClick={thisIndex.selectPoem} key={poem.id} {...poem}>
+        <li onClick={that.selectPoem} key={poem.id} {...poem}>
           {poem.title} <br/>
           {poem.author} <br/>
           {poem.first_stanza}

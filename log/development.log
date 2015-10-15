@@ -17237,3 +17237,2801 @@ Processing by Api::PoemsController#show as JSON
   [1m[35mUser Load (1.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (24, 25, 23)
   Rendered api/poems/show.json.jbuilder (21.2ms)
 Completed 200 OK in 214ms (Views: 74.8ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for ::1 at 2015-10-14 17:07:36 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 2902ms (Views: 2880.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:07:39 -0700
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:07:39 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:07:39 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:07:40 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 17:07:40 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:07:40 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 17:07:40 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 17:07:40 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 17:07:40 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 17:07:41 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 17:07:41 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 17:07:41 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 17:07:41 -0700
+
+
+Started GET "/assets/components/index.self-5bf7467e14ed8ecb16edaf262e8f589fe62bc7bfbd355622b995b897d8c6713d.js?body=1" for ::1 at 2015-10-14 17:07:41 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 17:07:41 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 17:07:42 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 17:07:42 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 17:07:42 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:07:42 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:07:42 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 17:07:42 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 17:07:42 -0700
+
+
+Started GET "/assets/multiverse.self-9b03d48aaa4b1576644fd218959f4d8ac43280590ba601fc163b8ed80ebf1b7d.js?body=1" for ::1 at 2015-10-14 17:07:43 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:07:43 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 17:07:43 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:07:43 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:07:43 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 17:07:43 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 17:07:43 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 17:07:44 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 17:07:44 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 17:07:44 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 17:07:44 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 17:07:44 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 17:07:45 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:07:45 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:07:45 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 17:07:45 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 17:07:45 -0700
+
+
+Started GET "/assets/multiverse.self-9b03d48aaa4b1576644fd218959f4d8ac43280590ba601fc163b8ed80ebf1b7d.js?body=1" for ::1 at 2015-10-14 17:07:45 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:07:45 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:07:46 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 17:07:46 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:07:46 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 17:07:46 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 17:07:46 -0700
+
+
+Started GET "/" for ::1 at 2015-10-14 17:08:24 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 2913ms (Views: 2901.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:08:27 -0700
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:08:27 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:08:27 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:08:27 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:08:27 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 17:08:27 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 17:08:28 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 17:08:28 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 17:08:28 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 17:08:28 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 17:08:28 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 17:08:28 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 17:08:29 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 17:08:29 -0700
+
+
+Started GET "/assets/components/index.self-6a3ff2d414543b1d3c1b4d2fde8028fa9dca80bf3183e488453dd85ef1d9de99.js?body=1" for ::1 at 2015-10-14 17:08:29 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 17:08:29 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 17:08:29 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 17:08:29 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:08:30 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:08:30 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 17:08:30 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 17:08:30 -0700
+
+
+Started GET "/assets/multiverse.self-9b03d48aaa4b1576644fd218959f4d8ac43280590ba601fc163b8ed80ebf1b7d.js?body=1" for ::1 at 2015-10-14 17:08:30 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:08:30 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:08:30 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 17:08:31 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:08:31 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 17:08:31 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 17:08:31 -0700
+
+
+Started GET "/api/poems?status=incomplete" for ::1 at 2015-10-14 17:08:34 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"incomplete"}
+  [1m[36mPoem Load (1.8ms)[0m  [1mSELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas > COUNT(stanzas.id)[0m
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 24]]
+  [1m[36mStanza Load (1.1ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 29]]
+  Rendered api/poems/index.json.jbuilder (74.0ms)
+Completed 200 OK in 136ms (Views: 121.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/api/poems/" for ::1 at 2015-10-14 17:08:38 -0700
+Processing by Api::PoemsController#index as JSON
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+NoMethodError - undefined method `to_sym' for nil:NilClass:
+  app/controllers/api/poems_controller.rb:3:in `index'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/rack/agent_hooks.rb:30:in `traced_call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/rack/browser_monitoring.rb:32:in `traced_call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/etag.rb:24:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/conditionalget.rb:25:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/api/poems/" for ::1 at 2015-10-14 17:08:42 -0700
+Processing by Api::PoemsController#index as JSON
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+NoMethodError - undefined method `to_sym' for nil:NilClass:
+  app/controllers/api/poems_controller.rb:3:in `index'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/rack/agent_hooks.rb:30:in `traced_call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/rack/browser_monitoring.rb:32:in `traced_call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/etag.rb:24:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/conditionalget.rb:25:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/" for ::1 at 2015-10-14 17:08:56 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 4273ms (Views: 4255.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-10-14 17:09:02 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 1091ms (Views: 1080.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/components/index.self-d9aa6e8dc68a86400301e92333f0d8f353d5ccaf1b487030926f36fe2d86729a.js?body=1" for ::1 at 2015-10-14 17:09:04 -0700
+
+
+Started GET "/api/poems?status=incomplete" for ::1 at 2015-10-14 17:09:08 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"incomplete"}
+  [1m[35mPoem Load (1.1ms)[0m  SELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas > COUNT(stanzas.id)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 24]]
+  [1m[35mStanza Load (0.6ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 29]]
+  Rendered api/poems/index.json.jbuilder (34.3ms)
+Completed 200 OK in 49ms (Views: 41.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2015-10-14 17:10:21 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 2784ms (Views: 2773.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:10:24 -0700
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:10:24 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:10:24 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:10:24 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:10:25 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 17:10:25 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 17:10:25 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 17:10:25 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 17:10:25 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 17:10:26 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 17:10:26 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 17:10:26 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 17:10:26 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 17:10:26 -0700
+
+
+Started GET "/assets/components/index.self-104083fdd8db34c986546bd77088f2be32daed8a2253880c18967f59b50ecfac.js?body=1" for ::1 at 2015-10-14 17:10:26 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 17:10:27 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 17:10:27 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 17:10:27 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:10:27 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:10:27 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 17:10:27 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 17:10:27 -0700
+
+
+Started GET "/assets/multiverse.self-9b03d48aaa4b1576644fd218959f4d8ac43280590ba601fc163b8ed80ebf1b7d.js?body=1" for ::1 at 2015-10-14 17:10:28 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:10:28 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:10:28 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 17:10:28 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:10:28 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 17:10:28 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 17:10:28 -0700
+
+
+Started GET "/api/poems?status=incomplete" for ::1 at 2015-10-14 17:10:34 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"incomplete"}
+  [1m[35mPoem Load (1.4ms)[0m  SELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas > COUNT(stanzas.id)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 24]]
+  [1m[35mStanza Load (0.9ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 29]]
+  Rendered api/poems/index.json.jbuilder (76.3ms)
+Completed 200 OK in 113ms (Views: 98.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2015-10-14 17:11:25 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 2844ms (Views: 2833.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:11:28 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:11:28 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:11:28 -0700
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:11:28 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:11:29 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 17:11:29 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 17:11:29 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 17:11:29 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 17:11:29 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 17:11:29 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 17:11:30 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 17:11:30 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 17:11:30 -0700
+
+
+Started GET "/assets/components/index.self-fb1fd31b215cc088304e04189b62592f3bf2d62436c95b85cce53d5e05503856.js?body=1" for ::1 at 2015-10-14 17:11:30 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 17:11:30 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 17:11:31 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 17:11:31 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 17:11:31 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:11:31 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:11:31 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 17:11:31 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 17:11:32 -0700
+
+
+Started GET "/assets/multiverse.self-9b03d48aaa4b1576644fd218959f4d8ac43280590ba601fc163b8ed80ebf1b7d.js?body=1" for ::1 at 2015-10-14 17:11:32 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:11:32 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:11:32 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 17:11:32 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:11:32 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 17:11:32 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 17:11:33 -0700
+
+
+Started GET "/api/poems?status=incomplete" for ::1 at 2015-10-14 17:11:36 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"incomplete"}
+  [1m[35mPoem Load (1.4ms)[0m  SELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas > COUNT(stanzas.id)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 24]]
+  [1m[35mStanza Load (1.2ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 29]]
+  Rendered api/poems/index.json.jbuilder (92.2ms)
+Completed 200 OK in 115ms (Views: 102.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/api/poems/" for ::1 at 2015-10-14 17:11:37 -0700
+Processing by Api::PoemsController#index as JSON
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+NoMethodError - undefined method `to_sym' for nil:NilClass:
+  app/controllers/api/poems_controller.rb:3:in `index'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/rack/agent_hooks.rb:30:in `traced_call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/rack/browser_monitoring.rb:32:in `traced_call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/etag.rb:24:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/conditionalget.rb:25:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/api/poems/" for ::1 at 2015-10-14 17:11:38 -0700
+Processing by Api::PoemsController#index as JSON
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+NoMethodError - undefined method `to_sym' for nil:NilClass:
+  app/controllers/api/poems_controller.rb:3:in `index'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/rack/agent_hooks.rb:30:in `traced_call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/rack/browser_monitoring.rb:32:in `traced_call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/etag.rb:24:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/conditionalget.rb:25:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/api/poems/" for ::1 at 2015-10-14 17:11:39 -0700
+Processing by Api::PoemsController#index as JSON
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+NoMethodError - undefined method `to_sym' for nil:NilClass:
+  app/controllers/api/poems_controller.rb:3:in `index'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/rack/agent_hooks.rb:30:in `traced_call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/rack/browser_monitoring.rb:32:in `traced_call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/etag.rb:24:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/conditionalget.rb:25:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/" for ::1 at 2015-10-14 17:12:11 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 2895ms (Views: 2884.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:12:14 -0700
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:12:14 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 17:12:14 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:12:14 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:12:15 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:12:15 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 17:12:15 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 17:12:15 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 17:12:15 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 17:12:15 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 17:12:16 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 17:12:16 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 17:12:16 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 17:12:16 -0700
+
+
+Started GET "/assets/components/index.self-3f0ae5bad5f50079accaa41d72ef0237d162f1797c8b7e2df203676bdc857b68.js?body=1" for ::1 at 2015-10-14 17:12:16 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 17:12:17 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 17:12:17 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 17:12:17 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:12:17 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:12:17 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 17:12:17 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 17:12:18 -0700
+
+
+Started GET "/assets/multiverse.self-9b03d48aaa4b1576644fd218959f4d8ac43280590ba601fc163b8ed80ebf1b7d.js?body=1" for ::1 at 2015-10-14 17:12:18 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:12:18 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:12:18 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 17:12:18 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:12:18 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 17:12:18 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 17:12:19 -0700
+
+
+Started GET "/api/poems?status=incomplete" for ::1 at 2015-10-14 17:12:22 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"incomplete"}
+  [1m[35mPoem Load (1.8ms)[0m  SELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas > COUNT(stanzas.id)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 24]]
+  [1m[35mStanza Load (0.9ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 29]]
+  Rendered api/poems/index.json.jbuilder (89.9ms)
+Completed 200 OK in 113ms (Views: 98.8ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2015-10-14 17:12:50 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 3042ms (Views: 3032.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:12:54 -0700
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:12:54 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:12:54 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:12:54 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:12:54 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 17:12:54 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 17:12:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 17:12:55 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 17:12:55 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 17:12:55 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 17:12:55 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 17:12:55 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 17:12:55 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 17:12:56 -0700
+
+
+Started GET "/assets/components/index.self-e9b23b0daa024760feacc3624c29dd44cd87d8cc0cbcb493fc5d407f8a6291b9.js?body=1" for ::1 at 2015-10-14 17:12:56 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 17:12:56 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 17:12:56 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 17:12:56 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:12:56 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:12:56 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 17:12:57 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 17:12:57 -0700
+
+
+Started GET "/assets/multiverse.self-9b03d48aaa4b1576644fd218959f4d8ac43280590ba601fc163b8ed80ebf1b7d.js?body=1" for ::1 at 2015-10-14 17:12:57 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:12:57 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:12:57 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 17:12:57 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:12:57 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 17:12:57 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 17:12:57 -0700
+
+
+Started GET "/api/poems?status=incomplete" for ::1 at 2015-10-14 17:13:00 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"incomplete"}
+  [1m[35mPoem Load (1.4ms)[0m  SELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas > COUNT(stanzas.id)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 24]]
+  [1m[35mStanza Load (1.1ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 29]]
+  Rendered api/poems/index.json.jbuilder (69.6ms)
+Completed 200 OK in 103ms (Views: 80.4ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/api/poems?status=complete" for ::1 at 2015-10-14 17:13:04 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"complete"}
+  [1m[36mPoem Load (1.3ms)[0m  [1mSELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas = COUNT(stanzas.id)[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 23]]
+  [1m[36mStanza Load (1.0ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 28]]
+  Rendered api/poems/index.json.jbuilder (71.9ms)
+Completed 200 OK in 105ms (Views: 92.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2015-10-14 17:14:14 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 2650ms (Views: 2640.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:14:17 -0700
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:14:17 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:14:17 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:14:17 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:14:18 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 17:14:18 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 17:14:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 17:14:18 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 17:14:18 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 17:14:18 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 17:14:18 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 17:14:19 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 17:14:19 -0700
+
+
+Started GET "/assets/components/index.self-7252bd6f9f392b469b0d92da6156aa350ade722e3b6c3fbac615abb150a94849.js?body=1" for ::1 at 2015-10-14 17:14:19 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 17:14:19 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 17:14:19 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 17:14:19 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 17:14:19 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:14:20 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:14:20 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 17:14:20 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 17:14:20 -0700
+
+
+Started GET "/assets/multiverse.self-9b03d48aaa4b1576644fd218959f4d8ac43280590ba601fc163b8ed80ebf1b7d.js?body=1" for ::1 at 2015-10-14 17:14:20 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:14:20 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:14:20 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 17:14:21 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:14:21 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 17:14:21 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 17:14:21 -0700
+
+
+Started GET "/api/poems?status=complete" for ::1 at 2015-10-14 17:14:24 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"complete"}
+  [1m[36mPoem Load (1.6ms)[0m  [1mSELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas = COUNT(stanzas.id)[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 23]]
+  [1m[36mStanza Load (1.0ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 28]]
+  Rendered api/poems/index.json.jbuilder (67.2ms)
+Completed 200 OK in 100ms (Views: 75.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2015-10-14 17:14:57 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 2708ms (Views: 2697.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:15:00 -0700
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:15:00 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:15:00 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:15:00 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:15:00 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 17:15:00 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 17:15:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 17:15:01 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 17:15:01 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 17:15:01 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 17:15:01 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 17:15:01 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 17:15:01 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 17:15:02 -0700
+
+
+Started GET "/assets/components/index.self-870c1a288074b61fffc5bbdc5c71c6fc13ed047fccc0b7016b4ebc2859000995.js?body=1" for ::1 at 2015-10-14 17:15:02 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 17:15:02 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 17:15:02 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 17:15:02 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:15:02 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:15:02 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 17:15:03 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 17:15:03 -0700
+
+
+Started GET "/assets/multiverse.self-9b03d48aaa4b1576644fd218959f4d8ac43280590ba601fc163b8ed80ebf1b7d.js?body=1" for ::1 at 2015-10-14 17:15:03 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:15:03 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:15:03 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 17:15:03 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:15:03 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 17:15:03 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 17:15:04 -0700
+
+
+Started GET "/api/poems?status=complete" for ::1 at 2015-10-14 17:15:15 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"complete"}
+  [1m[36mPoem Load (1.4ms)[0m  [1mSELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas = COUNT(stanzas.id)[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 23]]
+  [1m[36mStanza Load (0.9ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 28]]
+  Rendered api/poems/index.json.jbuilder (72.7ms)
+Completed 200 OK in 104ms (Views: 80.7ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/poems/" for ::1 at 2015-10-14 17:15:17 -0700
+Processing by Api::PoemsController#index as JSON
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+NoMethodError - undefined method `to_sym' for nil:NilClass:
+  app/controllers/api/poems_controller.rb:3:in `index'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/rack/agent_hooks.rb:30:in `traced_call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/rack/browser_monitoring.rb:32:in `traced_call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/etag.rb:24:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/conditionalget.rb:25:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/api/poems/" for ::1 at 2015-10-14 17:15:19 -0700
+Processing by Api::PoemsController#index as JSON
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+NoMethodError - undefined method `to_sym' for nil:NilClass:
+  app/controllers/api/poems_controller.rb:3:in `index'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/rack/agent_hooks.rb:30:in `traced_call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/rack/browser_monitoring.rb:32:in `traced_call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/etag.rb:24:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/conditionalget.rb:25:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/api/poems/" for ::1 at 2015-10-14 17:15:20 -0700
+Processing by Api::PoemsController#index as JSON
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+NoMethodError - undefined method `to_sym' for nil:NilClass:
+  app/controllers/api/poems_controller.rb:3:in `index'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/rack/agent_hooks.rb:30:in `traced_call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/rack/browser_monitoring.rb:32:in `traced_call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/etag.rb:24:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/conditionalget.rb:25:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/api/poems/" for ::1 at 2015-10-14 17:15:27 -0700
+Processing by Api::PoemsController#index as JSON
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+NoMethodError - undefined method `to_sym' for nil:NilClass:
+  app/controllers/api/poems_controller.rb:3:in `index'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/rack/agent_hooks.rb:30:in `traced_call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/rack/browser_monitoring.rb:32:in `traced_call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/etag.rb:24:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/conditionalget.rb:25:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/" for ::1 at 2015-10-14 17:15:30 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 2073ms (Views: 2039.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:15:32 -0700
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:15:32 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:15:33 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:15:33 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:15:33 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 17:15:33 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 17:15:33 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 17:15:33 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 17:15:33 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 17:15:34 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 17:15:34 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 17:15:34 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 17:15:34 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 17:15:34 -0700
+
+
+Started GET "/assets/components/index.self-870c1a288074b61fffc5bbdc5c71c6fc13ed047fccc0b7016b4ebc2859000995.js?body=1" for ::1 at 2015-10-14 17:15:34 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 17:15:35 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 17:15:35 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 17:15:35 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:15:35 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:15:35 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 17:15:35 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 17:15:35 -0700
+
+
+Started GET "/assets/multiverse.self-9b03d48aaa4b1576644fd218959f4d8ac43280590ba601fc163b8ed80ebf1b7d.js?body=1" for ::1 at 2015-10-14 17:15:36 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:15:36 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:15:36 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 17:15:36 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:15:36 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 17:15:36 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 17:15:36 -0700
+
+
+Started GET "/" for ::1 at 2015-10-14 17:16:01 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 4052ms (Views: 4019.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:16:06 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:16:06 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:16:06 -0700
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:16:06 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:16:06 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 17:16:06 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 17:16:07 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 17:16:07 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 17:16:07 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 17:16:07 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 17:16:07 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 17:16:07 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 17:16:08 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 17:16:08 -0700
+
+
+Started GET "/assets/components/index.self-a9cc469994b5da7608f7d9daaaa93180eceeb536bd31143fe5f824bc7dc42e9e.js?body=1" for ::1 at 2015-10-14 17:16:08 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 17:16:08 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 17:16:08 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 17:16:08 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:16:09 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:16:09 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 17:16:09 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 17:16:09 -0700
+
+
+Started GET "/assets/multiverse.self-9b03d48aaa4b1576644fd218959f4d8ac43280590ba601fc163b8ed80ebf1b7d.js?body=1" for ::1 at 2015-10-14 17:16:09 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:16:09 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:16:09 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 17:16:09 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:16:10 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 17:16:10 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 17:16:10 -0700
+
+
+Started GET "/api/poems?status=complete" for ::1 at 2015-10-14 17:16:14 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"complete"}
+  [1m[35mPoem Load (1.3ms)[0m  SELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas = COUNT(stanzas.id)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 23]]
+  [1m[35mStanza Load (0.9ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 28]]
+  Rendered api/poems/index.json.jbuilder (75.4ms)
+Completed 200 OK in 98ms (Views: 84.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/api/poems/28" for ::1 at 2015-10-14 17:16:15 -0700
+Processing by Api::PoemsController#show as JSON
+  Parameters: {"id"=>"28"}
+  [1m[36mPoem Load (1.3ms)[0m  [1mSELECT  "poems".* FROM "poems" WHERE (id = '28')  ORDER BY "poems"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (1.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (23)
+  [1m[36mStanza Load (1.1ms)[0m  [1mSELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" IN (28)[0m
+  [1m[35mUser Load (1.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (23, 24, 26)
+  Rendered api/poems/show.json.jbuilder (39.1ms)
+Completed 200 OK in 223ms (Views: 93.5ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-14 17:33:03 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 1334ms (Views: 1322.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:33:05 -0700
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:33:05 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:33:05 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 17:33:06 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:33:06 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:33:06 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 17:33:06 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 17:33:06 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 17:33:06 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 17:33:06 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 17:33:07 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 17:33:07 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 17:33:07 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 17:33:07 -0700
+
+
+Started GET "/assets/components/index.self-a9cc469994b5da7608f7d9daaaa93180eceeb536bd31143fe5f824bc7dc42e9e.js?body=1" for ::1 at 2015-10-14 17:33:07 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 17:33:07 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 17:33:08 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 17:33:08 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:33:08 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:33:08 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 17:33:08 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 17:33:08 -0700
+
+
+Started GET "/assets/multiverse.self-9b03d48aaa4b1576644fd218959f4d8ac43280590ba601fc163b8ed80ebf1b7d.js?body=1" for ::1 at 2015-10-14 17:33:08 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:33:09 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:33:09 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 17:33:09 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:33:09 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 17:33:09 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 17:33:09 -0700
+
+
+Started GET "/api/poems?status=complete" for ::1 at 2015-10-14 17:33:11 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"complete"}
+  [1m[35mPoem Load (1.4ms)[0m  SELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas = COUNT(stanzas.id)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 23]]
+  [1m[35mStanza Load (1.1ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 28]]
+  Rendered api/poems/index.json.jbuilder (70.0ms)
+Completed 200 OK in 127ms (Views: 111.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/poems/28" for ::1 at 2015-10-14 17:33:14 -0700
+Processing by Api::PoemsController#show as JSON
+  Parameters: {"id"=>"28"}
+  [1m[36mPoem Load (12.4ms)[0m  [1mSELECT  "poems".* FROM "poems" WHERE (id = '28')  ORDER BY "poems"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (1.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (23)
+  [1m[36mStanza Load (14.1ms)[0m  [1mSELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" IN (28)[0m
+  [1m[35mUser Load (1.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (23, 24, 26)
+  Rendered api/poems/show.json.jbuilder (38.6ms)
+Completed 200 OK in 226ms (Views: 83.4ms | ActiveRecord: 29.2ms)
+
+
+Started GET "/" for ::1 at 2015-10-14 17:33:47 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 1092ms (Views: 1081.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/poems?status=complete" for ::1 at 2015-10-14 17:33:52 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"complete"}
+  [1m[35mPoem Load (1.1ms)[0m  SELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas = COUNT(stanzas.id)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 23]]
+  [1m[35mStanza Load (0.6ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 28]]
+  Rendered api/poems/index.json.jbuilder (32.7ms)
+Completed 200 OK in 59ms (Views: 38.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/poems/28" for ::1 at 2015-10-14 17:33:54 -0700
+Processing by Api::PoemsController#show as JSON
+  Parameters: {"id"=>"28"}
+  [1m[36mPoem Load (0.9ms)[0m  [1mSELECT  "poems".* FROM "poems" WHERE (id = '28')  ORDER BY "poems"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (23)
+  [1m[36mStanza Load (0.8ms)[0m  [1mSELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" IN (28)[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (23, 24, 26)
+  Rendered api/poems/show.json.jbuilder (13.1ms)
+Completed 200 OK in 100ms (Views: 21.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2015-10-14 17:34:04 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 1099ms (Views: 1086.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:34:05 -0700
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:34:05 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:34:06 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:34:06 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 17:34:06 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:34:06 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 17:34:06 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 17:34:06 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 17:34:07 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 17:34:07 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 17:34:07 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 17:34:07 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 17:34:07 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 17:34:07 -0700
+
+
+Started GET "/assets/components/index.self-a9cc469994b5da7608f7d9daaaa93180eceeb536bd31143fe5f824bc7dc42e9e.js?body=1" for ::1 at 2015-10-14 17:34:08 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 17:34:08 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 17:34:08 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 17:34:08 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:34:08 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:34:08 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 17:34:08 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 17:34:09 -0700
+
+
+Started GET "/assets/multiverse.self-9b03d48aaa4b1576644fd218959f4d8ac43280590ba601fc163b8ed80ebf1b7d.js?body=1" for ::1 at 2015-10-14 17:34:09 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:34:09 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:34:09 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 17:34:09 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:34:09 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 17:34:09 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 17:34:10 -0700
+
+
+Started GET "/api/poems?status=complete" for ::1 at 2015-10-14 17:34:12 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"complete"}
+  [1m[35mPoem Load (1.6ms)[0m  SELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas = COUNT(stanzas.id)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 23]]
+  [1m[35mStanza Load (1.0ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 28]]
+  Rendered api/poems/index.json.jbuilder (85.0ms)
+Completed 200 OK in 108ms (Views: 93.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2015-10-14 17:34:34 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 2225ms (Views: 2194.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/poems/28" for ::1 at 2015-10-14 17:34:36 -0700
+Processing by Api::PoemsController#show as JSON
+  Parameters: {"id"=>"28"}
+  [1m[35mPoem Load (1.1ms)[0m  SELECT  "poems".* FROM "poems" WHERE (id = '28')  ORDER BY "poems"."id" ASC LIMIT 1
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (23)[0m
+  [1m[35mStanza Load (44.5ms)[0m  SELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" IN (28)
+  [1m[36mUser Load (30.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (23, 24, 26)[0m
+  Rendered api/poems/show.json.jbuilder (40.1ms)
+Completed 200 OK in 402ms (Views: 55.0ms | ActiveRecord: 77.9ms)
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:34:37 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:34:37 -0700
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:34:37 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:34:37 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 17:34:37 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 17:34:37 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 17:34:38 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 17:34:38 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 17:34:38 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 17:34:38 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 17:34:38 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 17:34:39 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 17:34:39 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 17:34:39 -0700
+
+
+Started GET "/assets/components/index.self-6a3ff2d414543b1d3c1b4d2fde8028fa9dca80bf3183e488453dd85ef1d9de99.js?body=1" for ::1 at 2015-10-14 17:34:39 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 17:34:39 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 17:34:39 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 17:34:40 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:34:40 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:34:40 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 17:34:40 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 17:34:40 -0700
+
+
+Started GET "/assets/multiverse.self-9b03d48aaa4b1576644fd218959f4d8ac43280590ba601fc163b8ed80ebf1b7d.js?body=1" for ::1 at 2015-10-14 17:34:40 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:34:40 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:34:41 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 17:34:41 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 17:34:41 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 17:34:41 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 17:34:41 -0700
+
+
+Started GET "/api/poems?status=complete" for ::1 at 2015-10-14 17:34:43 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"complete"}
+  [1m[35mPoem Load (1.3ms)[0m  SELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas = COUNT(stanzas.id)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 23]]
+  [1m[35mStanza Load (0.9ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 28]]
+  Rendered api/poems/index.json.jbuilder (82.7ms)
+Completed 200 OK in 108ms (Views: 93.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/api/poems/" for ::1 at 2015-10-14 17:35:53 -0700
+Processing by Api::PoemsController#index as JSON
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+NoMethodError - undefined method `to_sym' for nil:NilClass:
+  app/controllers/api/poems_controller.rb:3:in `index'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/rack/agent_hooks.rb:30:in `traced_call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/rack/browser_monitoring.rb:32:in `traced_call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/etag.rb:24:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/conditionalget.rb:25:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  newrelic_rpm (3.13.2.302) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+   () Users/Adi/.rvm/gems/ruby-2.2.1@global/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Adi/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/" for ::1 at 2015-10-14 17:36:48 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 3793ms (Views: 3781.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-10-14 17:36:54 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 1016ms (Views: 1003.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/components/index.self-a794bf9011dc43e154452a6674b30175103100c5de121eda11ec8a1d76aeb2d7.js?body=1" for ::1 at 2015-10-14 17:36:55 -0700
+
+
+Started GET "/" for ::1 at 2015-10-14 17:36:58 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 1011ms (Views: 999.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/poems?status=incomplete" for ::1 at 2015-10-14 17:36:59 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"incomplete"}
+  [1m[35mPoem Load (2.9ms)[0m  SELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas > COUNT(stanzas.id)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 24]]
+  [1m[35mStanza Load (0.6ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 29]]
+  Rendered api/poems/index.json.jbuilder (49.2ms)
+Completed 200 OK in 112ms (Views: 96.2ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for ::1 at 2015-10-14 17:37:06 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 1006ms (Views: 995.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/poems?status=incomplete" for ::1 at 2015-10-14 17:37:07 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"incomplete"}
+  [1m[35mPoem Load (1.4ms)[0m  SELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas > COUNT(stanzas.id)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 24]]
+  [1m[35mStanza Load (0.9ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 29]]
+  Rendered api/poems/index.json.jbuilder (53.5ms)
+Completed 200 OK in 76ms (Views: 66.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/api/poems/29" for ::1 at 2015-10-14 17:37:13 -0700
+Processing by Api::PoemsController#show as JSON
+  Parameters: {"id"=>"29"}
+  [1m[36mPoem Load (0.8ms)[0m  [1mSELECT  "poems".* FROM "poems" WHERE (id = '29')  ORDER BY "poems"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (24)
+  [1m[36mStanza Load (0.9ms)[0m  [1mSELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" IN (29)[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (24, 25, 23)
+  Rendered api/poems/show.json.jbuilder (21.0ms)
+Completed 200 OK in 148ms (Views: 92.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for ::1 at 2015-10-14 21:42:53 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "h3ikggzdWHJY5h7TTLembQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 4967ms (Views: 4904.7ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 21:42:59 -0700
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 21:42:59 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 21:42:59 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 21:42:59 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-14 21:43:00 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-14 21:43:00 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-14 21:43:00 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-14 21:43:00 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-14 21:43:00 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-10-14 21:43:00 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-14 21:43:00 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-14 21:43:01 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-14 21:43:01 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-14 21:43:01 -0700
+
+
+Started GET "/assets/components/index.self-f9c69c3bccd04c67dbc45c83de9a69ef4b2ebf24f0078375556b5afa3ef822d6.js?body=1" for ::1 at 2015-10-14 21:43:01 -0700
+
+
+Started GET "/assets/components/poem.self-74ca1b6a29441f3ff11aa3bc4a17c292486ed8e63e2e06aca946307d66bb7a33.js?body=1" for ::1 at 2015-10-14 21:43:01 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-14 21:43:01 -0700
+
+
+Started GET "/assets/actions/api_actions.self-a51fc204cecdec1eba835855b84bbcd6209d1d3b3628261a4f6aeb99fb80e54f.js?body=1" for ::1 at 2015-10-14 21:43:01 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 21:43:02 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 21:43:02 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-bc936eeab58eea5c4bff6763e08644cb3efc54fdf00b54c6fb165cd5695f3aab.js?body=1" for ::1 at 2015-10-14 21:43:02 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-14 21:43:02 -0700
+
+
+Started GET "/assets/multiverse.self-9b03d48aaa4b1576644fd218959f4d8ac43280590ba601fc163b8ed80ebf1b7d.js?body=1" for ::1 at 2015-10-14 21:43:02 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 21:43:02 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 21:43:02 -0700
+
+
+Started GET "/assets/stores/poem.self-994ef57d66b4ed69dc429cec7228f9f658bc6d97978e1715ae0d43a2d42ea183.js?body=1" for ::1 at 2015-10-14 21:43:03 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-14 21:43:03 -0700
+
+
+Started GET "/assets/util/api_util.self-a8676b38273ea20b4deba549cc19bf019362fbdca9f563dd0c7957146f0ec7f8.js?body=1" for ::1 at 2015-10-14 21:43:03 -0700
+
+
+Started GET "/assets/application.self-16c207b3ca1b52afcfc7f4b662487caf1bbe084a6656bb15f693ab9de2d11be7.js?body=1" for ::1 at 2015-10-14 21:43:03 -0700
+
+
+Started GET "/api/poems?status=incomplete" for ::1 at 2015-10-14 21:43:03 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"incomplete"}
+  [1m[35mPoem Load (1.6ms)[0m  SELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas > COUNT(stanzas.id)
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 24]]
+  [1m[35mStanza Load (1.1ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 29]]
+  Rendered api/poems/index.json.jbuilder (306.7ms)
+Completed 200 OK in 422ms (Views: 341.5ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/api/poems/29" for ::1 at 2015-10-14 21:43:05 -0700
+Processing by Api::PoemsController#show as JSON
+  Parameters: {"id"=>"29"}
+  [1m[36mPoem Load (1.1ms)[0m  [1mSELECT  "poems".* FROM "poems" WHERE (id = '29')  ORDER BY "poems"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (24)
+  [1m[36mStanza Load (1.2ms)[0m  [1mSELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" IN (29)[0m
+  [1m[35mUser Load (1.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (24, 25, 23)
+  Rendered api/poems/show.json.jbuilder (17.0ms)
+Completed 200 OK in 185ms (Views: 45.6ms | ActiveRecord: 4.4ms)
