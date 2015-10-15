@@ -25,6 +25,7 @@ var Poem = React.createClass({
         Author: {poem.author} <br/>
         {lastStanza.body}
         <br/>
+        <StanzaForm/>
         <a href='/#'>Back to all poems.</a>
       </div>
     );
