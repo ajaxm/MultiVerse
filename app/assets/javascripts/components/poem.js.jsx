@@ -18,18 +18,13 @@ var Poem = React.createClass({
 
   render: function() {
     var poem = this.state.poem;
-    var stanzas = poem.stanzas.map(function(stanza){
-      return (
-        <li key={stanza.id}>{stanza.body}</li>
-      );
-    });
+    var lastStanza = poem.stanzas.pop() || {};
     return (
       <div className='poem'>
         Title: {poem.title} <br/>
         Author: {poem.author} <br/>
-        <ul>
-          {stanzas}
-        </ul>
+        {lastStanza.body}
+        <br/>
         <a href='/#'>Back to all poems.</a>
       </div>
     );
