@@ -1,11 +1,11 @@
-var Index = React.createClass({
+var Archive = React.createClass({
   getInitialState: function() {
     return { poems: PoemStore.all() };
   },
 
   componentDidMount: function() {
     PoemStore.addChangeListener(this._onChangeEvent);
-    ApiUtil.fetchPoems({'status': 'incomplete'});
+    ApiUtil.fetchPoems({'status': 'complete'});
   },
 
   componentWillUnmount: function() {
@@ -16,20 +16,20 @@ var Index = React.createClass({
     this.setState({ poems: PoemStore.all() });
   },
 
-  _buildPoemIndex: function() {
+  _buildPoemArchive: function() {
     var that = this;
-    var poemIndex = this.state.poems.map(function(poem){
+    var poemArchive = this.state.poems.map(function(poem){
       return (
-        <PoemListItem status='incomplete' key={poem.id} {...poem}/>
+        <PoemListItem status='complete' key={poem.id} {...poem}/>
       );
     });
-    return poemIndex;
+    return poemArchive;
   },
 
   render: function() {
-    var poems = this._buildPoemIndex();
+    var poems = this._buildPoemArchive();
     return(
-      <ul className='poem-index'>{poems}</ul>
+      <ul className='poem-archive'>{poems}</ul>
     );
   }
 });

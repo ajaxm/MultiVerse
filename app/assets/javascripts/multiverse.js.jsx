@@ -17,6 +17,8 @@ var routes = (
   <Route path='/' component={App}>
     <IndexRoute component={Index}/>
     <Route path='poems/:poemId' component={Poem}/>
+    <Route path='archive' component={Archive}/>
+    <Route path='archive/:poemId' component={ArchivePoem}/>
   </Route>
 );
 
