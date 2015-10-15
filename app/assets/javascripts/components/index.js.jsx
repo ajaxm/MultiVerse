@@ -1,6 +1,6 @@
 var Index = React.createClass({
   getInitialState: function() {
-    return { poems: PoemStore.all(), selectedPoem: PoemStore.one() };
+    return { poems: PoemStore.all() };
   },
 
   componentDidMount: function() {
@@ -13,38 +13,23 @@ var Index = React.createClass({
   },
 
   _onChangeEvent: function() {
-    this.setState({ poems: PoemStore.all(), selectedPoem: PoemStore.one() });
+    this.setState({ poems: PoemStore.all() });
   },
 
   _buildPoemIndex: function() {
     var that = this;
-    var poemList = this.state.poems.map(function(poem){
+    var poemIndex = this.state.poems.map(function(poem){
       return (
-        <li onClick={that.selectPoem} key={poem.id} {...poem}>
-          {poem.title} <br/>
-          {poem.author} <br/>
-          {poem.first_stanza}
-        </li>
+        <IndexItem key={poem.id} {...poem}/>
       );
     });
-    return poemList;
-  },
-
-  selectPoem: function(e) {
-    ApiUtil.fetchOnePoem(e.currentTarget.id);
+    return poemIndex;
   },
 
   render: function() {
-    if (this.state.selectedPoem === undefined) {
-      var poems = this._buildPoemIndex();
-      return(
-        <ul className='poem-index'>{poems}</ul>
-      );
-    } else {
-      var poem = this.state.selectedPoem;
-      return(
-        <Poem className='selected-poem' {...poem}/>
-      );
-    }
+    var poems = this._buildPoemIndex();
+    return(
+      <ul className='poem-index'>{poems}</ul>
+    );
   }
 });
