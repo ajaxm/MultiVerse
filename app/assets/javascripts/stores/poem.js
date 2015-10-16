@@ -1,6 +1,7 @@
 (function(root) {
   var CHANGE_EVENT = 'CHANGE_EVENT';
   var SHOW_EVENT = 'SHOW_EVENT';
+  var CREATION_EVENT = 'CREATION_EVENT';
   var BLANK_POEM = {stanzas: []};
 
   var _poems = [];
@@ -40,6 +41,14 @@
       this.removeListener(SHOW_EVENT, callback);
     },
 
+    addCreationListener: function(callback) {
+      this.on(CREATION_EVENT, callback);
+    },
+
+    removeCreationListener: function(callback) {
+      this.removeListener(CREATION_EVENT, callback);
+    },
+
     dispatcherId: AppDispatcher.register(function(action) {
       switch (action.actionType) {
         case PoemConstants.POEMS_RECEIVED:
@@ -49,6 +58,9 @@
         case PoemConstants.ONE_POEM_RECEIVED:
           _setSelectedPoem(action.poem);
           PoemStore.emit(SHOW_EVENT);
+          break;
+        case PoemConstants.POEM_CREATED:
+          PoemStore.emit(CREATION_EVENT);
           break;
       }
     })

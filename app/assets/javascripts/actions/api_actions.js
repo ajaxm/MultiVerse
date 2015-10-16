@@ -13,5 +13,12 @@ var ApiActions = {
       poem: poem
     };
     AppDispatcher.dispatch(action);
+  },
+
+  createPoem: function() {
+    var action = {
+      actionType: PoemConstants.POEM_CREATED
+    };
+    AppDispatcher.dispatch(action);
   }
 };

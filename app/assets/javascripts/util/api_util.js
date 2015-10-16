@@ -11,9 +11,9 @@ var ApiUtil = {
     });
   },
 
-  fetchOnePoem: function(poem_id) {
+  fetchOnePoem: function(poemId) {
     $.ajax({
-      url: 'api/poems/' + poem_id,
+      url: 'api/poems/' + poemId,
       type: 'GET',
       dataType: 'JSON',
       success: function(responseData) {
@@ -29,14 +29,24 @@ var ApiUtil = {
       data: poem,
       dataType: 'JSON',
       success: function(responseData) {
-        ApiActions.receiveOnePoem(responseData);
-        /// ApiUtil.fetchAllPoems(:incomplete) here if poem creation
-        /// redirects to home page.
-        /// Otherwise, need some way to reference new poem's id and
-        /// redirect to its show page.
+        ApiActions.createPoem();
+      },
+      error: function(errorData) {
+        console.log(errorData);
       }
     });
   },
+
+  // deletePoem: function(poemId) {
+  //   $.ajax({
+  //     url: 'api/poems/',
+  //     type: 'DELETE',
+  //     dataType: 'JSON',
+  //     success: function(responseData) {
+  //       ApiActions.
+  //     }
+  //   });
+  // },
 
   createStanza: function(stanza) {
     $.ajax({

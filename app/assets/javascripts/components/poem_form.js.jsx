@@ -4,6 +4,24 @@ var PoemForm = React.createClass({
     return { title: '', numStanzas: '', firstStanza: '' };
   },
 
+  componentDidMount: function() {
+    PoemStore.addCreationListener(this._onCreation);
+  },
+
+  componentWillUnmount: function() {
+    PoemStore.removeCreationListener(this._onCreation);
+  },
+
+  _onCreation: function() {
+    this.props.history.pushState(null, "/");
+    /// QUESTIONS
+    /// can I call PoemStore.one() if I want to navigate
+    /// to the poem show page instead of index?
+
+    /// QUESTIONS
+    /// Why are listeners generally indicated to be private?
+  },
+
   handleSubmit: function(e) {
     e.preventDefault();
     var newPoem = { poem: {
@@ -13,7 +31,6 @@ var PoemForm = React.createClass({
       }
     };
     ApiUtil.createPoem(newPoem);
-    this.props.history.pushState(null, "/");
   },
 
   render: function() {
