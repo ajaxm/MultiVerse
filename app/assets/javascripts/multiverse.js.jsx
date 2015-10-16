@@ -19,6 +19,7 @@ var routes = (
     <Route path='poems/:poemId' component={Poem}/>
     <Route path='archive' component={Archive}/>
     <Route path='archive/:poemId' component={ArchivePoem}/>
+    <Route path='new' component={PoemForm}/>
   </Route>
 );
 

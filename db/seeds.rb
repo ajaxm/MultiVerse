@@ -25,6 +25,10 @@ richardsiken = User.create(
   username: 'richardsiken',
   password: 'scheherazade'
 )
+terrancehayes = User.create(
+  username: 'terrancehayes',
+  password: 'boxcarboxcarboxcar'
+)
 
 ##########
 
@@ -40,6 +44,13 @@ aimlesslove = Poem.create(
   author: billycollins,
   first_stanza: "This morning as I walked along the lakeshore,
     I fell in love with a wren"
+)
+boxcar = Poem.create(
+  title: 'Boxcar',
+  author: terrancehayes,
+  first_stanza: "Black as snow & ice as cool Miles stood horn-handed while
+    John so&soloed",
+  num_stanzas: 8
 )
 
 ##########

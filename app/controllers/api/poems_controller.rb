@@ -6,7 +6,7 @@ class Api::PoemsController < ApplicationController
   def create
     @poem = current_user.poems.new(poem_params)
     if @poem.save
-      render json: @poem
+      render '/api/poems/_poem', locals: {poem: @poem}
     else
       render json: @poem.errors.full_messages, status: :unprocessible_entity
     end
@@ -19,7 +19,8 @@ class Api::PoemsController < ApplicationController
     if @poem
       render :show
     else
-      render json: "Poem not found.", status: :unprocessible_entity
+      @poem = {title: 'N/A', stanzas: []}
+      render :show
     end
   end
 
@@ -36,6 +37,6 @@ class Api::PoemsController < ApplicationController
 
   private
   def poem_params
-    param.require(:poem).permit(:title, :num_stanzas, :first_stanza)
+    params.require(:poem).permit(:title, :num_stanzas, :first_stanza)
   end
 end

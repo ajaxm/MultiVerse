@@ -22,6 +22,22 @@ var ApiUtil = {
     });
   },
 
+  createPoem: function(poem) {
+    $.ajax({
+      url: 'api/poems',
+      type: 'POST',
+      data: poem,
+      dataType: 'JSON',
+      success: function(responseData) {
+        ApiActions.receiveOnePoem(responseData);
+        /// ApiUtil.fetchAllPoems(:incomplete) here if poem creation
+        /// redirects to home page.
+        /// Otherwise, need some way to reference new poem's id and
+        /// redirect to its show page.
+      }
+    });
+  },
+
   createStanza: function(stanza) {
     $.ajax({
       url: 'api/stanzas',

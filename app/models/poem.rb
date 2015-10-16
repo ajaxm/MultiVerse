@@ -29,9 +29,11 @@ class Poem < ActiveRecord::Base
     if completion_status == :complete
       Poem.joins(:stanzas).group("poems.id")
           .having("poems.num_stanzas = COUNT(stanzas.id)")
+          .order(created_at: :desc)
     else
       Poem.joins(:stanzas).group("poems.id")
           .having("poems.num_stanzas > COUNT(stanzas.id)")
+          .order(created_at: :desc)
     end
   end
 
