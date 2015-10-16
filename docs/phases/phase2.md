@@ -10,6 +10,9 @@
 * ArchivePoem
 * PoemForm
 
+## Rails Views
+* _poem.json.jbuilder
+
 ## Stores
 * Poem
 
