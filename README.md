@@ -48,7 +48,7 @@ entirely.
 * React components: Index, Archive, Poem, ArchivePoem, StanzaForm, PoemForm
 * Separate archive and home pages
 
-*At the end of Phase 2, Poems can be created, viewed, and destroyed in the
+*At the end of Phase 2, Poems can be created and viewed in the
 browser, and stanzas can be added to poems.*  
 Poems are separated by completion status (in Home or Archive).
 
