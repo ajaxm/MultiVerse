@@ -15,10 +15,10 @@ var ApiActions = {
     AppDispatcher.dispatch(action);
   },
 
-  createPoem: function(poem) {
+  createPoem: function(createdPoem) {
     var action = {
       actionType: PoemConstants.POEM_CREATED,
-      poem: poem
+      poem: createdPoem
     };
     AppDispatcher.dispatch(action);
   },

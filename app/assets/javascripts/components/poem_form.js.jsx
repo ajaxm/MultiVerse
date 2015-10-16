@@ -12,8 +12,9 @@ var PoemForm = React.createClass({
     PoemStore.removeCreationListener(this._onCreation);
   },
 
-  _onCreation: function(arg) {
-    this.props.history.pushState(null, "/");
+  _onCreation: function(createdPoem) {
+    var poemURL = "poems/" + createdPoem.id;
+    this.props.history.pushState(null, poemURL);
   },
 
   handleSubmit: function(e) {
