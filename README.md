@@ -12,8 +12,9 @@ MultiVerse allows users to:
 
 - [x] Create an account
 - [x] Log in / Log out
-- [ ] Create, read, and delete poems
-- [ ] Contribute stanzas to poems
+- [ ] Create poems
+- [x] Contribute stanzas to poems
+- [ ] Delete poems
 - [ ] Favorite completed poems
 - [ ] Comment on completed poems
 
@@ -39,29 +40,30 @@ entirely.
 
 [Component details.](./docs/phases/phase1.md)
 
+(Phase 1 completed in 1 day. October 13, 2015.)
+
 ### Phase 2: Flux Architecture, React views (3 days)
 * React router
 * Poem store, actions for create/read/destroy
-* React components: Index, Poem, Stanza
+* React components: Index, Archive, Poem, ArchivePoem, StanzaForm, PoemForm
+* Separate archive and home pages
 
 *At the end of Phase 2, Poems can be created, viewed, and destroyed in the
 browser, and stanzas can be added to poems.*  
-Home page (Index) shows all poems created by or involving the user.  
-No distinction is yet made between complete and incomplete poems, though users
-still specify poem length on creation.  
+Poems are separated by completion status (in Home or Archive).
 
 [Component details.](./docs/phases/phase2.md)
 
 
-### Phase 3: Navigation and Page Style (1 day)
+### Phase 3: User Focus and Page Style (1 day)
 * Persistent navigation sidebar: Home, Archive, New, Logout
-* Separate archive and home pages
+* Accessibility changes based on current user
 * Endless scrolling implementation
 * Basic cleanup of page design
 
-*At the end of Phase 3, Poems are separated by completion status (in Home or
-  Archive).*  
-Users can read archived poems and contribute stanzas to incomplete poems.  
+*At the end of Phase 3, the application only shows poems involving the current user.*  
+The archive shows users all completed poems to which they contributed a stanza.  
+Users can contribute stanzas to any incomplete poems provided they did not the write the most recent stanza.  
 
 A NavBar React component is the only new component required for Phase 3.
 
@@ -76,7 +78,7 @@ A NavBar React component is the only new component required for Phase 3.
 [Component details.](./docs/phases/phase4.md)
 
 ### Phase 5: Detailed Styling and Seeding (1 day)
-* Create seed data
+* Organize and expand seed data
 * Finalize page appearance, polish
 * Decorative quotes for login screen
 
