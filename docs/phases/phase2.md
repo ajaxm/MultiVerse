@@ -2,9 +2,12 @@
 
 ## React Components
 * Index
-  - Poem
-    - Stanza
+ - PoemListItem
+* Poem
     - StanzaForm
+* Archive
+  - PoemListItem
+* ArchivePoem
 * PoemForm
 
 ## Stores
