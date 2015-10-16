@@ -35542,3 +35542,262 @@ Processing by Api::PoemsController#create as JSON
   [1m[35m (0.2ms)[0m  BEGIN
   [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
 Completed 500 Internal Server Error in 113ms (Views: 0.3ms | ActiveRecord: 5.3ms)
+
+
+Started DELETE "/session" for ::1 at 2015-10-16 14:40:08 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MEz9vGuaPHWeR/2/zbOCyy7zvjY8cmYUlEbTjxjuOzsRdbLvwT7//+A/UeVBqAYRxR73NbWKAIaRkJ1B5zOUVA=="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "R9n8f88LsOSvJdeFmTpc+A=="]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "RKTcqo/OH91DRUrxxuC0Zw=="], ["updated_at", "2015-10-16 21:40:08.770067"], ["id", 32]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/session/new
+Completed 302 Found in 19ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/session/new" for ::1 at 2015-10-16 14:40:08 -0700
+Processing by SessionsController#new as HTML
+  Rendered shared/_form.html.erb (1.9ms)
+  Rendered sessions/new.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 228ms (Views: 227.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for ::1 at 2015-10-16 14:40:22 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"p/CvdKzvz0T0Qme8FEuDn/h4RGqIputxCJkBmgN/ygyGyeAnBksMzoo6y+aYUAdFE5UNaQFejeMNT09U/KJlYw==", "user"=>{"username"=>"terrancehayes", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT 1  [["username", "terrancehayes"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3  [["session_token", "jTz08GfXIUkHiZP1747jqQ=="], ["updated_at", "2015-10-16 21:40:22.898605"], ["id", 35]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 86ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2015-10-16 14:40:22 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "jTz08GfXIUkHiZP1747jqQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 169ms (Views: 167.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/poems?status=incomplete" for ::1 at 2015-10-16 14:40:23 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"incomplete"}
+  [1m[36mPoem Load (0.9ms)[0m  [1mSELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas > COUNT(stanzas.id)  ORDER BY "poems"."created_at" DESC[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 32]]
+  [1m[36mStanza Load (0.4ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 38]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36mStanza Load (0.3ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 34]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 32]]
+  [1m[36mStanza Load (0.9ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 33]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 31]]
+  [1m[36mStanza Load (0.3ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 32]]
+  Rendered api/poems/index.json.jbuilder (62.2ms)
+Completed 200 OK in 77ms (Views: 59.8ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/api/poems/38" for ::1 at 2015-10-16 14:40:25 -0700
+Processing by Api::PoemsController#show as JSON
+  Parameters: {"id"=>"38"}
+  [1m[35mPoem Load (1.2ms)[0m  SELECT  "poems".* FROM "poems" WHERE (id = '38')  ORDER BY "poems"."id" ASC LIMIT 1
+  [1m[36mUser Load (2.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (32)[0m
+  [1m[35mStanza Load (1.4ms)[0m  SELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" IN (38)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (32)[0m
+  [1m[35mStanza Load (0.4ms)[0m  SELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."order" ASC  [["poem_id", 38]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  Rendered api/poems/_poem.json.jbuilder (3.7ms)
+  Rendered api/poems/show.json.jbuilder (5.0ms)
+Completed 200 OK in 67ms (Views: 49.4ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/api/poems?status=incomplete" for ::1 at 2015-10-16 14:57:24 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"incomplete"}
+  [1m[35mPoem Load (0.8ms)[0m  SELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas > COUNT(stanzas.id)  ORDER BY "poems"."created_at" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mStanza Load (0.2ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 38]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mStanza Load (0.2ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 34]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mStanza Load (0.2ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 33]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 31]]
+  [1m[35mStanza Load (0.2ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 32]]
+  Rendered api/poems/index.json.jbuilder (113.9ms)
+Completed 200 OK in 177ms (Views: 136.4ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/" for ::1 at 2015-10-16 14:57:29 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "jTz08GfXIUkHiZP1747jqQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 2932ms (Views: 2929.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/components/stanza_form.self-e941ede26fd24cb8d720e16df887288fcfd00bb6566e52c5d19f23636f989b64.js?body=1" for ::1 at 2015-10-16 14:57:32 -0700
+
+
+Started GET "/assets/components/poem_form.self-205a5785af2f3f4971dcd5c583cb8785a914eca4ac5ecd0fe79124d29208485a.js?body=1" for ::1 at 2015-10-16 14:57:32 -0700
+
+
+Started GET "/api/poems?status=incomplete" for ::1 at 2015-10-16 14:57:33 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"incomplete"}
+  [1m[35mPoem Load (1.0ms)[0m  SELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas > COUNT(stanzas.id)  ORDER BY "poems"."created_at" DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mStanza Load (0.3ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 38]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mStanza Load (0.5ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 34]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mStanza Load (0.4ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 33]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 31]]
+  [1m[35mStanza Load (0.4ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 32]]
+  Rendered api/poems/index.json.jbuilder (32.0ms)
+Completed 200 OK in 39ms (Views: 34.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/api/poems/38" for ::1 at 2015-10-16 14:57:45 -0700
+Processing by Api::PoemsController#show as JSON
+  Parameters: {"id"=>"38"}
+  [1m[36mPoem Load (1.7ms)[0m  [1mSELECT  "poems".* FROM "poems" WHERE (id = '38')  ORDER BY "poems"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (2.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (32)
+  [1m[36mStanza Load (1.2ms)[0m  [1mSELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" IN (38)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (32)
+  [1m[36mStanza Load (0.5ms)[0m  [1mSELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."order" ASC[0m  [["poem_id", 38]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 32]]
+  Rendered api/poems/_poem.json.jbuilder (4.3ms)
+  Rendered api/poems/show.json.jbuilder (18.1ms)
+Completed 200 OK in 96ms (Views: 80.2ms | ActiveRecord: 5.8ms)
+
+
+Started POST "/api/stanzas" for ::1 at 2015-10-16 14:57:53 -0700
+Processing by Api::StanzasController#create as JSON
+  Parameters: {"body"=>"and I’m pretending I haven’t heard this one before as I eye\nblack tortillas on a red plate beside a big green bowl\nof guacamole made from the whipped, battered remains", "poem_id"=>"38"}
+  [1m[36mPoem Load (0.5ms)[0m  [1mSELECT  "poems".* FROM "poems" WHERE "poems"."id" = $1 LIMIT 1[0m  [["id", 38]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "stanzas" WHERE "stanzas"."poem_id" = $1  [["poem_id", 38]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "jTz08GfXIUkHiZP1747jqQ=="]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (3.4ms)[0m  [1mINSERT INTO "stanzas" ("body", "order", "author_id", "poem_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "and I’m pretending I haven’t heard this one before as I eye\nblack tortillas on a red plate beside a big green bowl\nof guacamole made from the whipped, battered remains"], ["order", 2], ["author_id", 35], ["poem_id", 38], ["created_at", "2015-10-16 21:57:53.866584"], ["updated_at", "2015-10-16 21:57:53.866584"]]
+  [1m[35m (426.5ms)[0m  COMMIT
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mStanza Load (0.4ms)[0m  SELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."order" ASC  [["poem_id", 38]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 35]]
+  Rendered api/poems/_poem.json.jbuilder (5.1ms)
+Completed 200 OK in 451ms (Views: 9.8ms | ActiveRecord: 432.0ms)
+  [1m[36mStanza Load (0.7ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas"  ORDER BY "stanzas"."id" DESC LIMIT 1[0m
+  [1m[35mStanza Load (0.8ms)[0m  SELECT  "stanzas".* FROM "stanzas"  ORDER BY "stanzas"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "stanzas" WHERE "stanzas"."id" = $1  [["id", 84]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for ::1 at 2015-10-16 14:59:45 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "jTz08GfXIUkHiZP1747jqQ=="]]
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1223ms (Views: 1210.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/components/stanza_form.self-6732b84e8950b662e36136f81adaa1881d286dabeb6b32c5060ff1a8306d8146.js?body=1" for ::1 at 2015-10-16 14:59:47 -0700
+
+
+Started GET "/api/poems?status=incomplete" for ::1 at 2015-10-16 14:59:47 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"incomplete"}
+  [1m[35mPoem Load (0.9ms)[0m  SELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas > COUNT(stanzas.id)  ORDER BY "poems"."created_at" DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mStanza Load (0.3ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 38]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mStanza Load (1.0ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 34]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mStanza Load (0.5ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 33]]
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 31]]
+  [1m[35mStanza Load (0.4ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 32]]
+  Rendered api/poems/index.json.jbuilder (50.6ms)
+Completed 200 OK in 64ms (Views: 49.2ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/api/poems/38" for ::1 at 2015-10-16 14:59:48 -0700
+Processing by Api::PoemsController#show as JSON
+  Parameters: {"id"=>"38"}
+  [1m[36mPoem Load (0.7ms)[0m  [1mSELECT  "poems".* FROM "poems" WHERE (id = '38')  ORDER BY "poems"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (1.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (32)
+  [1m[36mStanza Load (0.6ms)[0m  [1mSELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" IN (38)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (32)
+  [1m[36mStanza Load (0.6ms)[0m  [1mSELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."order" ASC[0m  [["poem_id", 38]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 32]]
+  Rendered api/poems/_poem.json.jbuilder (5.8ms)
+  Rendered api/poems/show.json.jbuilder (7.6ms)
+Completed 200 OK in 29ms (Views: 14.6ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/api/stanzas" for ::1 at 2015-10-16 14:59:53 -0700
+Processing by Api::StanzasController#create as JSON
+  Parameters: {"body"=>"and I’m pretending I haven’t heard this one before as I eye\nblack tortillas on a red plate beside a big green bowl\nof guacamole made from the whipped, battered remains", "poem_id"=>"38"}
+  [1m[36mPoem Load (0.5ms)[0m  [1mSELECT  "poems".* FROM "poems" WHERE "poems"."id" = $1 LIMIT 1[0m  [["id", 38]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "stanzas" WHERE "stanzas"."poem_id" = $1  [["poem_id", 38]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "jTz08GfXIUkHiZP1747jqQ=="]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "stanzas" ("body", "order", "author_id", "poem_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "and I’m pretending I haven’t heard this one before as I eye\nblack tortillas on a red plate beside a big green bowl\nof guacamole made from the whipped, battered remains"], ["order", 2], ["author_id", 35], ["poem_id", 38], ["created_at", "2015-10-16 21:59:53.681298"], ["updated_at", "2015-10-16 21:59:53.681298"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mStanza Load (0.4ms)[0m  SELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."order" ASC  [["poem_id", 38]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 35]]
+  Rendered api/poems/_poem.json.jbuilder (6.0ms)
+Completed 200 OK in 22ms (Views: 9.8ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/api/stanzas" for ::1 at 2015-10-16 15:00:17 -0700
+Processing by Api::StanzasController#create as JSON
+  Parameters: {"body"=>"", "poem_id"=>"38"}
+  [1m[36mPoem Load (0.4ms)[0m  [1mSELECT  "poems".* FROM "poems" WHERE "poems"."id" = $1 LIMIT 1[0m  [["id", 38]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "stanzas" WHERE "stanzas"."poem_id" = $1  [["poem_id", 38]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "jTz08GfXIUkHiZP1747jqQ=="]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 9ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/stanzas" for ::1 at 2015-10-16 15:00:20 -0700
+Processing by Api::StanzasController#create as JSON
+  Parameters: {"body"=>"", "poem_id"=>"38"}
+  [1m[35mPoem Load (0.5ms)[0m  SELECT  "poems".* FROM "poems" WHERE "poems"."id" = $1 LIMIT 1  [["id", 38]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "stanzas" WHERE "stanzas"."poem_id" = $1[0m  [["poem_id", 38]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "jTz08GfXIUkHiZP1747jqQ=="]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 9ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/stanzas" for ::1 at 2015-10-16 15:00:21 -0700
+Processing by Api::StanzasController#create as JSON
+  Parameters: {"body"=>"", "poem_id"=>"38"}
+  [1m[36mPoem Load (0.4ms)[0m  [1mSELECT  "poems".* FROM "poems" WHERE "poems"."id" = $1 LIMIT 1[0m  [["id", 38]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "stanzas" WHERE "stanzas"."poem_id" = $1  [["poem_id", 38]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "jTz08GfXIUkHiZP1747jqQ=="]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 9ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/api/stanzas" for ::1 at 2015-10-16 15:00:21 -0700
+Processing by Api::StanzasController#create as JSON
+  Parameters: {"body"=>"", "poem_id"=>"38"}
+  [1m[35mPoem Load (0.3ms)[0m  SELECT  "poems".* FROM "poems" WHERE "poems"."id" = $1 LIMIT 1  [["id", 38]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "stanzas" WHERE "stanzas"."poem_id" = $1[0m  [["poem_id", 38]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "jTz08GfXIUkHiZP1747jqQ=="]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 8ms (Views: 0.1ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/stanzas" for ::1 at 2015-10-16 15:00:22 -0700
+Processing by Api::StanzasController#create as JSON
+  Parameters: {"body"=>"", "poem_id"=>"38"}
+  [1m[36mPoem Load (0.3ms)[0m  [1mSELECT  "poems".* FROM "poems" WHERE "poems"."id" = $1 LIMIT 1[0m  [["id", 38]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "stanzas" WHERE "stanzas"."poem_id" = $1  [["poem_id", 38]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "jTz08GfXIUkHiZP1747jqQ=="]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 8ms (Views: 0.1ms | ActiveRecord: 1.0ms)

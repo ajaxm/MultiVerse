@@ -16,7 +16,8 @@ var PoemForm = React.createClass({
     this.props.history.pushState(null, "/");
     /// QUESTIONS
     /// can I call PoemStore.one() if I want to navigate
-    /// to the poem show page instead of index?
+    /// to the poem show page instead of index? This would be
+    /// reading from the store but not writing to it.
 
     /// QUESTIONS
     /// Why are listeners generally indicated to be private?

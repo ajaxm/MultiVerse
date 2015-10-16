@@ -4,6 +4,18 @@ var StanzaForm = React.createClass({
     return { body: '' };
   },
 
+  componentDidMount: function() {
+    PoemStore.addShowListener(this._onCreation);
+  },
+
+  componentWillUnmount: function() {
+    PoemStore.removeShowListener(this._onCreation);
+  },
+
+  _onCreation: function() {
+    this.setState({ body: '' });
+  },
+
   handleSubmit: function(e) {
     e.preventDefault();
     var newStanza = $.extend({}, this.state, { poem_id: this.props.poemId });
