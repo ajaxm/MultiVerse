@@ -1,7 +1,8 @@
 (function(root) {
   var CHANGE_EVENT = 'CHANGE_EVENT';
   var SHOW_EVENT = 'SHOW_EVENT';
-  var CREATION_EVENT = 'CREATION_EVENT';
+  var POEM_CREATION_EVENT = 'POEM_CREATION_EVENT';
+  var STANZA_CREATION_EVENT = 'STANZA_CREATION_EVENT';
   var BLANK_POEM = {stanzas: []};
 
   var _poems = [];
@@ -42,11 +43,19 @@
     },
 
     addCreationListener: function(callback) {
-      this.on(CREATION_EVENT, callback);
+      this.on(POEM_CREATION_EVENT, callback);
     },
 
     removeCreationListener: function(callback) {
-      this.removeListener(CREATION_EVENT, callback);
+      this.removeListener(POEM_CREATION_EVENT, callback);
+    },
+
+    addStanzaListener: function(callback) {
+      this.on(STANZA_CREATION_EVENT, callback);
+    },
+
+    removeStanzaListener: function(callback) {
+      this.removeListener(STANZA_CREATION_EVENT, callback);
     },
 
     dispatcherId: AppDispatcher.register(function(action) {
@@ -60,7 +69,11 @@
           PoemStore.emit(SHOW_EVENT);
           break;
         case PoemConstants.POEM_CREATED:
-          PoemStore.emit(CREATION_EVENT);
+          PoemStore.emit(POEM_CREATION_EVENT, action.poem);
+          break;
+        case PoemConstants.STANZA_CREATED:
+          _setSelectedPoem(action.poem);
+          PoemStore.emit(STANZA_CREATION_EVENT);
           break;
       }
     })

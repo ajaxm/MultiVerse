@@ -8,14 +8,16 @@ var Poem = React.createClass({
   },
 
   componentDidMount: function() {
-    PoemStore.addShowListener(this._onShowEvent);
+    PoemStore.addShowListener(this._setPoem);
+    PoemStore.addStanzaListener(this._setPoem);
   },
 
   componentWillUnmount: function() {
-    PoemStore.removeShowListener(this._onShowEvent);
+    PoemStore.removeShowListener(this._setPoem);
+    PoemStore.removeStanzaListener(this._setPoem);
   },
 
-  _onShowEvent: function() {
+  _setPoem: function() {
     this.setState({ poem: PoemStore.one() });
   },
 

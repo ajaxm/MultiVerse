@@ -15,9 +15,18 @@ var ApiActions = {
     AppDispatcher.dispatch(action);
   },
 
-  createPoem: function() {
+  createPoem: function(poem) {
     var action = {
-      actionType: PoemConstants.POEM_CREATED
+      actionType: PoemConstants.POEM_CREATED,
+      poem: poem
+    };
+    AppDispatcher.dispatch(action);
+  },
+
+  createStanza: function(associatedPoem) {
+    var action = {
+      actionType: PoemConstants.STANZA_CREATED,
+      poem: associatedPoem
     };
     AppDispatcher.dispatch(action);
   }

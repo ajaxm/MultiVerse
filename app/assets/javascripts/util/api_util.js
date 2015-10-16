@@ -29,24 +29,13 @@ var ApiUtil = {
       data: poem,
       dataType: 'JSON',
       success: function(responseData) {
-        ApiActions.createPoem();
+        ApiActions.createPoem(responseData);
       },
       error: function(errorData) {
         console.log(errorData);
       }
     });
   },
-
-  // deletePoem: function(poemId) {
-  //   $.ajax({
-  //     url: 'api/poems/',
-  //     type: 'DELETE',
-  //     dataType: 'JSON',
-  //     success: function(responseData) {
-  //       ApiActions.
-  //     }
-  //   });
-  // },
 
   createStanza: function(stanza) {
     $.ajax({
@@ -55,7 +44,7 @@ var ApiUtil = {
       data: stanza,
       dataType: 'JSON',
       success: function(responseData) {
-        ApiActions.receiveOnePoem(responseData);
+        ApiActions.createStanza(responseData);
       }
     });
   }

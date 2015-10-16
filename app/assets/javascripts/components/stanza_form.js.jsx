@@ -5,11 +5,11 @@ var StanzaForm = React.createClass({
   },
 
   componentDidMount: function() {
-    PoemStore.addShowListener(this._onCreation);
+    PoemStore.addStanzaListener(this._onCreation);
   },
 
   componentWillUnmount: function() {
-    PoemStore.removeShowListener(this._onCreation);
+    PoemStore.removeStanzaListener(this._onCreation);
   },
 
   _onCreation: function() {
