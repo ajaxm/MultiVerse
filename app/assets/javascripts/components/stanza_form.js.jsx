@@ -6,7 +6,7 @@ var StanzaForm = React.createClass({
 
   handleSubmit: function(e) {
     e.preventDefault();
-    var newStanza = this.state;
+    var newStanza = $.extend({}, this.state, { poem_id: this.props.poemId });
     ApiUtil.createStanza(newStanza);
   },
 

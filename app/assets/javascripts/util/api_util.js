@@ -3,8 +3,8 @@ var ApiUtil = {
     $.ajax({
       url: 'api/poems',
       type: 'GET',
-      dataType: 'json',
       data: status,
+      dataType: 'JSON',
       success: function(responseData) {
         ApiActions.receiveAllPoems(responseData);
       }
@@ -15,7 +15,19 @@ var ApiUtil = {
     $.ajax({
       url: 'api/poems/' + poem_id,
       type: 'GET',
-      dataType: 'json',
+      dataType: 'JSON',
+      success: function(responseData) {
+        ApiActions.receiveOnePoem(responseData);
+      }
+    });
+  },
+
+  createStanza: function(stanza) {
+    $.ajax({
+      url: 'api/stanzas',
+      type: 'POST',
+      data: stanza,
+      dataType: 'JSON',
       success: function(responseData) {
         ApiActions.receiveOnePoem(responseData);
       }

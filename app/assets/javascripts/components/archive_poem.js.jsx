@@ -4,12 +4,12 @@ var ArchivePoem = React.createClass({
   },
 
   componentDidMount: function() {
-    PoemStore.addSelectListener(this._onChangeEvent);
+    PoemStore.addShowListener(this._onChangeEvent);
     ApiUtil.fetchOnePoem(this.props.params.poemId);
   },
 
   componentWillUnmount: function() {
-    PoemStore.removeSelectListener(this._onChangeEvent);
+    PoemStore.removeShowListener(this._onChangeEvent);
   },
 
   _onChangeEvent: function() {

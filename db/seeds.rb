@@ -32,14 +32,14 @@ summerday = Poem.create(
   title: 'The Summer Day',
   author: maryoliver,
   first_stanza: "Who made the world?
-    Who made the swan, and the black bear?"
+    Who made the swan, and the black bear?",
+  num_stanzas: 8
 )
 aimlesslove = Poem.create(
   title: 'Aimless Love',
   author: billycollins,
   first_stanza: "This morning as I walked along the lakeshore,
-    I fell in love with a wren",
-  num_stanzas: 8
+    I fell in love with a wren"
 )
 
 ##########

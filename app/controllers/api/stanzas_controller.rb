@@ -1,20 +1,15 @@
 class Api::StanzasController < ApplicationController
 
   def create
-    poem = Poem.find_by_id(params[:id])
+    poem = Poem.find_by_id(params[:poem_id])
     @stanza = poem.stanzas.new(
-      body: stanza_body, order: poem.length + 1, author_id: current_user.id
+      body: params[:body], order: poem.length + 1, author_id: current_user.id
     )
     if @stanza.save
-      render json: @stanza
+      poem = @stanza.poem
+      render '/api/poems/_poem', locals: {poem: poem}
     else
-      render  json: @stanza.errors.full_messages, status: :unprocessible_entity
+      render json: @stanza.errors.full_messages, status: :unprocessible_entity
     end
-  end
-
-  private
-  def stanza_body
-    stanza_params = params.require(:stanza).permit(:body)
-    stanza_params[:body]
   end
 end

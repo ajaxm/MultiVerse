@@ -3,13 +3,16 @@ var Poem = React.createClass({
     return { poem: PoemStore.one() };
   },
 
-  componentDidMount: function() {
-    PoemStore.addSelectListener(this._onChangeEvent);
+  componentWillMount: function() {
     ApiUtil.fetchOnePoem(this.props.params.poemId);
   },
 
+  componentDidMount: function() {
+    PoemStore.addShowListener(this._onChangeEvent);
+  },
+
   componentWillUnmount: function() {
-    PoemStore.removeSelectListener(this._onChangeEvent);
+    PoemStore.removeShowListener(this._onChangeEvent);
   },
 
   _onChangeEvent: function() {
@@ -17,7 +20,7 @@ var Poem = React.createClass({
   },
 
   render: function() {
-    var poem = this.state.poem;
+    var poem = this.state.poem || {};
     var lastStanza = poem.stanzas.pop() || {};
     return (
       <div className='poem'>
@@ -25,7 +28,7 @@ var Poem = React.createClass({
         Author: {poem.author} <br/>
         {lastStanza.body}
         <br/>
-        <StanzaForm/>
+        <StanzaForm poemId={poem.id}/>
         <a href='/#'>Back to all poems.</a>
       </div>
     );

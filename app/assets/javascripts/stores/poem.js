@@ -1,8 +1,8 @@
 (function(root) {
   var CHANGE_EVENT = 'CHANGE_EVENT';
-  var SELECT_EVENT = 'SELECT_EVENT';
+  var SHOW_EVENT = 'SHOW_EVENT';
   var BLANK_POEM = {stanzas: []};
-  
+
   var _poems = [];
   var _singlePoem = BLANK_POEM;
 
@@ -32,12 +32,12 @@
       this.removeListener(CHANGE_EVENT, callback);
     },
 
-    addSelectListener: function(callback) {
-      this.on(SELECT_EVENT, callback);
+    addShowListener: function(callback) {
+      this.on(SHOW_EVENT, callback);
     },
 
-    removeSelectListener: function(callback) {
-      this.removeListener(SELECT_EVENT, callback);
+    removeShowListener: function(callback) {
+      this.removeListener(SHOW_EVENT, callback);
     },
 
     dispatcherId: AppDispatcher.register(function(action) {
@@ -48,7 +48,7 @@
           break;
         case PoemConstants.ONE_POEM_RECEIVED:
           _setSelectedPoem(action.poem);
-          PoemStore.emit(SELECT_EVENT);
+          PoemStore.emit(SHOW_EVENT);
           break;
       }
     })

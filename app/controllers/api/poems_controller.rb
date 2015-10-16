@@ -8,7 +8,7 @@ class Api::PoemsController < ApplicationController
     if @poem.save
       render json: @poem
     else
-      render  json: @poem.errors.full_messages, status: :unprocessible_entity
+      render json: @poem.errors.full_messages, status: :unprocessible_entity
     end
   end
 
