@@ -14,6 +14,8 @@
 class Stanza < ActiveRecord::Base
   validates :body, :order, :poem_id, :author_id, presence: true
   validate :stanza_order_cannot_exceed_num_stanzas_of_poem
+  validate :stanza_must_have_at_least_two_lines
+  validate :stanza_must_not_exceed_three_lines
 
   belongs_to :poem
   belongs_to(
@@ -22,10 +24,26 @@ class Stanza < ActiveRecord::Base
   foreign_key: :author_id
   )
 
+  def lines
+    body.split("\n")
+  end
+
   private
   def stanza_order_cannot_exceed_num_stanzas_of_poem
-    if order > self.poem.num_stanzas
+    if order > poem.num_stanzas
       errors.add(:order, "can't be greater than poem's maximum stanza count.")
+    end
+  end
+
+  def stanza_must_have_at_least_two_lines
+    if lines.length < 2
+      errors.add(:stanza, "must have at least two lines")
+    end
+  end
+
+  def stanza_must_not_exceed_four_lines
+    if lines.length > 3
+      errors.add(:stanza, "must not have more than three lines")
     end
   end
 end
