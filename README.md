@@ -12,9 +12,8 @@ MultiVerse allows users to:
 
 - [x] Create an account
 - [x] Log in / Log out
-- [ ] Create poems
+- [x] Create poems
 - [x] Contribute stanzas to poems
-- [ ] Delete poems
 - [ ] Favorite completed poems
 - [ ] Comment on completed poems
 
@@ -54,6 +53,7 @@ Poems are separated by completion status (in Home or Archive).
 
 [Component details.](./docs/phases/phase2.md)
 
+(Phase 2 completed in 3 days. October 16, 2015.)
 
 ### Phase 3: User Focus and Page Style (1 day)
 * Persistent navigation sidebar: Home, Archive, New, Logout
@@ -61,9 +61,9 @@ Poems are separated by completion status (in Home or Archive).
 * Endless scrolling implementation
 * Basic cleanup of page design
 
-*At the end of Phase 3, the application only shows poems involving the current user.*  
+*At the end of Phase 3, the poems are filteres according to the current user.*  
 The archive shows users all completed poems to which they contributed a stanza.  
-Users can contribute stanzas to any incomplete poems provided they did not the write the most recent stanza.  
+The home page still shows all incomplete poems; users can contribute stanzas to any of these provided they did not the write the most recent stanza.  
 
 A NavBar React component is the only new component required for Phase 3.
 
