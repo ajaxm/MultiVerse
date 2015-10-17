@@ -19,6 +19,8 @@
 ## Actions
 * .receiveAllPoems
 * .receiveOnePoem
+* .createPoem
+* .createStanza
 
 ## ApiUtil
 * .fetchAllPoems(status) (include *all* associated stanzas; argument indicates completion status)
