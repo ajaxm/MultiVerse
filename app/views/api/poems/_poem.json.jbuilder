@@ -7,3 +7,4 @@ json.stanzas {json.array! poem.stanzas.order(:order) do |stanza|
   json.author stanza.author.username
   json.body stanza.body
 end}
+json.last_line poem.stanzas.last.lines.last

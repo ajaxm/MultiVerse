@@ -6,7 +6,7 @@ var PoemListItem = React.createClass({
       poemPreview = poem.first_stanza;
       poemLink = '/#archive/';
     } else {
-      poemPreview = 'poem.last_line'; ///
+      poemPreview = poem.last_line; ///
       poemLink = '/#poems/';
     }
     return (

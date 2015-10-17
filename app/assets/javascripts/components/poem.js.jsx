@@ -23,12 +23,11 @@ var Poem = React.createClass({
 
   render: function() {
     var poem = this.state.poem || {};
-    var lastStanza = poem.stanzas.pop() || {};
     return (
       <div className='poem'>
         Title: {poem.title} <br/>
         Author: {poem.author} <br/>
-        {lastStanza.body}
+        {poem.last_line}
         <br/>
         <StanzaForm poemId={poem.id}/>
         <a href='/#'>Back to all poems.</a>

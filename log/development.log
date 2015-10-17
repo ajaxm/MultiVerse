@@ -37990,3 +37990,348 @@ Processing by Api::StanzasController#create as JSON
   [1m[35m (0.1ms)[0m  BEGIN
   [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
 Completed 500 Internal Server Error in 9ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2015-10-16 17:29:31 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "DFinwfzP72wIntMDk/Q/Mg=="]]
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2726ms (Views: 2712.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/components/poem.self-32214a3dde15fcc57b466bee3caceae03e53adf820dcf5ca6a3fdd34a3f97cc5.js?body=1" for ::1 at 2015-10-16 17:29:34 -0700
+
+
+Started GET "/assets/components/poem_list_item.self-710ea151a5161bb8414a48593133eab35f0d6fe4de5f2f89117dac8d0581b184.js?body=1" for ::1 at 2015-10-16 17:29:34 -0700
+
+
+Started GET "/api/poems?status=incomplete" for ::1 at 2015-10-16 17:29:34 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"incomplete"}
+  [1m[36mPoem Load (0.9ms)[0m  [1mSELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas > COUNT(stanzas.id)  ORDER BY "poems"."created_at" DESC[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 33]]
+  [1m[36mStanza Load (0.4ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 43]]
+  [1m[35mStanza Load (0.5ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1  [["poem_id", 43]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mStanza Load (0.3ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 42]]
+  [1m[36mStanza Load (0.5ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1[0m  [["poem_id", 42]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36mStanza Load (0.3ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 40]]
+  [1m[35mStanza Load (0.4ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1  [["poem_id", 40]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mStanza Load (0.4ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 38]]
+  [1m[36mStanza Load (0.6ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1[0m  [["poem_id", 38]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36mStanza Load (0.4ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 34]]
+  [1m[35mStanza Load (0.6ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1  [["poem_id", 34]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mStanza Load (0.3ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 33]]
+  [1m[36mStanza Load (0.5ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1[0m  [["poem_id", 33]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 31]]
+  [1m[36mStanza Load (0.3ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 32]]
+  [1m[35mStanza Load (0.3ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1  [["poem_id", 32]]
+  Rendered api/poems/index.json.jbuilder (78.1ms)
+Completed 200 OK in 89ms (Views: 69.4ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/api/poems/43" for ::1 at 2015-10-16 17:29:46 -0700
+Processing by Api::PoemsController#show as JSON
+  Parameters: {"id"=>"43"}
+  [1m[36mPoem Load (1.4ms)[0m  [1mSELECT  "poems".* FROM "poems" WHERE (id = '43')  ORDER BY "poems"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (33)
+  [1m[36mStanza Load (0.8ms)[0m  [1mSELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" IN (43)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (33)
+  [1m[36mStanza Load (0.3ms)[0m  [1mSELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."order" ASC[0m  [["poem_id", 43]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 33]]
+  Rendered api/poems/_poem.json.jbuilder (5.3ms)
+  Rendered api/poems/show.json.jbuilder (6.6ms)
+Completed 200 OK in 38ms (Views: 13.8ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/api/poems?status=incomplete" for ::1 at 2015-10-16 17:29:49 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"incomplete"}
+  [1m[35mPoem Load (1.0ms)[0m  SELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas > COUNT(stanzas.id)  ORDER BY "poems"."created_at" DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 33]]
+  [1m[35mStanza Load (0.4ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 43]]
+  [1m[36mStanza Load (0.3ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1[0m  [["poem_id", 43]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36mStanza Load (0.3ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 42]]
+  [1m[35mStanza Load (0.3ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1  [["poem_id", 42]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mStanza Load (0.3ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 40]]
+  [1m[36mStanza Load (0.2ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1[0m  [["poem_id", 40]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 32]]
+  [1m[36mStanza Load (0.2ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 38]]
+  [1m[35mStanza Load (0.3ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1  [["poem_id", 38]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mStanza Load (0.4ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 34]]
+  [1m[36mStanza Load (0.2ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1[0m  [["poem_id", 34]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 32]]
+  [1m[36mStanza Load (0.3ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 33]]
+  [1m[35mStanza Load (0.3ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1  [["poem_id", 33]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 31]]
+  [1m[35mStanza Load (0.3ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 32]]
+  [1m[36mStanza Load (0.4ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1[0m  [["poem_id", 32]]
+  Rendered api/poems/index.json.jbuilder (33.4ms)
+Completed 200 OK in 39ms (Views: 32.1ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/api/poems/42" for ::1 at 2015-10-16 17:29:51 -0700
+Processing by Api::PoemsController#show as JSON
+  Parameters: {"id"=>"42"}
+  [1m[35mPoem Load (1.9ms)[0m  SELECT  "poems".* FROM "poems" WHERE (id = '42')  ORDER BY "poems"."id" ASC LIMIT 1
+  [1m[36mUser Load (2.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (35)[0m
+  [1m[35mStanza Load (1.0ms)[0m  SELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" IN (42)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IN (35, 33)[0m
+  [1m[35mStanza Load (0.3ms)[0m  SELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."order" ASC  [["poem_id", 42]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 33]]
+  Rendered api/poems/_poem.json.jbuilder (4.7ms)
+  Rendered api/poems/show.json.jbuilder (6.1ms)
+Completed 200 OK in 30ms (Views: 11.9ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/api/poems?status=incomplete" for ::1 at 2015-10-16 17:29:51 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"incomplete"}
+  [1m[36mPoem Load (0.9ms)[0m  [1mSELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas > COUNT(stanzas.id)  ORDER BY "poems"."created_at" DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 33]]
+  [1m[36mStanza Load (0.2ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 43]]
+  [1m[35mStanza Load (0.2ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1  [["poem_id", 43]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mStanza Load (0.3ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 42]]
+  [1m[36mStanza Load (0.2ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1[0m  [["poem_id", 42]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36mStanza Load (0.3ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 40]]
+  [1m[35mStanza Load (0.3ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1  [["poem_id", 40]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mStanza Load (0.2ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 38]]
+  [1m[36mStanza Load (0.2ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1[0m  [["poem_id", 38]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36mStanza Load (0.2ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 34]]
+  [1m[35mStanza Load (0.2ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1  [["poem_id", 34]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mStanza Load (0.2ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 33]]
+  [1m[36mStanza Load (0.2ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1[0m  [["poem_id", 33]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 31]]
+  [1m[36mStanza Load (0.3ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 32]]
+  [1m[35mStanza Load (0.2ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1  [["poem_id", 32]]
+  Rendered api/poems/index.json.jbuilder (29.5ms)
+Completed 200 OK in 35ms (Views: 28.8ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/" for ::1 at 2015-10-16 17:30:06 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1[0m  [["session_token", "DFinwfzP72wIntMDk/Q/Mg=="]]
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1378ms (Views: 1366.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/api/stanzas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/api/poems.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/development-with-addons/react.self-eb8c71fecbd80164b57078dcf4c66c91c12c9c84b59938c485aea8b6ae3538c1.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/flux.self-d49657677b043fd9a5b56222b931c6dc76b57db2cff9d5967d80f300ee2f4545.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/reactrouter.min.self-05badf40174a02c8d3acb7f4c43e42b25a9aef3fe0e7b725dd89a68690cdc852.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/eventemitter.self-b7e538902dfb3dce50e80598efaa7b435781b7bc8fe936a7aca64a6f2699d411.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/components/archive.self-f338eb3b8e268e68d8c71a9178797a8980f230aa426a9d381d9737293c5cb6be.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/components/archive_poem.self-559357f43695e6a33e8219bcf6503e3f5c9d6c3aecca1578df301aa7551e1a39.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/components/poem.self-fc2cd3b5ab5a335996e8bbb38af6519b4309ab61410a226bc3c55078a1d209bc.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/components/index.self-110bf28d4b7ac4b695e950d272eae9234fda0c5d6229d8ab51ff167de4b39873.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/components/poem_form.self-877fe637b8105cf4cf57131183246206ecb9a7e5b5c4343b2e13b2e6dfd7504f.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/components/poem_list_item.self-710ea151a5161bb8414a48593133eab35f0d6fe4de5f2f89117dac8d0581b184.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/components/stanza_form.self-165db41ebeed37a99da3daef8a670276cbfd56461dcb73c0e9e30779324350e3.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/actions/api_actions.self-6e1a3e3a156d06994ce399e4dc6bee928d4644644dcb86135de0c1cf826f955e.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/api/poems.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/api/stanzas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/constants/poem_constants.self-b869d973e272242a7781575baf89f17f0273a0d3228864313f6ff888d96c9fee.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/dispatcher/dispatcher.self-34b31b3e204310e978a60dd3f2ea61c4fc294add063fbc66c7137ccde8c7df76.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/multiverse.self-36b77f1cf41b6cba57096c26787472eb3272ac9bfe5ac2b8a1ee3fab0665b3f2.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/stores/poem.self-22c7b07302f2af59eed70f505cedda0f351581c3691dd203a2a7fe771e0913e3.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/util/api_util.self-ec61c98ea2c3c3ad66fb14ee62062fc510cb5432bbbdc9e18a65dc856acd5b3f.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for ::1 at 2015-10-16 17:30:08 -0700
+
+
+Started GET "/api/poems?status=incomplete" for ::1 at 2015-10-16 17:30:08 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"incomplete"}
+  [1m[35mPoem Load (0.9ms)[0m  SELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas > COUNT(stanzas.id)  ORDER BY "poems"."created_at" DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 33]]
+  [1m[35mStanza Load (0.3ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 43]]
+  [1m[36mStanza Load (0.3ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1[0m  [["poem_id", 43]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36mStanza Load (0.3ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 42]]
+  [1m[35mStanza Load (0.6ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1  [["poem_id", 42]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mStanza Load (0.3ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 40]]
+  [1m[36mStanza Load (0.4ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1[0m  [["poem_id", 40]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 32]]
+  [1m[36mStanza Load (0.3ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 38]]
+  [1m[35mStanza Load (0.3ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1  [["poem_id", 38]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mStanza Load (0.3ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 34]]
+  [1m[36mStanza Load (0.2ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1[0m  [["poem_id", 34]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 32]]
+  [1m[36mStanza Load (0.2ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 33]]
+  [1m[35mStanza Load (0.2ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1  [["poem_id", 33]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 31]]
+  [1m[35mStanza Load (0.3ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 32]]
+  [1m[36mStanza Load (0.3ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1[0m  [["poem_id", 32]]
+  Rendered api/poems/index.json.jbuilder (70.5ms)
+Completed 200 OK in 82ms (Views: 64.6ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/" for ::1 at 2015-10-16 17:30:15 -0700
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT 1  [["session_token", "DFinwfzP72wIntMDk/Q/Mg=="]]
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 140ms (Views: 138.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/poems?status=incomplete" for ::1 at 2015-10-16 17:30:15 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"incomplete"}
+  [1m[36mPoem Load (1.4ms)[0m  [1mSELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas > COUNT(stanzas.id)  ORDER BY "poems"."created_at" DESC[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 33]]
+  [1m[36mStanza Load (0.4ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 43]]
+  [1m[35mStanza Load (0.4ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1  [["poem_id", 43]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mStanza Load (0.3ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 42]]
+  [1m[36mStanza Load (0.4ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1[0m  [["poem_id", 42]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36mStanza Load (1.1ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 40]]
+  [1m[35mStanza Load (1.0ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1  [["poem_id", 40]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mStanza Load (0.6ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 38]]
+  [1m[36mStanza Load (0.4ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1[0m  [["poem_id", 38]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36mStanza Load (0.4ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 34]]
+  [1m[35mStanza Load (0.3ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1  [["poem_id", 34]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 32]]
+  [1m[35mStanza Load (0.6ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 33]]
+  [1m[36mStanza Load (1.2ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1[0m  [["poem_id", 33]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 31]]
+  [1m[36mStanza Load (0.6ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 32]]
+  [1m[35mStanza Load (0.4ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1  [["poem_id", 32]]
+  Rendered api/poems/index.json.jbuilder (52.3ms)
+Completed 200 OK in 63ms (Views: 50.5ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/api/poems/43" for ::1 at 2015-10-16 17:30:16 -0700
+Processing by Api::PoemsController#show as JSON
+  Parameters: {"id"=>"43"}
+  [1m[36mPoem Load (0.7ms)[0m  [1mSELECT  "poems".* FROM "poems" WHERE (id = '43')  ORDER BY "poems"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (33)
+  [1m[36mStanza Load (0.6ms)[0m  [1mSELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" IN (43)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IN (33)
+  [1m[36mStanza Load (0.4ms)[0m  [1mSELECT "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."order" ASC[0m  [["poem_id", 43]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 33]]
+  Rendered api/poems/_poem.json.jbuilder (7.3ms)
+  Rendered api/poems/show.json.jbuilder (9.4ms)
+Completed 200 OK in 31ms (Views: 17.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/api/poems?status=incomplete" for ::1 at 2015-10-16 17:30:18 -0700
+Processing by Api::PoemsController#index as JSON
+  Parameters: {"status"=>"incomplete"}
+  [1m[35mPoem Load (1.0ms)[0m  SELECT "poems".* FROM "poems" INNER JOIN "stanzas" ON "stanzas"."poem_id" = "poems"."id" GROUP BY poems.id HAVING poems.num_stanzas > COUNT(stanzas.id)  ORDER BY "poems"."created_at" DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 33]]
+  [1m[35mStanza Load (0.3ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 43]]
+  [1m[36mStanza Load (0.2ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1[0m  [["poem_id", 43]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 35]]
+  [1m[36mStanza Load (0.3ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 42]]
+  [1m[35mStanza Load (0.2ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1  [["poem_id", 42]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mStanza Load (0.2ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 40]]
+  [1m[36mStanza Load (0.2ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1[0m  [["poem_id", 40]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 32]]
+  [1m[36mStanza Load (0.3ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 38]]
+  [1m[35mStanza Load (0.2ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1  [["poem_id", 38]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mStanza Load (0.3ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 34]]
+  [1m[36mStanza Load (0.2ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1[0m  [["poem_id", 34]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 32]]
+  [1m[36mStanza Load (0.3ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1[0m  [["poem_id", 33]]
+  [1m[35mStanza Load (0.2ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1  [["poem_id", 33]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 31]]
+  [1m[35mStanza Load (0.2ms)[0m  SELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" ASC LIMIT 1  [["poem_id", 32]]
+  [1m[36mStanza Load (0.2ms)[0m  [1mSELECT  "stanzas".* FROM "stanzas" WHERE "stanzas"."poem_id" = $1  ORDER BY "stanzas"."id" DESC LIMIT 1[0m  [["poem_id", 32]]
+  Rendered api/poems/index.json.jbuilder (29.5ms)
+Completed 200 OK in 35ms (Views: 28.9ms | ActiveRecord: 5.2ms)
