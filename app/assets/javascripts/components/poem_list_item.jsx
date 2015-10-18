@@ -11,7 +11,7 @@ var PoemListItem = React.createClass({
     }
     return (
       <a href={poemLink + poem.id}>
-        <li> {poem.title} <br/>
+        <li> <div className='poem-title'>{poem.title}</div>
           {poemPreview}
         </li>
       </a>

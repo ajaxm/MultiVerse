@@ -6,7 +6,6 @@ var App = React.createClass({
   render: function() {
     return (
       <div>
-        <h1>The MultiVerse</h1>
         {this.props.children}
       </div>
     );
