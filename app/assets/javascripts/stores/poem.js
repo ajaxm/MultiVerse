@@ -22,6 +22,20 @@
       return _poems.slice();
     },
 
+    involvingCurrentUser: function() {
+      /// QUESTIONS
+      /// involves_current_user vs involvesCurrentUser
+      return this.all().filter(function(poem) {
+        return poem.involves_current_user;
+      });
+    },
+
+    notInvolvingCurrentUser: function() {
+      return this.all().filter(function(poem) {
+        return !poem.involves_current_user;
+      });
+    },
+
     one: function() {
       return _singlePoem;
     },
