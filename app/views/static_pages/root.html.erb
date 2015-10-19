@@ -2,5 +2,8 @@
 
 </div>
 <% if current_user %>
+  <%= "Hello, #{current_user.username}!" %>
+  <br>
+  <br>
   <%= button_to "Log out.", session_url, method: :delete %>
 <% end %>

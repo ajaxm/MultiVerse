@@ -25,11 +25,12 @@ class Poem < ActiveRecord::Base
     foreign_key: :author_id
   )
 
-  def self.get_by_status(completion_status)
+  def self.get_by_status(completion_status, user)
     if completion_status == :complete
-      Poem.joins(:stanzas).group("poems.id")
-          .having("poems.num_stanzas = COUNT(stanzas.id)")
-          .order(created_at: :desc)
+      user.completed_contributed_poems
+      # Poem.joins(:stanzas).group("poems.id")
+      #     .having("poems.num_stanzas = COUNT(stanzas.id)")
+      #     .order(created_at: :desc)
     else
       Poem.joins(:stanzas).group("poems.id")
           .having("poems.num_stanzas > COUNT(stanzas.id)")

@@ -28,6 +28,16 @@ class User < ActiveRecord::Base
     foreign_key: :author_id
   )
 
+  has_many(
+    :contributed_poems, -> { uniq }, through: :stanzas, source: :poem
+  )
+
+  def completed_contributed_poems
+    self.contributed_poems.joins(:stanzas).group("poems.id")
+        .having("poems.num_stanzas = COUNT(stanzas.id)")
+        .order(created_at: :desc)
+  end
+
   def self.find_by_credentials(username, password)
     user = User.find_by_username(username)
     user if user && user.is_password?(password)

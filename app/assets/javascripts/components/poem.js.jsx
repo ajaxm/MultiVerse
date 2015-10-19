@@ -30,7 +30,7 @@ var Poem = React.createClass({
         {poem.last_line}
         <br/>
         <StanzaForm poemId={poem.id}/>
-        <a href='/#'>Back to all poems.</a>
+        <a className='back-button' href='/#'>Back to all poems.</a>
       </div>
     );
   }

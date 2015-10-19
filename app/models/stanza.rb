@@ -41,7 +41,7 @@ class Stanza < ActiveRecord::Base
     end
   end
 
-  def stanza_must_not_exceed_four_lines
+  def stanza_must_not_exceed_three_lines
     if lines.length > 3
       errors.add(:stanza, "must not have more than three lines")
     end
