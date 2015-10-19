@@ -1,7 +1,15 @@
 class Api::PoemsController < ApplicationController
   def index
-    user = current_user
-    @poems = Poem.get_by_status(params[:status].to_sym, user)
+    if params[:status].to_sym == :complete
+      @poems = current_user.completed_contributed_poems
+    else
+      @poems = Poem.get_incomplete_poems
+      # will probably need to separate incomplete poems by
+      # user participation so that users can track poems to which
+      # they have contributed.
+      # This could just be a separate section of the home page.
+      # See commented methods in user model.
+    end
   end
 
   def create
