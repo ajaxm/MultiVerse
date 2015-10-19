@@ -47,5 +47,16 @@ var ApiUtil = {
         ApiActions.createStanza(responseData);
       }
     });
+  },
+
+  logOut: function() {
+    $.ajax({
+      url: 'session',
+      type: 'POST',
+      data: {_method: 'delete'},
+      success: function() {
+        window.location = "session/new";
+      }
+    });
   }
 };

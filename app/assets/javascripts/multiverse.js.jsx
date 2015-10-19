@@ -23,8 +23,8 @@ var routes = (
   </Route>
 );
 
-$(function() {
+window.mountRouter = function() {
   React.render(<Router>{routes}</Router>,
     document.getElementById('multiverse-container')
   );
-});
+};
