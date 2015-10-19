@@ -44,8 +44,41 @@ li:hover {
 
 }
 
-.poem-title {
+.list-item-title {
   font-weight: bold;
   border-bottom: 1px black solid;
   margin: 10px 0px;
+}
+
+
+//////////////////////////////
+
+.poem {
+  border: 2px black solid;
+  color: navy;
+  padding: 5px;
+  background: lightgoldenrodyellow;
+  margin: 5px 0px;
+}
+
+.stanza-input {
+  padding: 5px 5px;
+  margin: 10px auto;
+  height: 80px;
+  width: 300px;
+  border: 2px solid lightgrey;
+  white-space: pre-line;
+  font-size: inherit;
+}
+
+.poem {
+  font-size: large;
+}
+
+.poem-title {
+  font-size: xx-large;
+}
+.poem-author {
+  font-size: medium;
+  margin-bottom: 20px;
 }

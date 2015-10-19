@@ -25,8 +25,8 @@ var Poem = React.createClass({
     var poem = this.state.poem || {};
     return (
       <div className='poem'>
-        Title: {poem.title} <br/>
-        Author: {poem.author} <br/>
+        <div className='poem-title'>{poem.title}</div>
+        <div className='poem-author'>created by {poem.author}</div>
         {poem.last_line}
         <br/>
         <StanzaForm poemId={poem.id}/>

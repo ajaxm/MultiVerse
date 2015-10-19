@@ -24,9 +24,8 @@ var StanzaForm = React.createClass({
 
   render: function() {
     var form = (
-      <form onSubmit={this.handleSubmit}>
-        <br/> Add a Stanza: <br/>
-        <textarea valueLink={this.linkState('body')}/>
+      <form className='stanza-form' onSubmit={this.handleSubmit}>
+        <textarea className='stanza-input' valueLink={this.linkState('body')}/>
         <input type="submit" value="Add Stanza!"/>
       </form>
     );
