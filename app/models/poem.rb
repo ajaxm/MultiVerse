@@ -15,6 +15,7 @@ class Poem < ActiveRecord::Base
 
   validates :title, :author_id, :num_stanzas, presence: true
   validates :first_stanza, length: { allow_nil: true, minimum: 1 }
+  validate :poem_must_have_at_least_two_stanzas
   after_create :ensure_first_stanza
 
   has_many :stanzas, inverse_of: :poem, dependent: :destroy
@@ -51,5 +52,12 @@ class Poem < ActiveRecord::Base
       body: @first_stanza_content, order: 1, author_id: author_id, poem_id: id
     )
     first_stanza.save!
+  end
+
+  private
+  def poem_must_have_at_least_two_stanzas
+    if num_stanzas <= 1
+      errors.add(:poem, "must have at least two stanzas")
+    end
   end
 end
