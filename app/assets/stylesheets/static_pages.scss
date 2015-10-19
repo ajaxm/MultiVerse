@@ -25,6 +25,8 @@ h1, h2, p, strong, em, a, ul, li {
 ul.poem-index, ul.poem-archive {
   list-style: none;
   margin: 0 auto;
+  overflow: auto;
+  max-height: 300px;
 }
 
 .home-container li, .archive-container li {
