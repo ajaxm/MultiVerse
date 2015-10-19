@@ -31,24 +31,27 @@ var PoemForm = React.createClass({
   render: function() {
     var form = (
       <form onSubmit={this.handleSubmit}>
-        <label> Title:
+        <div className='form-title'>
+          <label> Title: </label>
           <input valueLink={this.linkState('title')}/>
-        </label>
-        <br/>
-        <label> Number of Stanzas:
+        </div>
+        <div className='form-num-stanzas'>
+          <label> Number of Stanzas: </label>
           <input valueLink={this.linkState('numStanzas')}/>
-        </label>
-        <br/>
-        <label> First Stanza:
+        </div>
+        <div className='form-first-stanza'>
+          <label> First Stanza: </label>
           <textarea valueLink={this.linkState('firstStanza')}/>
-        </label>
-        <br/>
-        <input type="submit" value="Create 'Verse!"/>
+        </div>
+        <input className='poem-form-submit'
+               type="submit"
+               value="Create 'Verse!"/>
       </form>
     );
+    var heading = "Create a New 'Verse!";
     return (
-      <div>
-        <h2>Create a New Verse</h2>
+      <div className='poem-form'>
+        <h2>{heading}</h2>
         {form}
       </div>
     );

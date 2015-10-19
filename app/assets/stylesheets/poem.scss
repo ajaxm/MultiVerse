@@ -1,0 +1,50 @@
+.poem {
+  border: 2px black solid;
+  color: navy;
+  padding: 5px;
+  background: lightgoldenrodyellow;
+  margin: 5px 0px;
+}
+
+.stanza-input {
+  padding: 5px 5px;
+  margin: 0 auto;
+  height: 80px;
+  width: 300px;
+  border: 2px solid lightgrey;
+  white-space: pre-line;
+  font-size: inherit;
+}
+
+.poem {
+  font-size: large;
+}
+
+.poem ul {
+  list-style: none;
+}
+
+#stanza-submit {
+  padding: 0;
+}
+
+.back-button {
+  width: 300px;
+  padding: 0 50px;
+  margin: 10px auto;
+  border: 1px solid navy;
+}
+
+.back-button:hover {
+  color: lightgoldenrodyellow;
+  background: navy;
+}
+
+.poem-title {
+  font-size: xx-large;
+}
+
+.poem-author {
+  font-size: medium;
+  margin-bottom: 20px;
+}

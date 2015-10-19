@@ -25,12 +25,12 @@ var ArchivePoem = React.createClass({
     });
     return (
       <div className='poem'>
-        Title: {poem.title} <br/>
-        Author: {poem.author} <br/>
+        <div className='poem-title'>{poem.title}</div>
+        <div className='poem-author'>created by {poem.author}</div>
         <ul>
           {stanzas}
         </ul>
-        <a href='/#archive'>Back to archive.</a>
+        <a className='back-button' href='/#archive'>Back to archive.</a>
       </div>
     );
   }

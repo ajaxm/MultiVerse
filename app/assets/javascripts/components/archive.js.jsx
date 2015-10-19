@@ -29,7 +29,9 @@ var Archive = React.createClass({
   render: function() {
     var poems = this._buildPoemArchive();
     return(
-      <ul className='poem-archive'>{poems}</ul>
+      <div className='archive-container'>
+        <ul className='poem-archive'>{poems}</ul>
+      </div>
     );
   }
 });
