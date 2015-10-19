@@ -29,26 +29,31 @@ class User < ActiveRecord::Base
   )
 
   has_many(
-    :contributed_poems, -> { uniq }, through: :stanzas, source: :poem
+    :contributed_poems,
+    -> { uniq },
+    through: :stanzas,
+    source: :poem
   )
+
+  # has_many(
+  #   :completed_contributed_poems,
+  #   -> { joins(:stanzas).group("poems.id")
+  #       .having("poems.num_stanzas = COUNT(stanzas.id)")
+  #       .order(created_at: :desc) },
+  #   through: :stanzas,
+  #   source: :poem
+  # )
+
+  def self.find_by_credentials(username, password)
+    user = User.find_by_username(username)
+    user if user && user.is_password?(password)
+  end
 
   def completed_contributed_poems
     self.contributed_poems.joins(:stanzas).group("poems.id")
         .having("poems.num_stanzas = COUNT(stanzas.id)")
         .order(created_at: :desc)
-  end
-
-  # def incomplete_contributed_poems
-  #   self.contributed_poems.joins(:stanzas).group("poems.id")
-  #       .having("poems.num_stanzas > COUNT(stanzas.id)")
-  #       .order(created_at: :desc)
-  # end
-  # def incomplete_non_contributed_poems
-  # end
-
-  def self.find_by_credentials(username, password)
-    user = User.find_by_username(username)
-    user if user && user.is_password?(password)
+        .preload(:author, :contributors, stanzas: :author)
   end
 
   def reset_session_token!

@@ -48,7 +48,7 @@ var Home = React.createClass({
       <div className='home-container'>
         <ul className='poem-index'>{nonUserPoems}</ul>
         <br/>
-        <span>You've contributed to:</span>
+        <div className='contributions-label'>You've contributed to:</div>
         <ul className='poem-index'>{userPoems}</ul>
       </div>
     );

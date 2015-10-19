@@ -32,11 +32,10 @@ class Poem < ActiveRecord::Base
     Poem.joins(:stanzas).group("poems.id")
         .having("poems.num_stanzas > COUNT(stanzas.id)")
         .order(created_at: :desc)
+        .preload(:author, :contributors, stanzas: :author)
   end
 
   def is_contributor?(user)
-    ### QUESTIONS: efficient?
-    # return true if author == user   ### is this worth it?
     contributors.any? { |c|
       c == user
       }

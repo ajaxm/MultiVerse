@@ -23,8 +23,6 @@
     },
 
     involvingCurrentUser: function() {
-      /// QUESTIONS
-      /// involves_current_user vs involvesCurrentUser
       return this.all().filter(function(poem) {
         return poem.involves_current_user;
       });
