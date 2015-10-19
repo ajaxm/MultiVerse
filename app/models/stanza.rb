@@ -35,6 +35,12 @@ class Stanza < ActiveRecord::Base
     end
   end
 
+  def prevent_successive_stanza
+    if poem.stanzas.last.author_id == author_id
+      errors.add(:user, "cannot contribute successive stanzas.")
+    end
+  end
+
   def stanza_must_have_at_least_two_lines
     if lines.length < 2
       errors.add(:stanza, "must have at least two lines")
