@@ -1,6 +1,6 @@
 # MultiVerse
 
-[Heroku link.](http://multi-verse.herokuapp.com)
+[Heroku link.](http://multi-verse.herokuapp.com) <-- Not yet live.
 
 ## Minimum Viable Product
 
