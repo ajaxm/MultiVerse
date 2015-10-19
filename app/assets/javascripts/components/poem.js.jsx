@@ -23,13 +23,19 @@ var Poem = React.createClass({
 
   render: function() {
     var poem = this.state.poem || {};
+    var form;
+    if (poem.last_author_id === window.currentUserId) {
+      form = (<div>You wrote the most recent stanza for this poem.</div>);
+    } else {
+      form = <StanzaForm poemId={poem.id}/>;
+    }
     return (
       <div className='poem'>
         <div className='poem-title'>{poem.title}</div>
         <div className='poem-author'>created by {poem.author}</div>
         {poem.last_line}
         <br/>
-        <StanzaForm poemId={poem.id}/>
+        {form}
         <a className='back-button' href='/#'>Back to all poems.</a>
       </div>
     );
