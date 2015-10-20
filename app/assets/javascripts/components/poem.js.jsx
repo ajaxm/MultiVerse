@@ -24,9 +24,12 @@ var Poem = React.createClass({
   render: function() {
     var poem = this.state.poem || {};
     var form;
-    // if (poem.last_author_id === window.currentUserId) {
-    if (false) {
-      form = (<div>You wrote the most recent stanza for this poem.</div>);
+    if (poem.last_author_id === window.currentUserId) {
+      form = (
+        <div className='stanza-form-blocker'>
+          You wrote the most recent stanza for this poem.
+        </div>
+      );
     } else {
       form = <StanzaForm poemId={poem.id}/>;
     }
