@@ -26,7 +26,7 @@ ul.poem-index, ul.poem-archive {
   list-style: none;
   margin: 0 auto;
   overflow: auto;
-  max-height: 300px;
+  max-height: 360px;
 }
 
 .home-container li, .archive-container li {
@@ -35,6 +35,7 @@ ul.poem-index, ul.poem-archive {
   padding: 5px;
   background: lightyellow;
   margin: 5px 0px;
+  height: 100px;
 }
 
 .home-container li:hover, .archive-container li:hover {

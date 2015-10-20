@@ -1,8 +1,7 @@
 var Home = React.createClass({
   getInitialState: function() {
     return {
-      contributed: PoemStore.involvingCurrentUser(),
-      nonContributed: PoemStore.notInvolvingCurrentUser()
+      poems: PoemStore.all()
     };
   },
 
@@ -16,40 +15,19 @@ var Home = React.createClass({
   },
 
   _onChangeEvent: function() {
-    this.setState({
-      contributed: PoemStore.involvingCurrentUser(),
-      nonContributed: PoemStore.notInvolvingCurrentUser()
-    });
-  },
-
-  _getUserPoems: function() {
-    var that = this;
-    var userPoems = this.state.contributed.map(function(poem){
-      return (
-        <PoemListItem status='incomplete' key={poem.id} {...poem}/>
-      );
-    });
-    return userPoems;
-  },
-
-  _getNonUserPoems: function() {
-    var nonUserPoems = this.state.nonContributed.map(function(poem){
-      return (
-        <PoemListItem status='incomplete' key={poem.id} {...poem}/>
-      );
-    });
-    return nonUserPoems;
+    this.setState({ poems: PoemStore.all() });
   },
 
   render: function() {
-    var userPoems = this._getUserPoems();
-    var nonUserPoems = this._getNonUserPoems();
+    var poems = this.state.poems.map(function(poem){
+        return (
+          <PoemListItem status='incomplete' key={poem.id} {...poem}/>
+        );
+      });
+
     return(
       <div className='home-container'>
-        <ul className='poem-index'>{nonUserPoems}</ul>
-        <br/>
-        <div className='contributions-label'>You've contributed to:</div>
-        <ul className='poem-index'>{userPoems}</ul>
+        <ul className='poem-index'>{poems}</ul>
       </div>
     );
   }

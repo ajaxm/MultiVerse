@@ -3,6 +3,7 @@
   var SHOW_EVENT = 'SHOW_EVENT';
   var POEM_CREATION_EVENT = 'POEM_CREATION_EVENT';
   var STANZA_CREATION_EVENT = 'STANZA_CREATION_EVENT';
+  var SCROLL_EVENT = 'SCROLL_EVENT';
   var BLANK_POEM = {stanzas: []};
 
   var _poems = [];
@@ -11,6 +12,10 @@
   var _resetPoems = function(poems) {
     _poems = poems;
     _singlePoem = BLANK_POEM;
+  };
+
+  var _loadMorePoems = function(poems) {
+    _poems = _poems.concat(poems);
   };
 
   var _setSelectedPoem = function(poem) {
@@ -22,17 +27,17 @@
       return _poems.slice();
     },
 
-    involvingCurrentUser: function() {
-      return this.all().filter(function(poem) {
-        return poem.involves_current_user;
-      });
-    },
-
-    notInvolvingCurrentUser: function() {
-      return this.all().filter(function(poem) {
-        return !poem.involves_current_user;
-      });
-    },
+    // involvingCurrentUser: function() {
+    //   return this.all().filter(function(poem) {
+    //     return poem.involves_current_user;
+    //   });
+    // },
+    //
+    // notInvolvingCurrentUser: function() {
+    //   return this.all().filter(function(poem) {
+    //     return !poem.involves_current_user;
+    //   });
+    // },
 
     one: function() {
       return _singlePoem;
