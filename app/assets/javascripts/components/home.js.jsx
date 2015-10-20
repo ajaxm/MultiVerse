@@ -18,6 +18,14 @@ var Home = React.createClass({
     this.setState({ poems: PoemStore.all() });
   },
 
+  handleScroll: function(e) {
+    var scrollTop = $(e.currentTarget).scrollTop();
+    var containerHeight = $(document.getElementById('scroll-container')).height();
+    if (scrollTop > 0.5 * containerHeight) {
+      ApiUtil.loadMorePoems({ 'status': 'incomplete' });
+    }
+  },
+
   render: function() {
     var poems = this.state.poems.map(function(poem){
         return (
@@ -26,8 +34,8 @@ var Home = React.createClass({
       });
 
     return(
-      <div className='home-container'>
-        <ul className='poem-index'>{poems}</ul>
+      <div id='scroll-container' className='home-container'>
+        <ul onScroll={this.handleScroll} className='poem-index'>{poems}</ul>
       </div>
     );
   }
