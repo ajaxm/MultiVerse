@@ -28,12 +28,12 @@ class Poem < ActiveRecord::Base
 
   has_many :contributors, -> { uniq }, through: :stanzas, source: :author
 
-  def self.get_incomplete_poems
+  def self.get_incomplete_poems(page)
     Poem.joins(:stanzas).group("poems.id")
         .having("poems.num_stanzas > COUNT(stanzas.id)")
         .order(created_at: :desc)
         .preload(:author, :contributors, stanzas: :author)
-        # .page(page).per(10)
+        .page(page).per(10)
   end
 
   def is_contributor?(user)
