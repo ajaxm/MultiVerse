@@ -16,20 +16,34 @@ var ArchivePoem = React.createClass({
     this.setState({ poem: PoemStore.one() });
   },
 
-  render: function() {
-    var poem = this.state.poem;
-    var stanzas = poem.stanzas.map(function(stanza){
-      return (
-        <li key={stanza.id}>{stanza.body}</li>
-      );
+  _buildPoem: function() {
+    return (
+      this.state.poem.stanzas.map(function(stanza){
+        return (
+          <li key={stanza.id}>{stanza.body}</li>
+        );
+      })
+    );
+  },
+
+  handleFavorite: function() {
+    ApiUtil.addFavorite({
+      'poem_id': this.state.poem.id
     });
+  },
+
+  render: function() {
+    var stanzas = this._buildPoem();
     return (
       <div className='poem'>
-        <div className='poem-title'>{poem.title}</div>
-        <div className='poem-author'>created by {poem.author}</div>
+        <div className='poem-title'>{this.state.poem.title}</div>
+        <div className='poem-author'>created by {this.state.poem.author}</div>
         <ul>
           {stanzas}
         </ul>
+        <button className='favorite-button' onClick={this.handleFavorite}>
+          Favorite!
+        </button>
         <a className='back-button' href='/#archive'>Back to archive.</a>
       </div>
     );

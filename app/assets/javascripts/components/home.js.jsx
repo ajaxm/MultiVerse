@@ -10,7 +10,7 @@ var Home = React.createClass({
 
   componentDidMount: function() {
     PoemStore.addChangeListener(this._onChangeEvent);
-    ApiUtil.fetchPoems({'status': 'incomplete', page: this.state.page });
+    ApiUtil.fetchPoems({ 'status': 'incomplete', page: this.state.page });
   },
 
   componentWillUnmount: function() {

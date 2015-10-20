@@ -37,8 +37,7 @@ class Stanza < ActiveRecord::Base
   end
 
   def prevent_successive_stanzas
-    debugger
-    if poem.stanzas.find_by_order(order - 1).author == author
+    if order > 1 && poem.stanzas.find_by_order(order - 1).author == author
       errors.add(:user, "cannot contribute successive stanzas.")
     end
   end

@@ -25,8 +25,10 @@ class Poem < ActiveRecord::Base
     class_name: "User",
     foreign_key: :author_id
   )
-
   has_many :contributors, -> { uniq }, through: :stanzas, source: :author
+
+  has_many :favorites
+  has_many :users_who_favorited, through: :favorites, source: :user
 
   def self.get_incomplete_poems(page)
     Poem.joins(:stanzas).group("poems.id")

@@ -1,9 +1,8 @@
 (function(root) {
-  var CHANGE_EVENT = 'CHANGE_EVENT';
-  var SHOW_EVENT = 'SHOW_EVENT';
+  var POEM_INDEX_CHANGE_EVENT = 'POEM_INDEX_CHANGE_EVENT';
+  var POEM_SHOW_EVENT = 'POEM_SHOW_EVENT';
   var POEM_CREATION_EVENT = 'POEM_CREATION_EVENT';
   var STANZA_CREATION_EVENT = 'STANZA_CREATION_EVENT';
-  var SCROLL_EVENT = 'SCROLL_EVENT';
   var BLANK_POEM = {stanzas: []};
 
   var _poems = [];
@@ -15,19 +14,15 @@
     _poems = poems;
     _singlePoem = BLANK_POEM;
   };
-
   var _loadMorePoems = function(poems) {
     _poems = _poems.concat(poems);
   };
-
   var _setSelectedPoem = function(poem) {
     _singlePoem = poem;
   };
-
   var _setCurrentPage = function(page) {
     _currentPage = page;
   };
-
   var _setScrollEnd = function(bool) {
     _scrollEnd = bool;
   };
@@ -36,18 +31,6 @@
     all: function() {
       return _poems.slice();
     },
-
-    // involvingCurrentUser: function() {
-    //   return this.all().filter(function(poem) {
-    //     return poem.involves_current_user;
-    //   });
-    // },
-    //
-    // notInvolvingCurrentUser: function() {
-    //   return this.all().filter(function(poem) {
-    //     return !poem.involves_current_user;
-    //   });
-    // },
 
     one: function() {
       return _singlePoem;
@@ -62,19 +45,19 @@
     },
 
     addChangeListener: function(callback) {
-      this.on(CHANGE_EVENT, callback);
+      this.on(POEM_INDEX_CHANGE_EVENT, callback);
     },
 
     removeChangeListener: function(callback) {
-      this.removeListener(CHANGE_EVENT, callback);
+      this.removeListener(POEM_INDEX_CHANGE_EVENT, callback);
     },
 
     addShowListener: function(callback) {
-      this.on(SHOW_EVENT, callback);
+      this.on(POEM_SHOW_EVENT, callback);
     },
 
     removeShowListener: function(callback) {
-      this.removeListener(SHOW_EVENT, callback);
+      this.removeListener(POEM_SHOW_EVENT, callback);
     },
 
     addCreationListener: function(callback) {
@@ -109,11 +92,11 @@
       switch (action.actionType) {
         case PoemConstants.POEMS_RECEIVED:
           PoemStore.processReceivedPoems(action.poems, action.page);
-          PoemStore.emit(CHANGE_EVENT);
+          PoemStore.emit(POEM_INDEX_CHANGE_EVENT);
           break;
         case PoemConstants.ONE_POEM_RECEIVED:
           _setSelectedPoem(action.poem);
-          PoemStore.emit(SHOW_EVENT);
+          PoemStore.emit(POEM_SHOW_EVENT);
           break;
         case PoemConstants.POEM_CREATED:
           PoemStore.emit(POEM_CREATION_EVENT, action.poem);

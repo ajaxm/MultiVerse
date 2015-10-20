@@ -35,6 +35,9 @@ class User < ActiveRecord::Base
     source: :poem
   )
 
+  has_many :favorites
+  has_many :favorited_poems, through: :favorites, source: :poem
+
   def self.find_by_credentials(username, password)
     user = User.find_by_username(username)
     user if user && user.is_password?(password)

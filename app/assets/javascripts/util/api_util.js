@@ -49,6 +49,17 @@ var ApiUtil = {
     });
   },
 
+  addFavorite: function(favParams) {
+    $.ajax({
+      url: 'api/favorites',
+      type: 'POST',
+      data: favParams,
+      success: function(responseData) {
+        ApiActions.receiveOnePoem(responseData);
+      }
+    });
+  },
+
   logOut: function() {
     $.ajax({
       url: 'session',
