@@ -1,11 +1,16 @@
 var Archive = React.createClass({
   getInitialState: function() {
-    return { poems: PoemStore.all() };
+    return {
+      poems: PoemStore.all(),
+      page: 1,
+      scrollEnd: false,
+      scrolling: false
+    };
   },
 
   componentDidMount: function() {
     PoemStore.addChangeListener(this._onChangeEvent);
-    ApiUtil.fetchPoems({'status': 'complete'});
+    ApiUtil.fetchPoems({'status': 'complete', page: this.state.page });
   },
 
   componentWillUnmount: function() {
@@ -13,7 +18,27 @@ var Archive = React.createClass({
   },
 
   _onChangeEvent: function() {
-    this.setState({ poems: PoemStore.all() });
+    this.setState({
+      poems: PoemStore.all(),
+      page: PoemStore.currentPage(),
+      scrollEnd: PoemStore.scrollEnd(),
+      scrolling: false
+    });
+  },
+
+  handleScroll: function(e) {
+    if (this.state.scrollEnd || this.state.scrolling) {
+      return null;
+    }
+
+    var scrollTop = $(e.currentTarget).scrollTop();
+    var containerHeight = $(document.getElementById('scroll-container')).height();
+    /// This if clause is pretty hacky: ~ total height of pages passed - container height
+    if (scrollTop > (800 * this.state.page) - containerHeight) {
+      var newPage = this.state.page + 1;
+      ApiUtil.fetchPoems({ 'status': 'complete', page: newPage });
+      this.setState({ scrolling: true });
+    }
   },
 
   _buildPoemArchive: function() {
@@ -32,8 +57,8 @@ var Archive = React.createClass({
       return <div>No poems completed yet.</div>;
     }
     return(
-      <div className='archive-container'>
-        <ul className='poem-archive'>{poems}</ul>
+      <div id='scroll-container' className='archive-container'>
+        <ul onScroll={this.handleScroll} className='poem-archive'>{poems}</ul>
       </div>
     );
   }

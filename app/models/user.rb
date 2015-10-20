@@ -35,25 +35,17 @@ class User < ActiveRecord::Base
     source: :poem
   )
 
-  # has_many(
-  #   :completed_contributed_poems,
-  #   -> { joins(:stanzas).group("poems.id")
-  #       .having("poems.num_stanzas = COUNT(stanzas.id)")
-  #       .order(created_at: :desc) },
-  #   through: :stanzas,
-  #   source: :poem
-  # )
-
   def self.find_by_credentials(username, password)
     user = User.find_by_username(username)
     user if user && user.is_password?(password)
   end
 
-  def completed_contributed_poems
+  def completed_contributed_poems(page)
     self.contributed_poems.joins(:stanzas).group("poems.id")
         .having("poems.num_stanzas = COUNT(stanzas.id)")
         .order(created_at: :desc)
         .preload(:author, :contributors, stanzas: :author)
+        .page(page).per(10)
   end
 
   def reset_session_token!

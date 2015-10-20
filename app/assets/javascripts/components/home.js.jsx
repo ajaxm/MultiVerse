@@ -37,7 +37,7 @@ var Home = React.createClass({
     if (scrollTop > (800 * this.state.page) - containerHeight) {
       var newPage = this.state.page + 1;
       ApiUtil.fetchPoems({ 'status': 'incomplete', page: newPage });
-      this.setState({scrolling: true});
+      this.setState({ scrolling: true });
     }
   },
 

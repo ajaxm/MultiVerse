@@ -16,6 +16,7 @@ class Stanza < ActiveRecord::Base
   validate :stanza_order_cannot_exceed_num_stanzas_of_poem
   validate :stanza_must_have_at_least_two_lines
   validate :stanza_must_not_exceed_three_lines
+  validate :prevent_successive_stanzas
 
   belongs_to :poem
   belongs_to(
@@ -35,7 +36,7 @@ class Stanza < ActiveRecord::Base
     end
   end
 
-  def prevent_successive_stanza
+  def prevent_successive_stanzas
     if poem.stanzas.last.author_id == author_id
       errors.add(:user, "cannot contribute successive stanzas.")
     end
