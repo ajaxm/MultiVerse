@@ -2,23 +2,27 @@ var PoemListItem = React.createClass({
   render: function() {
     var poem = this.props;
 
-    var poemPreview, poemLink, contributionStatus;
+    var poemPreview, poemLink, contributionStatus, statusMessage;
 
     if (poem.status === 'complete') {
       poemPreview = poem.first_stanza;
       poemLink = '/#archive/';
       contributionStatus = 'complete';
+      statusMessage = '';
     } else {
       poemPreview = poem.last_line;
       poemLink = '/#poems/';
       if (poem.involves_current_user) {
         if (poem.last_author_id === window.currentUserId) {
           contributionStatus = 'last-contribution';
+          statusMessage = 'You wrote the most recent stanza for this poem.';
         } else {
-        contributionStatus = 'contributed';
+          contributionStatus = 'contributed';
+          statusMessage = 'You have contributed #stanzas to this poem.';
         }
       } else {
-        contributionStatus = 'not-contributed';
+          contributionStatus = 'not-contributed';
+          statusMessage = '';
       }
     }
 
@@ -27,6 +31,7 @@ var PoemListItem = React.createClass({
         <li className={contributionStatus}>
           <div className='list-item-title'>{poem.title}</div>
           {poemPreview}
+          <div className='status-message'>{statusMessage}</div>
         </li>
       </a>
     );

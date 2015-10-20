@@ -28,6 +28,9 @@ var Archive = React.createClass({
 
   render: function() {
     var poems = this._buildPoemArchive();
+    if (poems.length === 0) {
+      return <div>No poems completed yet.</div>;
+    }
     return(
       <div className='archive-container'>
         <ul className='poem-archive'>{poems}</ul>

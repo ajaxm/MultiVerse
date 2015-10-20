@@ -36,9 +36,7 @@ class Poem < ActiveRecord::Base
   end
 
   def is_contributor?(user)
-    contributors.any? { |c|
-      c == user
-      }
+    contributors.any? { |c| c == user }
   end
 
   def first_stanza=(first_stanza)
