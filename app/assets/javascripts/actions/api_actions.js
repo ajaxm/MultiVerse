@@ -1,8 +1,9 @@
 var ApiActions = {
-  receiveAllPoems: function(poems) {
+  receiveAllPoems: function(poems, page) {
     var action = {
       actionType: PoemConstants.POEMS_RECEIVED,
-      poems: poems
+      poems: poems,
+      page: page
     };
     AppDispatcher.dispatch(action);
   },

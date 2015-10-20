@@ -8,6 +8,8 @@
 
   var _poems = [];
   var _singlePoem = BLANK_POEM;
+  var _currentPage = 1;
+  var _scrollEnd = false;
 
   var _resetPoems = function(poems) {
     _poems = poems;
@@ -20,6 +22,14 @@
 
   var _setSelectedPoem = function(poem) {
     _singlePoem = poem;
+  };
+
+  var _setCurrentPage = function(page) {
+    _currentPage = page;
+  };
+
+  var _setScrollEnd = function(bool) {
+    _scrollEnd = bool;
   };
 
   root.PoemStore = $.extend({}, EventEmitter.prototype, {
@@ -41,6 +51,14 @@
 
     one: function() {
       return _singlePoem;
+    },
+
+    currentPage: function() {
+      return _currentPage;
+    },
+
+    scrollEnd: function() {
+      return _scrollEnd;
     },
 
     addChangeListener: function(callback) {
@@ -75,10 +93,22 @@
       this.removeListener(STANZA_CREATION_EVENT, callback);
     },
 
+    processReceivedPoems: function(poems, page) {
+      _setCurrentPage(page);
+      if (page === 1) {
+        _resetPoems(poems);
+      } else {
+        _loadMorePoems(poems);
+      }
+      if (poems.length === 0) {
+        _setScrollEnd(true);
+      }
+    },
+
     dispatcherId: AppDispatcher.register(function(action) {
       switch (action.actionType) {
         case PoemConstants.POEMS_RECEIVED:
-          _resetPoems(action.poems);
+          PoemStore.processReceivedPoems(action.poems, action.page);
           PoemStore.emit(CHANGE_EVENT);
           break;
         case PoemConstants.ONE_POEM_RECEIVED:

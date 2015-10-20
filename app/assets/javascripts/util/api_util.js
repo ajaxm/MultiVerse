@@ -1,12 +1,12 @@
 var ApiUtil = {
-  fetchPoems: function(status) {
+  fetchPoems: function(fetchParams) {
     $.ajax({
       url: 'api/poems',
       type: 'GET',
-      data: status,
+      data: fetchParams,
       dataType: 'JSON',
       success: function(responseData) {
-        ApiActions.receiveAllPoems(responseData);
+        ApiActions.receiveAllPoems(responseData, fetchParams.page);
       }
     });
   },

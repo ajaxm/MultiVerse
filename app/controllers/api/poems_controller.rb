@@ -3,7 +3,7 @@ class Api::PoemsController < ApplicationController
     if params[:status].to_sym == :complete
       @poems = current_user.completed_contributed_poems
     else
-      @poems = Poem.get_incomplete_poems
+      @poems = Poem.get_incomplete_poems(params[:page].to_i)
     end
   end
 
