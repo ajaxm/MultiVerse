@@ -56,16 +56,19 @@ Poems are separated by completion status (in Home or Archive).
 (Phase 2 completed in 3 days. October 16, 2015.)
 
 ### Phase 3: User Focus and Page Style (1 day)
-* Persistent navigation sidebar: Home, Archive, New, Logout
+* Persistent navigation: Home, Archive, New, Logout
 * Accessibility changes based on current user
 * Endless scrolling implementation
 * Basic cleanup of page design
 
-*At the end of Phase 3, the poems are filteres according to the current user.*  
+*At the end of Phase 3, the poems are filtered according to the current user.*  
 The archive shows users all completed poems to which they contributed a stanza.  
-The home page still shows all incomplete poems; users can contribute stanzas to any of these provided they did not the write the most recent stanza.  
+The home page still shows all incomplete poems; users can contribute stanzas to
+any of these provided they did not the write the most recent stanza.  
 
-A NavBar React component is the only new component required for Phase 3.
+[Component details.](./docs/phases/phase3.md)
+
+(Phase 3 completed in 1.5 days. October 20, 2015.)
 
 ### Phase 4: Favorites, Comments (1 day)
 * Rails models for Favorites, Comments
