@@ -1,0 +1,42 @@
+.login-container {
+  background: lightyellow;
+  color: steelblue;
+  border: 1px black solid;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login-header {
+  font-size: x-large;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.login-username, .login-password, .login-submit {
+  padding: 10px;
+  margin: 0 auto;
+  color: steelblue;
+}
+
+.login-switch {
+  background: lightyellow;
+  color: steelblue;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.login-switch:hover {
+  color: navy;
+}
+
+.error-list {
+  list-style: none;
+  background: lightyellow;
+  color: steelblue;
+  border: 1px black solid;
+  width: 480px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}

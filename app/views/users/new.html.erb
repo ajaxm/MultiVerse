@@ -1,3 +1,6 @@
-<%= render partial: 'shared/form', locals: { source: 'new_user' }  %>
-<br>
-Already have an account? <%= link_to "Sign in here.", new_session_url %>
+<div class='login-container'>
+  <%= render partial: 'shared/form', locals: { source: 'new_user' }  %>
+  <div class='login-switch'>
+    <%= link_to "Already have an account? Log in here.", new_session_url %>
+  </div>
+</div>
