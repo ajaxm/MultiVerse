@@ -1,6 +1,6 @@
 var ArchivePoem = React.createClass({
   getInitialState: function() {
-    return { poem: PoemStore.one(), favoriting: false };
+    return { poem: PoemStore.one(), favoriting: true };
   },
 
   componentDidMount: function() {

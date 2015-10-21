@@ -34,7 +34,7 @@ class Poem < ActiveRecord::Base
     Poem.joins(:stanzas).group("poems.id")
         .having("poems.num_stanzas > COUNT(stanzas.id)")
         .order(created_at: :desc)
-        .preload(:author, :contributors, stanzas: :author)
+        .preload(:author, :contributors, :favoritors, stanzas: :author)
         .page(page).per(10)
   end
 

@@ -1188,3 +1188,43 @@
 [10/20/15 16:44:55 -0700 Adithyas-MacBook-Pro.local (5725)] ERROR : Invalid license key, please contact support@newrelic.com
 [10/20/15 16:44:55 -0700 Adithyas-MacBook-Pro.local (5725)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
 [10/20/15 17:32:32 -0700 Adithyas-MacBook-Pro.local (5725)] INFO : Starting Agent shutdown
+[10/20/15 17:44:42 -0700 Adithyas-MacBook-Pro.local (6054)] INFO : Starting the New Relic agent in "development" environment.
+[10/20/15 17:44:42 -0700 Adithyas-MacBook-Pro.local (6054)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[10/20/15 17:44:42 -0700 Adithyas-MacBook-Pro.local (6054)] WARN : No configuration file found. Working directory = /Users/Adi/appAcademy/MultiVerse
+[10/20/15 17:44:42 -0700 Adithyas-MacBook-Pro.local (6054)] WARN : Looked in these locations (based on defaults): /Users/Adi/appAcademy/MultiVerse/config/newrelic.yml, /Users/Adi/appAcademy/MultiVerse/newrelic.yml, /Users/Adi/appAcademy/MultiVerse/config/newrelic.yml, /Users/Adi/appAcademy/MultiVerse/newrelic.yml, /Users/Adi/.newrelic/newrelic.yml, /Users/Adi/newrelic.yml
+[10/20/15 17:44:42 -0700 Adithyas-MacBook-Pro.local (6054)] INFO : Environment: development
+[10/20/15 17:44:42 -0700 Adithyas-MacBook-Pro.local (6054)] INFO : Dispatcher: webrick
+[10/20/15 17:44:42 -0700 Adithyas-MacBook-Pro.local (6054)] INFO : Application: development
+[10/20/15 17:44:42 -0700 Adithyas-MacBook-Pro.local (6054)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[10/20/15 17:44:42 -0700 Adithyas-MacBook-Pro.local (6054)] INFO : Installing ActiveJob instrumentation
+[10/20/15 17:44:42 -0700 Adithyas-MacBook-Pro.local (6054)] INFO : Installing ActiveRecord 4 instrumentation
+[10/20/15 17:44:42 -0700 Adithyas-MacBook-Pro.local (6054)] INFO : Installing Net instrumentation
+[10/20/15 17:44:42 -0700 Adithyas-MacBook-Pro.local (6054)] INFO : Installing deferred Rack instrumentation
+[10/20/15 17:44:42 -0700 Adithyas-MacBook-Pro.local (6054)] INFO : Installing Rack::Builder middleware instrumentation
+[10/20/15 17:44:42 -0700 Adithyas-MacBook-Pro.local (6054)] INFO : Installing Rails 3+ middleware instrumentation
+[10/20/15 17:44:42 -0700 Adithyas-MacBook-Pro.local (6054)] INFO : Installing Rails 4 Controller instrumentation
+[10/20/15 17:44:42 -0700 Adithyas-MacBook-Pro.local (6054)] INFO : Installing Rails 4 view instrumentation
+[10/20/15 17:44:42 -0700 Adithyas-MacBook-Pro.local (6054)] INFO : Installing Rails 4 Error instrumentation
+[10/20/15 17:44:42 -0700 Adithyas-MacBook-Pro.local (6054)] INFO : Finished instrumentation
+[10/20/15 17:44:43 -0700 Adithyas-MacBook-Pro.local (6054)] INFO : Doing deferred dependency-detection before Rack startup
+[10/20/15 17:44:48 -0700 Adithyas-MacBook-Pro.local (6054)] ERROR : Invalid license key, please contact support@newrelic.com
+[10/20/15 17:44:48 -0700 Adithyas-MacBook-Pro.local (6054)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[10/20/15 18:00:48 -0700 Adithyas-MacBook-Pro.local (6054)] INFO : Starting Agent shutdown
+[10/20/15 18:13:10 -0700 Adithyas-MacBook-Pro.local (6217)] INFO : Starting the New Relic agent in "development" environment.
+[10/20/15 18:13:10 -0700 Adithyas-MacBook-Pro.local (6217)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[10/20/15 18:13:10 -0700 Adithyas-MacBook-Pro.local (6217)] WARN : No configuration file found. Working directory = /Users/Adi/appAcademy/MultiVerse
+[10/20/15 18:13:10 -0700 Adithyas-MacBook-Pro.local (6217)] WARN : Looked in these locations (based on defaults): /Users/Adi/appAcademy/MultiVerse/config/newrelic.yml, /Users/Adi/appAcademy/MultiVerse/newrelic.yml, /Users/Adi/appAcademy/MultiVerse/config/newrelic.yml, /Users/Adi/appAcademy/MultiVerse/newrelic.yml, /Users/Adi/.newrelic/newrelic.yml, /Users/Adi/newrelic.yml
+[10/20/15 18:13:10 -0700 Adithyas-MacBook-Pro.local (6217)] INFO : Environment: development
+[10/20/15 18:13:10 -0700 Adithyas-MacBook-Pro.local (6217)] INFO : No known dispatcher detected.
+[10/20/15 18:13:10 -0700 Adithyas-MacBook-Pro.local (6217)] INFO : Application: development
+[10/20/15 18:13:10 -0700 Adithyas-MacBook-Pro.local (6217)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[10/20/15 18:13:10 -0700 Adithyas-MacBook-Pro.local (6217)] INFO : Installing ActiveJob instrumentation
+[10/20/15 18:13:10 -0700 Adithyas-MacBook-Pro.local (6217)] INFO : Installing ActiveRecord 4 instrumentation
+[10/20/15 18:13:10 -0700 Adithyas-MacBook-Pro.local (6217)] INFO : Installing Net instrumentation
+[10/20/15 18:13:10 -0700 Adithyas-MacBook-Pro.local (6217)] INFO : Installing deferred Rack instrumentation
+[10/20/15 18:13:10 -0700 Adithyas-MacBook-Pro.local (6217)] INFO : Installing Rack::Builder middleware instrumentation
+[10/20/15 18:13:10 -0700 Adithyas-MacBook-Pro.local (6217)] INFO : Installing Rails 3+ middleware instrumentation
+[10/20/15 18:13:10 -0700 Adithyas-MacBook-Pro.local (6217)] INFO : Installing Rails 4 Controller instrumentation
+[10/20/15 18:13:11 -0700 Adithyas-MacBook-Pro.local (6217)] INFO : Installing Rails 4 view instrumentation
+[10/20/15 18:13:11 -0700 Adithyas-MacBook-Pro.local (6217)] INFO : Installing Rails 4 Error instrumentation
+[10/20/15 18:13:11 -0700 Adithyas-MacBook-Pro.local (6217)] INFO : Finished instrumentation
