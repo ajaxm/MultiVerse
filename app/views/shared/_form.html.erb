@@ -1,7 +1,8 @@
 <% user_action = ((source === 'new_session') ? 'Log In' : 'Create New Account') %>
 <% url = ((source === 'new_session') ? session_url : users_url)%>
 
-<h2 class='login-header'>MultiVerse: <%= user_action %></h2>
+<h2 class='login-header'>MultiVerse: Possibilities in Poetry</h2>
+<h3 class='login-header'><%= user_action %></h3>
 
 <form class='login-form' action="<%= url %>" method="post">
   <%= auth_token %>
