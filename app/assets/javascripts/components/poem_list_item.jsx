@@ -18,7 +18,8 @@ var PoemListItem = React.createClass({
           statusMessage = 'You wrote the most recent stanza for this poem.';
         } else {
           contributionStatus = 'contributed';
-          statusMessage = 'You have contributed #stanzas to this poem.';
+          // statusMessage = 'You have contributed #stanzas to this poem.';
+          statusMessage = 'You have contributed to this poem.';
         }
       } else {
           contributionStatus = 'not-contributed';

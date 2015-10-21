@@ -54,6 +54,10 @@ class Poem < ActiveRecord::Base
     @length ||= self.stanzas.count ### database query each time?
   end
 
+  def completed?
+    length == num_stanzas
+  end
+
   def ensure_first_stanza
     first_stanza = Stanza.new(
       body: @first_stanza_content, order: 1, author_id: author_id, poem_id: id

@@ -1,16 +1,16 @@
 <% user_action = ((source === 'new_session') ? 'Sign in' : 'Sign up') %>
 <% url = ((source === 'new_session') ? session_url : users_url)%>
 
-<h2><%= user_action %> to the MultiVerse!</h2>
+<h3 className='login-header'><%= user_action %> to the MultiVerse!</h3>
 
-<form action="<%= url %>" method="post">
+<form className='login-form' action="<%= url %>" method="post">
   <%= auth_token %>
-  <label>
+  <label className='login-username'>
     Username
     <input type="text" name="user[username]" value="<%= @user.username %>">
   </label>
 
-  <label>
+  <label className='login-password'>
     Password
     <input type="password" name="user[password]">
   </label>

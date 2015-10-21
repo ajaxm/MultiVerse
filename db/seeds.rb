@@ -8,6 +8,7 @@
 
 User.destroy_all
 Poem.destroy_all
+Stanza.destroy_all
 Favorite.destroy_all
 
 maryoliver = User.create(

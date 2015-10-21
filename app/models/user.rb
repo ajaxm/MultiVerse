@@ -24,16 +24,28 @@ class User < ActiveRecord::Base
   )
 
   has_many(
-    :stanzas,
+    :authored_stanzas,
+    class_name: 'Stanza',
     foreign_key: :author_id
   )
 
   has_many(
     :contributed_poems,
     -> { uniq },
-    through: :stanzas,
+    through: :authored_stanzas,
     source: :poem
   )
+
+  # has_many(
+  #   :completed_contributed_poems,
+  #   -> { joins(:stanzas)
+  #        .group("poems.id")
+  #        .having("poems.num_stanzas = COUNT(stanzas.id)")
+  #        .order(created_at: :desc)
+  #        .preload(:author, :contributors, :favoritors, stanzas: :author) },
+  #   through: :stanzas,
+  #   source: :poem
+  # )
 
   has_many :favorites
   has_many :favorited_poems, through: :favorites, source: :poem
@@ -43,12 +55,48 @@ class User < ActiveRecord::Base
     user if user && user.is_password?(password)
   end
 
+#   def thing
+#     self.contributed_poems.joins(:stanzas)
+#         .group("poems.id")
+#         .having("poems.num_stanzas = COUNT(stanzas.id)")
+#         .order(created_at: :desc)
+#         .preload(:author, :contributors, stanzas: :author)
+#         .page(page).per(10)
+#
+# m.contributed_poems.joins("as ps JOIN stanzas ON ps.poem_id = poems.id")
+# .group("poems.id")
+# .having("poems.num_stanzas = COUNT(ps.id)")
+#       Poem.find_by_sql(<<-SQL)
+#         SELECT DISTINCT
+#           poems.*
+#         FROM
+#           poems
+#         JOIN
+#           stanzas as a_stanza
+#         ON a_stanza.poem_id = poems.id
+#         JOIN
+#           (
+#             SELECT
+#               poems.id
+#             FROM
+#               poems
+#             JOIN
+#               stanzas ON poems.id = stanzas.poem_id
+#             GROUP BY
+#               poems.id
+#             HAVING
+#               poems.num_stanzas = COUNT(stanzas.id)
+#           ) as complete_poems
+#         ON complete_poems.id = poems.id
+#         WHERE
+#           a_stanza.author_id = 1
+#       SQL
+#   end
+
   def completed_contributed_poems(page)
-    self.contributed_poems.joins(:stanzas).group("poems.id")
-        .having("poems.num_stanzas = COUNT(stanzas.id)")
-        .order(created_at: :desc)
-        .preload(:author, :contributors, stanzas: :author)
-        .page(page).per(10)
+    contributed_poems.page(page).select do |poem|
+      poem.length === poem.num_stanzas
+    end
   end
 
   def reset_session_token!
