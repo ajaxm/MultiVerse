@@ -78,8 +78,10 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: MultiVerse_production
-  username: MultiVerse
-  password: <%= ENV['MULTIVERSE_DATABASE_PASSWORD'] %>
+#
+# heroku ignores database.yml, no need for production here:
+# production:
+#   <<: *default
+#   database: MultiVerse_production
+#   username: MultiVerse
+#   password: <%= ENV['MULTIVERSE_DATABASE_PASSWORD'] %>
