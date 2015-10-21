@@ -12,7 +12,7 @@ var PoemListItem = React.createClass({
     } else {
       poemPreview = poem.last_line;
       poemLink = '/#poems/';
-      if (poem.involves_current_user) {
+      if (poem.contributed) {
         if (poem.last_author_id === window.currentUserId) {
           contributionStatus = 'last-contribution';
           statusMessage = 'You wrote the most recent stanza for this poem.';

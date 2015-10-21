@@ -1,6 +1,6 @@
 var ArchivePoem = React.createClass({
   getInitialState: function() {
-    return { poem: PoemStore.one() };
+    return { poem: PoemStore.one(), favoriting: false };
   },
 
   componentDidMount: function() {
@@ -13,7 +13,7 @@ var ArchivePoem = React.createClass({
   },
 
   _onChangeEvent: function() {
-    this.setState({ poem: PoemStore.one() });
+    this.setState({ poem: PoemStore.one(), favoriting: false });
   },
 
   _buildPoem: function() {
@@ -27,9 +27,14 @@ var ArchivePoem = React.createClass({
   },
 
   handleFavorite: function() {
-    ApiUtil.addFavorite({
-      'poem_id': this.state.poem.id
-    });
+    if (this.state.poem.favorited) {
+      ApiUtil.removeFavorite(this.state.poem.fav.id);
+    } else {
+      ApiUtil.addFavorite({
+        'poem_id': this.state.poem.id
+      });
+    }
+    this.setState({ favoriting: true });
   },
 
   render: function() {
@@ -41,8 +46,11 @@ var ArchivePoem = React.createClass({
         <ul>
           {stanzas}
         </ul>
-        <button className='favorite-button' onClick={this.handleFavorite}>
-          Favorite!
+        <button
+          className='favorite-button'
+          onClick={this.handleFavorite}
+          disabled={this.state.favoriting}>
+          {this.state.poem.favorited ? 'Unfavorite' : 'Favorite!'}
         </button>
         <a className='back-button' href='/#archive'>Back to archive.</a>
       </div>

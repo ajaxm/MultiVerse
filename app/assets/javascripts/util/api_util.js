@@ -60,6 +60,17 @@ var ApiUtil = {
     });
   },
 
+  removeFavorite: function(favId) {
+    $.ajax({
+      url: 'api/favorites/' + favId,
+      type: 'POST',
+      data: {_method: 'delete'},
+      success: function(responseData) {
+        ApiActions.receiveOnePoem(responseData);
+      }
+    });
+  },
+
   logOut: function() {
     $.ajax({
       url: 'session',

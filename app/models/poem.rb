@@ -28,7 +28,7 @@ class Poem < ActiveRecord::Base
   has_many :contributors, -> { uniq }, through: :stanzas, source: :author
 
   has_many :favorites
-  has_many :users_who_favorited, through: :favorites, source: :user
+  has_many :favoritors, through: :favorites, source: :user
 
   def self.get_incomplete_poems(page)
     Poem.joins(:stanzas).group("poems.id")
@@ -39,7 +39,11 @@ class Poem < ActiveRecord::Base
   end
 
   def is_contributor?(user)
-    contributors.any? { |c| c == user }
+    contributors.any? { |contributor| contributor == user }
+  end
+
+  def is_favoritor?(user)
+    favoritors.any? { |favoritor| favoritor == user }
   end
 
   def first_stanza=(first_stanza)
