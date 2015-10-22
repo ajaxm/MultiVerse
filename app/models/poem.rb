@@ -30,14 +30,6 @@ class Poem < ActiveRecord::Base
   has_many :favorites
   has_many :favoritors, through: :favorites, source: :user
 
-  # def self.get_incomplete_poems(page)
-  #   Poem.joins(:stanzas).group("poems.id")
-  #       .having("poems.num_stanzas > COUNT(stanzas.id)")
-  #       .order(created_at: :desc)
-  #       .preload(:author, :contributors, :favoritors, stanzas: :author)
-  #       .page(page).per(10)
-  # end
-
   def self.get_by_status(status, page)
     if status == :complete
       Poem.joins(:stanzas).group("poems.id")

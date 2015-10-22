@@ -1,7 +1,7 @@
 var Home = React.createClass({
   getInitialState: function() {
     return {
-      poems: PoemStore.all(),
+      poems: [],
       page: 1,
       scrollEnd: false,
       scrolling: false

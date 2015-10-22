@@ -1,10 +1,5 @@
 class Api::PoemsController < ApplicationController
   def index
-    # if params[:status].to_sym == :complete
-    #   @poems = current_user.completed_contributed_poems(params[:page].to_i)
-    # else
-    #   @poems = Poem.get_incomplete_poems(params[:page].to_i)
-    # end
     @poems = Poem.get_by_status(params[:status].to_sym, params[:page].to_i)
   end
 

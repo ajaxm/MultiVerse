@@ -17,13 +17,20 @@
 }
 
 .home-container li, .archive-container li {
+  position: relative;
   border-bottom: 2px black solid;
   border-top: 2px black solid;
   color: steelblue;
   padding: 5px;
   background: lightyellow;
   margin: 5px 0px;
-  height: 80px;
+  height: 150px;
+  white-space: pre-line;
+}
+
+.status-message {
+  position: absolute;
+  bottom: 0
 }
 
 .home-container a:first-child li, .archive-container a:first-child li {
