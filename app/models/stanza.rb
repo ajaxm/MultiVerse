@@ -17,6 +17,7 @@ class Stanza < ActiveRecord::Base
   validate :stanza_must_have_at_least_two_lines
   validate :stanza_must_not_exceed_three_lines
   validate :prevent_successive_stanzas
+  validate :last_line_must_not_be_blank
 
   belongs_to :poem
   belongs_to(
@@ -52,6 +53,12 @@ class Stanza < ActiveRecord::Base
   def stanza_must_not_exceed_three_lines
     if lines.length > 3
       errors.add(:stanza, "must not have more than three lines")
+    end
+  end
+
+  def last_line_must_not_be_blank
+    if lines.last.split('').all? { |char| char.ord == 32 || char.ord == 160 }
+      errors.add(:stanza, "must not end with a blank line")
     end
   end
 end
