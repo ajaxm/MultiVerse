@@ -25,6 +25,26 @@
   white-space: pre-line;
 }
 
+.stanza {
+  position: relative;
+}
+
+.stanza:hover {
+  color: steelblue;
+}
+
+.clicked-stanza {
+  background: lightyellow;
+}
+
+.stanza-click-content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: navy;
+  font-size: small;
+}
+
 #stanza-submit {
   padding: 0;
 }

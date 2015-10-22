@@ -1,6 +1,6 @@
 var ArchivePoem = React.createClass({
   getInitialState: function() {
-    return { poem: PoemStore.one(), favoriting: true };
+    return { poem: PoemStore.one(), favoriting: true, activeId: -1 };
   },
 
   componentDidMount: function() {
@@ -16,13 +16,27 @@ var ArchivePoem = React.createClass({
     this.setState({ poem: PoemStore.one(), favoriting: false });
   },
 
+  _setActive: function(id) {
+    if (this.state.activeId === id) {
+      this.setState({ activeId: -1 });
+    } else {
+      this.setState({ activeId: id });
+    }
+  },
+
   _buildPoem: function() {
     return (
       this.state.poem.stanzas.map(function(stanza){
+        var isActive = false;
+        if (this.state.activeId === stanza.id) {
+          isActive = true;
+        }
         return (
-          <li key={stanza.id}>{stanza.body}</li>
+          <Stanza active={isActive}
+                  setActive={this._setActive}
+                  key={stanza.id} {...stanza}/>
         );
-      })
+      }.bind(this))
     );
   },
 
@@ -42,8 +56,10 @@ var ArchivePoem = React.createClass({
     return (
       <div className='poem'>
         <div className='poem-title'>{this.state.poem.title}</div>
-        <div className='poem-author'>created by {this.state.poem.author}</div>
-        <ul>
+        <div className='poem-author'>
+          created by {this.state.poem.author} {this.state.poem.timestamp} ago
+        </div>
+        <ul onClick={this.handleStanzaClick}>
           {stanzas}
         </ul>
         <button
