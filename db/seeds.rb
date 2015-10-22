@@ -244,6 +244,60 @@ Stanza.create([
   }
 ])
 
-
-
 ############################################################
+### FAVORITES
+
+Favorite.create([
+  {
+    user: billycollins,
+    poem: summerday
+  },
+  {
+    user: richardsiken,
+    poem: summerday
+  },
+  {
+    user: roberthass,
+    poem: summerday
+  },
+  {
+    user: sharonolds,
+    poem: summerday
+  },
+  {
+    user: margaretatwood,
+    poem: summerday
+  },
+  {
+    user: maryoliver,
+    poem: aimlesslove
+  },
+  {
+    user: eavanboland,
+    poem: aimlesslove
+  },
+  {
+    user: markstrand,
+    poem: aimlesslove
+  },
+  {
+    user: terrancehayes,
+    poem: aimlesslove
+  },
+  {
+    user: markstrand,
+    poem: boxcar
+  },
+  {
+    user: billycollins,
+    poem: boxcar
+  },
+  {
+    user: richardsiken,
+    poem: boxcar
+  },
+  {
+    user: sharonolds,
+    poem: boxcar
+  }
+])

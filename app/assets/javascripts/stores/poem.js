@@ -3,7 +3,7 @@
   var POEM_SHOW_EVENT = 'POEM_SHOW_EVENT';
   var POEM_CREATION_EVENT = 'POEM_CREATION_EVENT';
   var STANZA_CREATION_EVENT = 'STANZA_CREATION_EVENT';
-  var BLANK_POEM = {stanzas: []};
+  var BLANK_POEM = {stanzas: [], favoritors: []};
 
   var _poems = [];
   var _singlePoem = BLANK_POEM;

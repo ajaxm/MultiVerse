@@ -42,7 +42,7 @@ var ArchivePoem = React.createClass({
 
   handleFavorite: function() {
     if (this.state.poem.favorited) {
-      ApiUtil.removeFavorite(this.state.poem.fav.id);
+      ApiUtil.removeFavorite(this.state.poem.fav_object.id);
     } else {
       ApiUtil.addFavorite({
         'poem_id': this.state.poem.id
@@ -52,12 +52,21 @@ var ArchivePoem = React.createClass({
   },
 
   render: function() {
+    var poem = this.state.poem;
     var stanzas = this._buildPoem();
+    var favs = '';
+    if (poem.favoritors.length > 0) {
+      favs = (
+        <div className='poem-favoritors'>
+          Favorited by {poem.favoritors.join(', ')}.
+        </div>
+      );
+    }
     return (
       <div className='poem'>
-        <div className='poem-title'>{this.state.poem.title}</div>
+        <div className='poem-title'>{poem.title}</div>
         <div className='poem-author'>
-          created by {this.state.poem.author} {this.state.poem.timestamp} ago
+          created by {poem.author} {poem.timestamp} ago
         </div>
         <ul onClick={this.handleStanzaClick}>
           {stanzas}
@@ -66,8 +75,9 @@ var ArchivePoem = React.createClass({
           className='favorite-button'
           onClick={this.handleFavorite}
           disabled={this.state.favoriting}>
-          {this.state.poem.favorited ? 'Unfavorite' : 'Favorite!'}
+          {poem.favorited ? 'Unfavorite' : 'Favorite!'}
         </button>
+        {favs}
         <a className='back-button' href='/#archive'>Back to archive.</a>
       </div>
     );

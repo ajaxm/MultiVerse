@@ -13,7 +13,7 @@ class Api::PoemsController < ApplicationController
   end
 
   def show
-    @poem = Poem.includes(:author, stanzas: :author)
+    @poem = Poem.includes(:author, :contributors, :favoritors, stanzas: :author)
                 .where('id = ?', params[:id])
                 .first
     if @poem
