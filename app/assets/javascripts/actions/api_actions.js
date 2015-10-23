@@ -30,5 +30,13 @@ var ApiActions = {
       poem: associatedPoem
     };
     AppDispatcher.dispatch(action);
+  },
+
+  setFavorite: function(favorite) {
+    var action = {
+      actionType: PoemConstants.POEM_FAVORITED,
+      favorite: {'favStatus': favorite.fav_status}
+    };
+    AppDispatcher.dispatch(action);
   }
 };

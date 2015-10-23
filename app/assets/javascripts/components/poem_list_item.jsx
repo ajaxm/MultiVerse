@@ -2,8 +2,8 @@ var PoemListItem = React.createClass({
   render: function() {
     var poem = this.props;
 
-    var poemPreview, poemLink;
-    var contributionStatus, statusMessage, numContribution;
+    var poemPath = '/#poems/';
+    var poemPreview, contributionStatus, statusMessage, numContribution;
 
     if (poem.num_contribution === 'one') {
       numContribution = 'one stanza to this poem';
@@ -14,7 +14,6 @@ var PoemListItem = React.createClass({
     if (poem.contributed) {
       if (poem.status === 'incomplete') {
         poemPreview = '... ' + poem.last_line;
-        poemLink = '/#poems/';
         if (poem.last_author_id === window.currentUserId) {
           contributionStatus = 'last-contribution';
           statusMessage = 'You have contributed ' + numContribution +
@@ -25,7 +24,6 @@ var PoemListItem = React.createClass({
         }
       } else if (poem.status === 'complete') {
         poemPreview = poem.first_stanza;
-        poemLink = '/#archive/';
         contributionStatus = 'complete';
         statusMessage = 'You contributed ' + numContribution + '.';
       }
@@ -34,15 +32,13 @@ var PoemListItem = React.createClass({
       statusMessage = '';
       if (poem.status === 'incomplete') {
         poemPreview = '... ' + poem.last_line;
-        poemLink = '/#poems/';
       } else if (poem.status === 'complete') {
         poemPreview = poem.first_stanza;
-        poemLink = '/#archive/';
       }
     }
 
     return (
-      <a href={poemLink + poem.id}>
+      <a href={poemPath + poem.id}>
         <li className={contributionStatus}>
           <div className='list-item-title'>{poem.title}</div>
           <div className='list-item-preview'>{poemPreview} ...</div>

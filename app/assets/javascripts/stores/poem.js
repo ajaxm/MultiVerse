@@ -3,6 +3,7 @@
   var POEM_SHOW_EVENT = 'POEM_SHOW_EVENT';
   var POEM_CREATION_EVENT = 'POEM_CREATION_EVENT';
   var STANZA_CREATION_EVENT = 'STANZA_CREATION_EVENT';
+  var FAVORITE_EVENT = 'FAVORITE_EVENT';
   var BLANK_POEM = {stanzas: [], favoritors: []};
 
   var _poems = [];
@@ -25,6 +26,9 @@
   };
   var _setScrollEnd = function(bool) {
     _scrollEnd = bool;
+  };
+  var _setFavoriteStatus = function(favorite) {
+    _singlePoem.favorited = favorite.favStatus;
   };
 
   root.PoemStore = $.extend({}, EventEmitter.prototype, {
@@ -76,6 +80,14 @@
       this.removeListener(STANZA_CREATION_EVENT, callback);
     },
 
+    addFavListener: function(callback) {
+      this.on(FAVORITE_EVENT, callback);
+    },
+
+    removeFavListener: function(callback) {
+      this.removeListener(FAVORITE_EVENT, callback);
+    },
+
     processReceivedPoems: function(poems, page) {
       _setCurrentPage(page);
       if (page === 1) {
@@ -104,6 +116,10 @@
         case PoemConstants.STANZA_CREATED:
           _setSelectedPoem(action.poem);
           PoemStore.emit(STANZA_CREATION_EVENT);
+          break;
+        case PoemConstants.POEM_FAVORITED:
+          _setFavoriteStatus(action.favorite);
+          PoemStore.emit(FAVORITE_EVENT);
           break;
       }
     })

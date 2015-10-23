@@ -5,15 +5,13 @@ class Api::FavoritesController < ApplicationController
     })
 
     if @fav.save
-      poem = @fav.poem
-      render '/api/poems/_poem', locals: {poem: poem}
+      render json: {fav_status: true}
     end
   end
 
   def destroy
     @fav = Favorite.find(params[:id])
     @fav.destroy
-    poem = @fav.poem
-    render '/api/poems/_poem', locals: {poem: poem}
+    render json: {fav_status: false}
   end
 end

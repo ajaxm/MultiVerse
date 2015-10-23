@@ -1,28 +1,9 @@
-var Poem = React.createClass({
-  getInitialState: function() {
-    return { poem: PoemStore.one() };
-  },
-
-  componentDidMount: function() {
-    PoemStore.addShowListener(this._onChangeEvent);
-    PoemStore.addStanzaListener(this._onChangeEvent);
-    ApiUtil.fetchOnePoem(this.props.params.poemId);
-  },
-
-  componentWillUnmount: function() {
-    PoemStore.removeShowListener(this._onChangeEvent);
-    PoemStore.removeStanzaListener(this._onChangeEvent);
-  },
-
-  _onChangeEvent: function() {
-    this.setState({ poem: PoemStore.one() });
-  },
-
+var IncompletePoem = React.createClass({
   _buildPoem: function() {
-    if (this.state.poem.stanzas.length === 0) {
+    if (this.props.poem.stanzas.length === 0) {
       return <div></div>;
     }
-    var stanzas = this.state.poem.stanzas;
+    var stanzas = this.props.poem.stanzas;
     var lines = [];
     var idx = 1;
     stanzas.forEach(function(stanza) {
@@ -41,10 +22,10 @@ var Poem = React.createClass({
 
   _getRemainingStanzaCount: function() {
     var remainingStanzas;
-    if (this.state.poem.remaining === 'one') {
-      remainingStanzas = this.state.poem.remaining + ' stanza';
+    if (this.props.poem.remaining === 'one') {
+      remainingStanzas = this.props.poem.remaining + ' stanza';
     } else {
-      remainingStanzas = this.state.poem.remaining + ' stanzas';
+      remainingStanzas = this.props.poem.remaining + ' stanzas';
     }
     var remainingMsg = "This poem is " + remainingStanzas + " from completion.";
     return remainingMsg;
@@ -54,7 +35,7 @@ var Poem = React.createClass({
     var stanzaFormPlaceholder = (
       "Add a new stanza; at least two lines, but not more than three."
     );
-    if (this.state.poem.last_author_id === window.currentUserId) {
+    if (this.props.poem.last_author_id === window.currentUserId) {
       stanzaFormPlaceholder = (
           "You wrote the most recent stanza for this poem."
       );
@@ -63,7 +44,7 @@ var Poem = React.createClass({
   },
 
   render: function() {
-    var poem = this.state.poem || { stanzas: [] };
+    var poem = this.props.poem || { stanzas: [] };
     if (poem.stanzas.length === 0) {
       return <div></div>;
     }

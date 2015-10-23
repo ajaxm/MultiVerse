@@ -55,7 +55,7 @@ var ApiUtil = {
       type: 'POST',
       data: favParams,
       success: function(responseData) {
-        ApiActions.receiveOnePoem(responseData);
+        ApiActions.setFavorite(responseData);
       }
     });
   },
@@ -66,7 +66,7 @@ var ApiUtil = {
       type: 'POST',
       data: {_method: 'delete'},
       success: function(responseData) {
-        ApiActions.receiveOnePoem(responseData);
+        ApiActions.setFavorite(responseData);
       }
     });
   },

@@ -1,18 +1,17 @@
 var ArchivePoem = React.createClass({
   getInitialState: function() {
-    return { poem: PoemStore.one(), favoriting: true, activeId: -1 };
+    return { favoriting: true, activeId: -1 };
   },
 
   componentDidMount: function() {
-    PoemStore.addShowListener(this._onChangeEvent);
-    ApiUtil.fetchOnePoem(this.props.params.poemId);
+    PoemStore.addFavListener(this._onFavEvent);
   },
 
   componentWillUnmount: function() {
-    PoemStore.removeShowListener(this._onChangeEvent);
+    PoemStore.removeFavListener(this._onFavEvent);
   },
 
-  _onChangeEvent: function() {
+  _onFavEvent: function() {
     this.setState({ poem: PoemStore.one(), favoriting: false });
   },
 
@@ -26,7 +25,7 @@ var ArchivePoem = React.createClass({
 
   _buildPoem: function() {
     return (
-      this.state.poem.stanzas.map(function(stanza){
+      this.props.poem.stanzas.map(function(stanza){
         var isActive = false;
         if (this.state.activeId === stanza.id) {
           isActive = true;
@@ -41,18 +40,19 @@ var ArchivePoem = React.createClass({
   },
 
   handleFavorite: function() {
-    if (this.state.poem.favorited) {
-      ApiUtil.removeFavorite(this.state.poem.fav_object.id);
+    if (this.props.poem.favorited) {
+      var favId = this.props.poem.fav_object.id;
+      ApiUtil.removeFavorite(favId);
     } else {
       ApiUtil.addFavorite({
-        'poem_id': this.state.poem.id
+        'poem_id': this.props.poem.id
       });
     }
     this.setState({ favoriting: true });
   },
 
   render: function() {
-    var poem = this.state.poem;
+    var poem = this.props.poem;
     var stanzas = this._buildPoem();
     var favs = '';
     if (poem.favoritors.length > 0) {
