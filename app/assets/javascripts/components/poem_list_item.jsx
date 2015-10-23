@@ -13,7 +13,7 @@ var PoemListItem = React.createClass({
 
     if (poem.contributed) {
       if (poem.status === 'incomplete') {
-        poemPreview = poem.last_line;
+        poemPreview = '... ' + poem.last_line;
         poemLink = '/#poems/';
         if (poem.last_author_id === window.currentUserId) {
           contributionStatus = 'last-contribution';
@@ -33,7 +33,7 @@ var PoemListItem = React.createClass({
       contributionStatus = 'not-contributed';
       statusMessage = '';
       if (poem.status === 'incomplete') {
-        poemPreview = poem.last_line;
+        poemPreview = '... ' + poem.last_line;
         poemLink = '/#poems/';
       } else if (poem.status === 'complete') {
         poemPreview = poem.first_stanza;

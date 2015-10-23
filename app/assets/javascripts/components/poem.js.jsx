@@ -42,34 +42,42 @@ var Poem = React.createClass({
     return lines;
   },
 
-  render: function() {
-    var poem = this.state.poem || {};
-    if (poem.stanzas.length === 0) {
-      return <div></div>;
+  _getRemainingStanzaCount: function() {
+    var remainingStanzas;
+    if (this.state.poem.remaining === 'one') {
+      remainingStanzas = this.state.poem.remaining + ' stanza';
+    } else {
+      remainingStanzas = this.state.poem.remaining + ' stanzas';
     }
-    var lines = this._buildPoem();
+    var remainingMsg = "This poem is " + remainingStanzas + " from completion.";
+    return remainingMsg;
+  },
 
+  _setStanzaFormPlaceholder: function() {
     var stanzaFormPlaceholder = (
       "Add a new stanza; at least two lines, but not more than three."
     );
-    var stanzaFormDisabled = false;
-    if (poem.last_author_id === window.currentUserId) {
+    if (this.state.poem.last_author_id === window.currentUserId) {
       stanzaFormPlaceholder = (
           "You wrote the most recent stanza for this poem."
       );
-      stanzaFormDisabled = true;
     }
-    var form = <StanzaForm isDisabled={stanzaFormDisabled}
-                           placeholder={stanzaFormPlaceholder}
-                           poemId={poem.id}/>;
+    return stanzaFormPlaceholder;
+  },
 
-    var remainingStanzas;
-    if (poem.remaining === 'one') {
-      remainingStanzas = poem.remaining + ' stanza';
-    } else {
-      remainingStanzas = poem.remaining + ' stanzas';
+  render: function() {
+    var poem = this.state.poem || { stanzas: [] };
+    if (poem.stanzas.length === 0) {
+      return <div></div>;
     }
-    var remainingMsg = "This poem is " + remainingStanzas + " from completion.";
+
+    var lines = this._buildPoem();
+    var remainingMessage = this._getRemainingStanzaCount();
+    var stanzaFormPlaceholder = this._setStanzaFormPlaceholder();
+    var stanzaFormIsDisabled = (poem.last_author_id === window.currentUserId);
+    var form = <StanzaForm placeholder={stanzaFormPlaceholder}
+                           isDisabled={stanzaFormIsDisabled}
+                           poemId={poem.id}/>;
 
     return (
       <div className='poem'>
@@ -81,7 +89,7 @@ var Poem = React.createClass({
         <br/>
         {form}
         <div className='stanzas-remaining'>
-          {remainingMsg}
+          {remainingMessage}
         </div>
         <a className='back-button' href='/#'>Back to all poems.</a>
       </div>
