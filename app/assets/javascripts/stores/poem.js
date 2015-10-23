@@ -27,8 +27,15 @@
   var _setScrollEnd = function(bool) {
     _scrollEnd = bool;
   };
-  var _setFavoriteStatus = function(favorite) {
+  var _setFavorite = function(favorite) {
     _singlePoem.favorited = favorite.favStatus;
+    _singlePoem.fav_object = favorite.favObject;
+    if (favorite.favStatus) {
+      _singlePoem.favoritors.push(favorite.favoritor);
+    } else {
+      var favArray = _singlePoem.favoritors;
+      favArray.splice(favArray.indexOf(favorite.favoritor), 1);
+    }
   };
 
   root.PoemStore = $.extend({}, EventEmitter.prototype, {
@@ -118,7 +125,7 @@
           PoemStore.emit(STANZA_CREATION_EVENT);
           break;
         case PoemConstants.POEM_FAVORITED:
-          _setFavoriteStatus(action.favorite);
+          _setFavorite(action.favorite);
           PoemStore.emit(FAVORITE_EVENT);
           break;
       }

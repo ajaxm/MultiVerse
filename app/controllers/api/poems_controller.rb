@@ -1,4 +1,6 @@
 class Api::PoemsController < ApplicationController
+  before_action :ensure_login
+  
   def index
     @poems = Poem.get_by_status(params[:status].to_sym, params[:page].to_i)
   end

@@ -35,7 +35,11 @@ var ApiActions = {
   setFavorite: function(favorite) {
     var action = {
       actionType: PoemConstants.POEM_FAVORITED,
-      favorite: {'favStatus': favorite.fav_status}
+      favorite: {
+        'favStatus': favorite.fav_status,
+        'favObject': favorite.fav_object,
+        'favoritor': favorite.favoritor
+      }
     };
     AppDispatcher.dispatch(action);
   }

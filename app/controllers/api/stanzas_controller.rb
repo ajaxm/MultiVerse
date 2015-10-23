@@ -1,4 +1,5 @@
 class Api::StanzasController < ApplicationController
+  before_action :ensure_login
 
   def create
     poem = Poem.find_by_id(params[:poem_id])

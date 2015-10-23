@@ -27,7 +27,7 @@ class Poem < ActiveRecord::Base
   )
   has_many :contributors, -> { uniq }, through: :stanzas, source: :author
 
-  has_many :favorites
+  has_many :favorites, -> { order('created_at DESC') }
   has_many :favoritors, through: :favorites, source: :user
 
   def self.get_by_status(status, page)

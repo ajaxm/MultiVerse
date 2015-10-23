@@ -1,6 +1,6 @@
 var ArchivePoem = React.createClass({
   getInitialState: function() {
-    return { favoriting: true, activeId: -1 };
+    return { favoriting: false, activeId: -1 };
   },
 
   componentDidMount: function() {
@@ -12,7 +12,7 @@ var ArchivePoem = React.createClass({
   },
 
   _onFavEvent: function() {
-    this.setState({ poem: PoemStore.one(), favoriting: false });
+    this.setState({ favoriting: false });
   },
 
   _setActive: function(id) {
