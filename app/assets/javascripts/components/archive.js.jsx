@@ -53,9 +53,6 @@ var Archive = React.createClass({
 
   render: function() {
     var poems = this._buildPoemArchive();
-    if (poems.length === 0) {
-      return <div>No poems completed yet.</div>;
-    }
     return(
       <div id='scroll-container' className='archive-container'>
         <ul onScroll={this.handleScroll} className='poem-archive'>{poems}</ul>

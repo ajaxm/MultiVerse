@@ -19,8 +19,8 @@ class Api::PoemsController < ApplicationController
     if @poem
       render :show
     else
-      @poem = {title: 'N/A', stanzas: []}
-      render :show
+      # send error hash to error store.
+      render json: 'These are not the verses you were looking for.', status: 404
     end
   end
 

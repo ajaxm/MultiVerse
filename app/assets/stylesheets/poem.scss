@@ -25,6 +25,23 @@
   white-space: pre-line;
 }
 
+.incomplete-container {
+  padding: 1px 0;
+}
+
+.incomplete-container:not(:last-child) > .incomplete-poem-line {
+  background: steelblue;
+  color: steelblue;
+  padding: 0 2px;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .stanza {
   position: relative;
 }
