@@ -44,25 +44,33 @@ var Poem = React.createClass({
 
   render: function() {
     var poem = this.state.poem || {};
+    if (poem.stanzas.length === 0) {
+      return <div></div>;
+    }
     var lines = this._buildPoem();
 
-    var form;
+    var stanzaFormPlaceholder = (
+      "Add a new stanza; at least two lines, but not more than three."
+    );
+    var stanzaFormDisabled = false;
     if (poem.last_author_id === window.currentUserId) {
-      form = (
-        <div className='stanza-form-blocker'>
-          You wrote the most recent stanza for this poem.
-        </div>
+      stanzaFormPlaceholder = (
+          "You wrote the most recent stanza for this poem."
       );
-    } else {
-      form = <StanzaForm poemId={poem.id}/>;
+      stanzaFormDisabled = true;
     }
+    var form = <StanzaForm isDisabled={stanzaFormDisabled}
+                           placeholder={stanzaFormPlaceholder}
+                           poemId={poem.id}/>;
 
     var remainingStanzas;
-    if (poem.remaining === 'One') {
-      remainingStanzas = poem.remaining + ' more stanza is';
+    if (poem.remaining === 'one') {
+      remainingStanzas = poem.remaining + ' stanza';
     } else {
-      remainingStanzas = poem.remaining + ' more stanzas are';
+      remainingStanzas = poem.remaining + ' stanzas';
     }
+    var remainingMsg = "This poem is " + remainingStanzas + " from completion.";
+
     return (
       <div className='poem'>
         <div className='poem-title'>{poem.title}</div>
@@ -73,7 +81,7 @@ var Poem = React.createClass({
         <br/>
         {form}
         <div className='stanzas-remaining'>
-          {remainingStanzas} needed to complete this poem.
+          {remainingMsg}
         </div>
         <a className='back-button' href='/#'>Back to all poems.</a>
       </div>

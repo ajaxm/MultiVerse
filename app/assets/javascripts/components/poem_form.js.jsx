@@ -33,15 +33,19 @@ var PoemForm = React.createClass({
       <form onSubmit={this.handleSubmit}>
         <div className='form-title'>
           <label> Title: </label>
-          <input valueLink={this.linkState('title')}/>
+          <input valueLink={this.linkState('title')}
+                 placeholder="Give your poem a title."/>
         </div>
         <div className='form-num-stanzas'>
           <label> Number of Stanzas: </label>
-          <input valueLink={this.linkState('numStanzas')}/>
+          <input valueLink={this.linkState('numStanzas')}
+                 placeholder={"How many stanzas should this poem have?"}/>
         </div>
         <div className='form-first-stanza'>
           <label> First Stanza: </label>
-          <textarea valueLink={this.linkState('firstStanza')}/>
+          <textarea valueLink={this.linkState('firstStanza')}
+                    placeholder="Write the first stanza;
+                      at least two lines, but not more than three."/>
         </div>
         <input className='poem-form-submit'
                type="submit"
