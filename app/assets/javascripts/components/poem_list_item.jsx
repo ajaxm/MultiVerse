@@ -2,7 +2,14 @@ var PoemListItem = React.createClass({
   render: function() {
     var poem = this.props;
 
-    var poemPreview, poemLink, contributionStatus, statusMessage;
+    var poemPreview, poemLink;
+    var contributionStatus, statusMessage, numContribution;
+
+    if (poem.num_contribution === 'one') {
+      numContribution = 'one stanza to this poem';
+    } else {
+      numContribution = poem.num_contribution + ' stanzas to this poem';
+    }
 
     if (poem.contributed) {
       if (poem.status === 'incomplete') {
@@ -10,18 +17,17 @@ var PoemListItem = React.createClass({
         poemLink = '/#poems/';
         if (poem.last_author_id === window.currentUserId) {
           contributionStatus = 'last-contribution';
-          statusMessage = 'You wrote the most recent stanza for this poem.';
+          statusMessage = 'You have contributed ' + numContribution +
+                            ", including the most recent.";
         } else {
           contributionStatus = 'contributed';
-          // statusMessage = 'You have contributed #stanzas to this poem so far.';
-          statusMessage = 'You have contributed to this poem.';
+          statusMessage = 'You have contributed ' + numContribution + '.';
         }
       } else if (poem.status === 'complete') {
         poemPreview = poem.first_stanza;
         poemLink = '/#archive/';
         contributionStatus = 'complete';
-        // statusMessage = 'You contributed #stanzas to this poem.';
-        statusMessage = 'You contributed to this poem.';
+        statusMessage = 'You contributed ' + numContribution + '.';
       }
     } else {
       contributionStatus = 'not-contributed';
