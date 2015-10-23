@@ -3,13 +3,10 @@ var Poem = React.createClass({
     return { poem: PoemStore.one() };
   },
 
-  componentWillMount: function() {
-    ApiUtil.fetchOnePoem(this.props.params.poemId);
-  },
-
   componentDidMount: function() {
     PoemStore.addShowListener(this._onChangeEvent);
     PoemStore.addStanzaListener(this._onChangeEvent);
+    ApiUtil.fetchOnePoem(this.props.params.poemId);
   },
 
   componentWillUnmount: function() {
