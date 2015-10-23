@@ -21,27 +21,6 @@ var Poem = React.createClass({
     this.setState({ poem: PoemStore.one() });
   },
 
-  // _buildPoem: function() {
-  //   if (this.state.poem.stanzas.length === 0) {
-  //     return <div></div>;
-  //   }
-  //   stanzas = this.state.poem.stanzas;
-  //   var other = stanzas.slice(0, stanzas.length - 1).map(function(stanza){
-  //     return (
-  //       <li className='hidden-stanza' key={stanza.id}>{stanza.body}</li>
-  //     );
-  //   });
-  //   var lastStanza = stanzas.slice().pop();
-  //   var lines = lastStanza.body.split("\n");
-  //   var lastLine = lines.pop();
-  //   var otherLines = lines.join("\n");
-  //   other.push(
-  //     <li className='hidden-stanza' key={lastStanza.id}>{otherLines}</li>
-  //   );
-  //   var allStanzas = other.concat([<li key='0' className='last-line'>{lastLine}</li>]);
-  //   return allStanzas;
-  // },
-
   _buildPoem: function() {
     if (this.state.poem.stanzas.length === 0) {
       return <div></div>;
@@ -66,6 +45,7 @@ var Poem = React.createClass({
   render: function() {
     var poem = this.state.poem || {};
     var lines = this._buildPoem();
+
     var form;
     if (poem.last_author_id === window.currentUserId) {
       form = (
@@ -76,6 +56,13 @@ var Poem = React.createClass({
     } else {
       form = <StanzaForm poemId={poem.id}/>;
     }
+
+    var remainingStanzas;
+    if (poem.remaining === 'One') {
+      remainingStanzas = poem.remaining + ' more stanza is';
+    } else {
+      remainingStanzas = poem.remaining + ' more stanzas are';
+    }
     return (
       <div className='poem'>
         <div className='poem-title'>{poem.title}</div>
@@ -85,6 +72,9 @@ var Poem = React.createClass({
         </ul>
         <br/>
         {form}
+        <div className='stanzas-remaining'>
+          {remainingStanzas} needed to complete this poem.
+        </div>
         <a className='back-button' href='/#'>Back to all poems.</a>
       </div>
     );

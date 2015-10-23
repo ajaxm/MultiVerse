@@ -26,6 +26,9 @@ gem 'newrelic_rpm'
 # Kaminari for infinite scrolling
 gem 'kaminari'
 
+# Convert numbers to words
+gem 'to_words'
+
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 

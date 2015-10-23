@@ -54,12 +54,16 @@ class Poem < ActiveRecord::Base
     favoritors.any? { |favoritor| favoritor == user }
   end
 
+  def remaining
+    (num_stanzas - length).to_words
+  end
+
   def first_stanza=(first_stanza)
     @first_stanza_content = first_stanza
   end
 
   def length
-    @length ||= self.stanzas.count ### database query each time?
+    @length ||= self.stanzas.count
   end
 
   def completed?

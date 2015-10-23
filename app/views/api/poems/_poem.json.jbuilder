@@ -14,3 +14,4 @@ json.last_author_id poem.stanzas.sort_by(&:order).last.author_id
 json.favorited poem.is_favoritor?(current_user)
 json.fav_object current_user.favorites.find_by_poem_id(poem.id)
 json.favoritors poem.favoritors.map(&:username)
+json.remaining poem.remaining.capitalize
