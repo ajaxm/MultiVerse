@@ -63,7 +63,7 @@ class Poem < ActiveRecord::Base
   end
 
   def length
-    @length ||= self.stanzas.count
+    self.stanzas.count
   end
 
   def completed?
