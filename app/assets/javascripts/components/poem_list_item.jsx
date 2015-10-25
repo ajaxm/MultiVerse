@@ -40,6 +40,7 @@ var PoemListItem = React.createClass({
     return (
       <a href={poemPath + poem.id}>
         <li className={contributionStatus}>
+          <div className="lines"></div>
           <div className='list-item-title'>{poem.title}</div>
           <div className='list-item-preview'>{poemPreview} ...</div>
           <div className='status-message'>{statusMessage}</div>

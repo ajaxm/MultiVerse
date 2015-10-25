@@ -13,7 +13,10 @@
   margin: 0 auto;
   overflow: auto;
   max-height: 600px;
-  border: 2px solid black;
+  font-size: medium;
+  padding: 0;
+  // width: 500px;
+  font-family: courier, monospace;
 }
 
 .home-container li, .archive-container li {
@@ -27,6 +30,66 @@
   height: 150px;
   white-space: pre-line;
 }
+
+.home-container a:first-child li, .archive-container a:first-child li {
+  margin-top: 0;
+  border-top: 0;
+}
+
+.home-container a:last-child li, .archive-container a:last-child li {
+  margin-bottom: 0;
+  // border-bottom: 0;
+}
+
+.contributed > .list-item-title {
+  font-weight: normal;
+}
+
+.last-contribution > .list-item-title {
+  opacity: 0.5;
+}
+
+.status-message {
+  font-size: small;
+  opacity: 1.0;
+  color: black;
+  padding: 5px 0;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  max-width: 400px;
+}
+
+.home-container li:hover, .archive-container li:hover {
+  // For transparent background but not text,
+  // if using texture for container background.
+  // background: rgba(250,250,210,0.5);
+  color: black;
+  background: lightgoldenrodyellow;
+
+}
+
+.list-item-title {
+  font-weight: bold;
+  font-size: large;
+  border-bottom: 1px black solid;
+  margin: 5px 0px 10px 0px;
+  text-indent: 35px;
+}
+
+.list-item-preview {
+  padding-left: 35px;
+}
+
+.lines {
+  position: absolute;
+  border-left: 1px solid #ffaa9f;
+  border-right: 1px solid #ffaa9f;
+  width: 2px;
+  top: 0;
+  bottom: 0;
+  left: 30px;
+}​
 
 .about-container {
   height: 400px;
@@ -42,50 +105,4 @@
 }
 .about-container li {
   padding: 10px
-}
-
-.status-message {
-  position: absolute;
-  bottom: 0
-}
-
-.home-container a:first-child li, .archive-container a:first-child li {
-  margin-top: 0;
-  border-top: 0;
-}
-
-.home-container a:last-child li, .archive-container a:last-child li {
-  margin-bottom: 0;
-  border-bottom: 0;
-}
-
-.contributed > .list-item-title {
-  font-weight: normal;
-}
-
-.last-contribution > .list-item-title {
-  opacity: 0.5;
-}
-
-.status-message {
-  font-size: small;
-  opacity: 1.0;
-  color: navy;
-  padding: 5px 0;
-}
-
-.home-container li:hover, .archive-container li:hover {
-  // For transparent background but not text,
-  // if using texture for container background.
-  // background: rgba(250,250,210,0.5);
-  color: navy;
-  background: lightgoldenrodyellow;
-
-}
-
-.list-item-title {
-  font-weight: bold;
-  font-size: large;
-  border-bottom: 1px black solid;
-  margin: 5px 0px 10px 0px;
 }
