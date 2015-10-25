@@ -6,17 +6,25 @@
 
 <form class='login-form' action="<%= url %>" method="post">
   <%= auth_token %>
-  <div class='login-username'>
-    Username
-    <input type="text" name="user[username]" value="<%= @user.username %>">
-  </div>
+    <input placeholder='Username' class='login-input' type="text"
+      name="user[username]" value="<%= @user.username %>">
 
-  <div class='login-password'>
-    Password
-    <input type="password" name="user[password]">
-  </div>
+    <input placeholder='Password' class='login-input' type="password"
+      name="user[password]">
 
-  <div class='login-submit'>
-    <input type="submit" value="<%= user_action %>">
-  </div>
+    <input class='login-button' type="submit" value="<%= user_action %>">
 </form>
+<div class='guest-login-container clearfix'>
+  <%= button_to "Guest Login: Mary Oliver",
+    {controller: "sessions", action: "create",
+      user: {username: "mary0liver", password: "thesummerdayoliver"}
+    },
+    {class: 'guest-login-button'}
+  %>
+  <%= button_to "Guest Login: Billy Collins",
+    {controller: "sessions", action: "create",
+      user: {username: "billy_collins", password: "aimlesslovecollins"}
+    },
+    {class: 'guest-login-button'}
+  %>
+</div>

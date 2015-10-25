@@ -14,11 +14,11 @@
  *= require_self
  */
 
- @import "bootstrap-sprockets";
- @import "bootstrap";
+ // @import "bootstrap-sprockets";
+ // @import "bootstrap";
 
  html, body, section, article,
- h1, h2, p, strong, em, a, ul, li {
+ h1, h2, p, strong, em, a, ul, li, button {
    margin: 0;
    border: 0;
    padding: 0;
@@ -30,3 +30,15 @@
    color: inherit;
    background: transparent;
  }
+
+ body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
+}

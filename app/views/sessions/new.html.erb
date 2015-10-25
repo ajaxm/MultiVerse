@@ -1,20 +1,6 @@
 <div class='login-container'>
   <%= render partial: 'shared/form', locals: { source: 'new_session' }  %>
-  <br>
   <div class='login-switch'>
     <%= link_to "New user? Sign up here.", new_user_url %>
   </div>
-
-  <%= button_to "Guest Login: Mary Oliver",
-    {controller: "sessions", action: "create",
-      user: {username: "mary0liver", password: "thesummerdayoliver"}
-    },
-    {class: 'guest-login-button'}
-  %>
-  <%= button_to "Guest Login: Billy Collins",
-    {controller: "sessions", action: "create",
-      user: {username: "billy_collins", password: "aimlesslovecollins"}
-    },
-    {class: 'guest-login-button'}
-  %>
 </div>
