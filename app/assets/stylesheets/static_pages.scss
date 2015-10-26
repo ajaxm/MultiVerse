@@ -8,6 +8,22 @@
   margin: 0 auto;
 }
 
+.about-container {
+  // height: 400px;
+  border: 2px solid black;
+  background: lightyellow;
+  color: steelblue;
+}
+
+.about-container ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 20px;
+}
+.about-container li {
+  padding: 10px
+}
+
 .poem-index, .poem-archive {
   list-style: none;
   margin: 0 auto;
@@ -19,7 +35,7 @@
   font-family: courier, monospace;
 }
 
-.home-container li, .archive-container li {
+.poem-index li, .poem-archive li {
   position: relative;
   border-bottom: 2px black solid;
   border-top: 2px black solid;
@@ -31,14 +47,21 @@
   white-space: pre-line;
 }
 
-.home-container a:first-child li, .archive-container a:first-child li {
+.poem-index a:first-child > li, .poem-archive a:first-child > li {
   margin-top: 0;
   border-top: 0;
 }
 
-.home-container a:last-child li, .archive-container a:last-child li {
+.poem-index a:last-child > li, .poem-archive a:last-child > li {
   margin-bottom: 0;
-  // border-bottom: 0;
+}
+
+.list-item-title {
+  font-weight: bold;
+  font-size: large;
+  border-bottom: 1px black solid;
+  margin: 5px 0px 10px 0px;
+  text-indent: 35px;
 }
 
 .contributed > .list-item-title {
@@ -47,6 +70,10 @@
 
 .last-contribution > .list-item-title {
   opacity: 0.5;
+}
+
+.list-item-preview {
+  padding-left: 35px;
 }
 
 .status-message {
@@ -60,27 +87,6 @@
   max-width: 400px;
 }
 
-.home-container li:hover, .archive-container li:hover {
-  // For transparent background but not text,
-  // if using texture for container background.
-  // background: rgba(250,250,210,0.5);
-  color: black;
-  background: lightgoldenrodyellow;
-
-}
-
-.list-item-title {
-  font-weight: bold;
-  font-size: large;
-  border-bottom: 1px black solid;
-  margin: 5px 0px 10px 0px;
-  text-indent: 35px;
-}
-
-.list-item-preview {
-  padding-left: 35px;
-}
-
 .lines {
   position: absolute;
   border-left: 1px solid #ffaa9f;
@@ -89,20 +95,13 @@
   top: 0;
   bottom: 0;
   left: 30px;
+}
+
+.home-container li:hover, .archive-container li:hover {
+  color: black;
+  background: lightgoldenrodyellow;
 }​
 
 .about-container {
-  height: 400px;
-  border: 2px solid black;
-  background: lightyellow;
-  color: steelblue;
-}
-
-.about-container ul {
-  list-style: none;
-  margin: 0 auto;
-  padding: 20px;
-}
-.about-container li {
-  padding: 10px
+  // sass error without this
 }
