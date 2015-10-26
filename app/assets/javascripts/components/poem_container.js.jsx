@@ -21,7 +21,6 @@ var PoemContainer = React.createClass({
     if (poem.stanzas.length === 0) {
       return <div></div>;
     }
-
     if (poem.remaining === 'zero') {
       return <ArchivePoem poem={this.state.poem}/>;
     } else {

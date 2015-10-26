@@ -14,13 +14,11 @@ var PoemListItem = React.createClass({
     if (poem.contributed) {
       if (poem.status === 'incomplete') {
         poemPreview = '... ' + poem.last_line;
+        statusMessage = 'You have contributed ' + numContribution + '.';
         if (poem.last_author_id === window.currentUserId) {
           contributionStatus = 'last-contribution';
-          statusMessage = 'You have contributed ' + numContribution +
-                            ", including the most recent.";
         } else {
-          contributionStatus = 'contributed';
-          statusMessage = 'You have contributed ' + numContribution + '.';
+          contributionStatus = 'contributed';          
         }
       } else if (poem.status === 'complete') {
         poemPreview = poem.first_stanza;
