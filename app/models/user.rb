@@ -15,6 +15,7 @@ class User < ActiveRecord::Base
 
   validates :username, :password_digest, :session_token, presence: true
   validates :password, length: { minimum: 8, allow_nil: true }
+  validate :username_must_be_under_fifteen_characters
 
   after_initialize :ensure_sesion_token
 
@@ -66,5 +67,11 @@ class User < ActiveRecord::Base
 
   def ensure_sesion_token
     self.session_token = generate_session_token
+  end
+
+  def username_must_be_under_fifteen_characters
+    if username.length > 15
+      errors.add(:username, "must not be longer than 15 characters")
+    end
   end
 end
