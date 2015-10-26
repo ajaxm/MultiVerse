@@ -74,13 +74,15 @@ var ArchivePoem = React.createClass({
         <ul onClick={this.handleStanzaClick}>
           {stanzas}
         </ul>
-        <button
-          className='favorite-button'
-          onClick={this.handleFavorite}
-          disabled={this.state.favoriting}>
-          {poem.favorited ? 'Unfavorite' : 'Favorite!'}
-        </button>
-        {favs}
+        <div className='favorites-container'>
+          <button
+            className='favorite-button'
+            onClick={this.handleFavorite}
+            disabled={this.state.favoriting}>
+            {poem.favorited ? 'Unfavorite' : 'Favorite!'}
+          </button>
+          <div className='favorites-list'>{favs}</div>
+        </div>
         <a className='back-button' href='/#archive'>Back to archive.</a>
       </div>
     );

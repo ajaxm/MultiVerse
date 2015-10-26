@@ -9,7 +9,7 @@
 
 .stanza-input {
   padding: 5px 5px;
-  margin: 0 auto;
+  margin-left: 40px;
   height: 80px;
   width: 300px;
   border: 2px solid lightgrey;
@@ -23,7 +23,7 @@
 }
 
 .incomplete-container {
-  padding: 1px 0;
+  padding: 1px 0 0 40px;
 }
 
 .incomplete-container:not(:last-child) > .incomplete-poem-line {
@@ -82,13 +82,13 @@
 .back-button {
   width: 300px;
   padding: 0 50px;
-  margin: 10px auto;
-  border: 1px solid navy;
+  margin-left: 40px;
+  border: 1px solid black;
 }
 
 .back-button:hover {
-  color: lightgoldenrodyellow;
-  background: navy;
+  color: lightyellow;
+  background: steelblue;
 }
 
 .poem-title {
@@ -109,6 +109,14 @@
   text-align: right;
 }
 
-.poem-author, .poem-title {
+.poem-author, .poem-title, .stanzas-remaining {
   text-indent: 40px;
+}
+
+.favorites-container {
+  padding: 10px 0 10px 40px;
+}
+
+.stanzas-remaining {
+  padding: 10px 0;
 }
