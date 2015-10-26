@@ -6,9 +6,10 @@
   width: 680px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  position: relative;
 }
 
-.sidebar-button {
+.sidebar-container > a {
   margin: 5px;
   padding: 10px;
   width: 80px;
@@ -16,16 +17,33 @@
   font-weight: bold;
 }
 
-.sidebar-button:hover {
+.sidebar-container > a:hover {
   color: black;
 }
 
 .sidebar-username {
-  color: lightyellow;
+  color: white;
   background: steelblue;
   border-left: black 1px solid;
   border-right: black 1px solid;
   margin: 5px;
   padding: 10px;
   width: 80px;
+}
+
+a.sidebar-logout {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0px;
+  color: steelblue;
+  font-weight: bold;
+}
+
+a.sidebar-active {
+  color:black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  margin-left: 4px;
+  margin-right: 4px;
 }

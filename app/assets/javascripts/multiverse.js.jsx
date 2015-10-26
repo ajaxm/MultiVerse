@@ -6,7 +6,7 @@ var App = React.createClass({
   render: function() {
     return (
       <div>
-        <Sidebar/>
+        <Sidebar activePath={this.props.location.pathname}/>
         {this.props.children}
       </div>
     );
