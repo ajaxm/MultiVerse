@@ -1,9 +1,10 @@
 .poem {
-  border: 2px black solid;
-  color: navy;
+  color: steelblue;
   padding: 5px;
-  background: lightgoldenrodyellow;
-  margin: 5px 0px;
+  background: lightyellow;
+  font-size: large;
+  font-family: courier, monospace;
+  position: relative;
 }
 
 .stanza-input {
@@ -14,10 +15,6 @@
   border: 2px solid lightgrey;
   white-space: pre-line;
   font-size: inherit;
-}
-
-.poem {
-  font-size: large;
 }
 
 .poem ul {
@@ -44,22 +41,38 @@
 
 .stanza {
   position: relative;
+  padding-left: 40px;
+  font-size: medium;
 }
 
 .stanza:hover {
-  color: steelblue;
+  color: black;
 }
 
 .clicked-stanza {
-  background: lightyellow;
+  color: navy;
+  border-bottom: 1px #aaa dotted;
+  margin-bottom: -1px;
+  border-top: 1px #aaa dotted;
+  margin-top: -1px;
 }
 
 .stanza-click-content {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 5px;
+  padding-right: 5px;
   color: navy;
-  font-size: small;
+  font-size: x-small;
+  text-align: right;
+}
+
+.stanza:hover .stanza-click-content {
+  color: black;
+}
+
+.clicked-stanza > .stanza-body {
+  max-width: 450px;
 }
 
 #stanza-submit {
@@ -79,10 +92,23 @@
 }
 
 .poem-title {
-  font-size: xx-large;
+  font-weight: bold;
+  font-size: x-large;
+  margin: 5px 0px 10px 0px;
+  border-bottom: 1px black solid;
+  position: relative;
 }
 
 .poem-author {
-  font-size: medium;
-  margin-bottom: 20px;
+  position: absolute;
+  font-size: small;
+  font-weight: normal;
+  bottom: 0;
+  right: 5px;
+  padding-right: 5px;
+  text-align: right;
+}
+
+.poem-author, .poem-title {
+  text-indent: 40px;
 }

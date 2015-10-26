@@ -8,7 +8,7 @@ var Stanza = React.createClass({
     if (this.props.active) {
       stanzaClickContent = (
         <div className='stanza-click-content'>
-          Written by {this.props.author} {this.props.timestamp} ago.
+          written by {this.props.author}<br/>{this.props.timestamp} ago
         </div>
       );
     }

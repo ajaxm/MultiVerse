@@ -64,9 +64,12 @@ var ArchivePoem = React.createClass({
     }
     return (
       <div className='poem'>
-        <div className='poem-title'>{poem.title}</div>
-        <div className='poem-author'>
-          created by {poem.author} {poem.timestamp} ago
+        <div className="lines"></div>
+        <div className='poem-title'>
+          {poem.title}
+          <div className='poem-author'>
+            created by {poem.author}<br/>{poem.timestamp} ago
+          </div>
         </div>
         <ul onClick={this.handleStanzaClick}>
           {stanzas}
