@@ -17,7 +17,7 @@ class Stanza < ActiveRecord::Base
   validate :stanza_must_have_at_least_two_lines
   validate :stanza_must_not_exceed_three_lines
   validate :prevent_successive_stanzas
-  validate :last_line_must_not_be_blank
+  before_validation :remove_trailing_linebreaks_and_spaces
 
   belongs_to :poem
   belongs_to(
@@ -56,9 +56,9 @@ class Stanza < ActiveRecord::Base
     end
   end
 
-  def last_line_must_not_be_blank
-    if lines.last.split('').all? { |char| char.ord == 32 || char.ord == 160 }
-      errors.add(:stanza, "must not end with a blank line")
+  def remove_trailing_linebreaks_and_spaces
+    while [10, 32, 160].include?(body.last.ord)
+      self.body = self.body[0...-1]
     end
   end
 end
