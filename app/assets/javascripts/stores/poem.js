@@ -9,7 +9,6 @@
   var _poems = [];
   var _singlePoem = BLANK_POEM;
   var _currentPage = 1;
-  var _scrollEnd = false;
 
   var _resetPoems = function(poems) {
     _poems = poems;
@@ -23,9 +22,6 @@
   };
   var _setCurrentPage = function(page) {
     _currentPage = page;
-  };
-  var _setScrollEnd = function(bool) {
-    _scrollEnd = bool;
   };
   var _setFavorite = function(favorite) {
     _singlePoem.favorited = favorite.favStatus;
@@ -49,10 +45,6 @@
 
     currentPage: function() {
       return _currentPage;
-    },
-
-    scrollEnd: function() {
-      return _scrollEnd;
     },
 
     addChangeListener: function(callback) {
@@ -101,9 +93,6 @@
         _resetPoems(poems);
       } else {
         _loadMorePoems(poems);
-      }
-      if (poems.length === 0) {
-        _setScrollEnd(true);
       }
     },
 

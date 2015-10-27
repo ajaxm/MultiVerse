@@ -3,7 +3,6 @@ var Home = React.createClass({
     return {
       poems: [],
       page: 1,
-      scrollEnd: false,
       scrolling: false
     };
   },
@@ -21,13 +20,12 @@ var Home = React.createClass({
     this.setState({
       poems: PoemStore.all(),
       page: PoemStore.currentPage(),
-      scrollEnd: PoemStore.scrollEnd(),
       scrolling: false
     });
   },
 
   handleScroll: function(e) {
-    if (this.state.scrollEnd || this.state.scrolling) {
+    if (this.state.scrolling) {
       return null;
     }
 
