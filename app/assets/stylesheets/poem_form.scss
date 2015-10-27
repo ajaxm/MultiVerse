@@ -48,7 +48,8 @@
   border: 2px solid #eee;
 }
 
-.poem-form input:focus, .poem-form textarea:focus {
+.form-title input:focus, .form-num-stanzas input:focus,
+.poem-form textarea:focus {
   border: 2px solid #ccc;
 }
 

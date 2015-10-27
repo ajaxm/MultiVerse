@@ -2,19 +2,31 @@
   color: steelblue;
   padding: 5px;
   background: lightyellow;
-  font-size: large;
+  font-size: medium;
   font-family: courier, monospace;
   position: relative;
 }
 
-.stanza-input {
-  padding: 5px 5px;
-  margin-left: 40px;
-  height: 80px;
-  width: 300px;
-  border: 2px solid lightgrey;
-  white-space: pre-line;
-  font-size: inherit;
+.poem-title {
+  font-weight: bold;
+  font-size: x-large;
+  margin: 5px 0px 10px 0px;
+  border-bottom: 1px black solid;
+  position: relative;
+}
+
+.poem-author {
+  position: absolute;
+  font-size: small;
+  font-weight: normal;
+  bottom: 0;
+  right: 5px;
+  padding-right: 5px;
+  text-align: right;
+}
+
+.poem-author, .poem-title, .stanzas-remaining {
+  text-indent: 40px;
 }
 
 .poem ul {
@@ -75,48 +87,46 @@
   max-width: 450px;
 }
 
-#stanza-submit {
-  padding: 0;
-}
-
-.back-button {
-  width: 300px;
-  padding: 0 50px;
-  margin-left: 40px;
-  border: 1px solid black;
-}
-
-.back-button:hover {
-  color: lightyellow;
-  background: steelblue;
-}
-
-.poem-title {
-  font-weight: bold;
-  font-size: x-large;
-  margin: 5px 0px 10px 0px;
-  border-bottom: 1px black solid;
-  position: relative;
-}
-
-.poem-author {
-  position: absolute;
-  font-size: small;
-  font-weight: normal;
-  bottom: 0;
-  right: 5px;
-  padding-right: 5px;
-  text-align: right;
-}
-
-.poem-author, .poem-title, .stanzas-remaining {
-  text-indent: 40px;
-}
-
 .favorites-container {
   padding: 10px 0 10px 40px;
 }
 
 .stanzas-remaining {
-  padding: 10px 0;
+  padding: 5px 0;
+  border-bottom: 1px #aaa dotted;
+  font-size: medium;
+}
+
+.stanza-form {
+  padding-bottom: 5px;
+  padding-top: 10px;
+  border-bottom: 1px #aaa dotted;
+  border-top: 1px #aaa dotted;
+}
+
+.stanza-input {
+  margin-left: 40px;
+  background: white;
+  width: 500px;
+  height: 100px;
+  font-size: medium;
+  padding: 3px;
+  color: black;
+  border: 2px solid #eee;
+}
+
+.stanza-input:focus {
+  border: 2px solid #ccc;
+}
+
+.stanza-submit {
+  margin: 0 0 5px 40px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.stanza-submit:hover {
+  background: steelblue;
+  color: lightyellow;
+  cursor: pointer;
 }

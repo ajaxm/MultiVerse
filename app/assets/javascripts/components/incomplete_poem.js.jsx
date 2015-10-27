@@ -33,7 +33,7 @@ var IncompletePoem = React.createClass({
 
   _setStanzaFormPlaceholder: function() {
     var stanzaFormPlaceholder = (
-      "Add a new stanza; at least two lines, but not more than three."
+      "Add a new stanza; at least two lines, but not more than three. Include an explicit linebreak at the end of each line."
     );
     if (this.props.poem.last_author_id === window.currentUserId) {
       stanzaFormPlaceholder = (
@@ -74,7 +74,6 @@ var IncompletePoem = React.createClass({
         <div className='stanzas-remaining'>
           {remainingMessage}
         </div>
-        <a className='back-button' href='/#'>Back to all poems.</a>
       </div>
     );
   }

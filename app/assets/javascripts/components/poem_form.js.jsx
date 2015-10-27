@@ -45,8 +45,8 @@ var PoemForm = React.createClass({
           <label> First Stanza: </label>
           <textarea valueLink={this.linkState('firstStanza')}
                     placeholder="Write this poem's first stanza; at least two
-                      lines, but not more than three. Be sure to include
-                      an explicit linebreak for each line."/>
+                      lines, but not more than three. Include an explicit
+                      linebreak at the end of each line."/>
         </div>
         <input className='poem-form-submit'
                type="submit"

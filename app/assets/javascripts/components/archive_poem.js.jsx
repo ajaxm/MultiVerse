@@ -83,7 +83,6 @@ var ArchivePoem = React.createClass({
           </button>
           <div className='favorites-list'>{favs}</div>
         </div>
-        <a className='back-button' href='/#archive'>Back to archive.</a>
       </div>
     );
   }
