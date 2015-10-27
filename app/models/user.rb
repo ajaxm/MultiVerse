@@ -71,7 +71,7 @@ class User < ActiveRecord::Base
 
   def username_must_be_under_fifteen_characters
     if username.length > 15
-      errors.add(:username, "must not be longer than 15 characters")
+      errors.add(:username, "can't be longer than 15 characters")
     end
   end
 end

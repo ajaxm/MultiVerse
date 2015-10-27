@@ -1,94 +1,72 @@
 .login-container {
-  background: lightyellow;
-  color: steelblue;
-  border: 1px black solid;
-  width: 600px;
+  width: 700px;
   margin: 0 auto;
-  text-align: center;
-}
-
-.login-header {
-  font-size: x-large;
-  font-weight: bold;
-  margin: 10px;
-}
-
-h3.login-header {
+  color: steelblue;
+  background: lightyellow;
+  font-family: courier, monospace;
   font-size: large;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+h2.login-header {
+  margin: 0px;
+  padding: 5px;
+  background: white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  position: relative;
+  font-size: x-large;
+  text-align: center;
+  font-weight: bold;
+}
+
+.login-subheader {
+  font-size: large;
+  font-weight: bold;
+  padding: 10px;
+  padding-left: 45px;
+  border-bottom: 1px dotted #aaa;
+}
+
+.login-form, .guest-login-container,
+.login-switch, .login-spacer {
+  padding: 10px;
+  padding-left: 45px;
+  border-bottom: 1px dotted #aaa;
+  font-size: medium;
 }
 
 .login-input {
-  padding: 5px;
-  margin: 0 auto;
-  color: steelblue;
-  display: block;
-  width: 200px;
-  border: 1px dotted inset;
-  border-top-style: inset;
-  border-radius: 5px;
-}
-
-.login-button{
-  display: block;
-  padding: 5px;
-  margin: 10px auto;
-  width: 200px;
-  font-weight: bold;
-}
-
-.login-switch {
   background: lightyellow;
-  color: steelblue;
-  font-weight: bold;
-  margin: 5px;
-  font-size: small;
+  width: 200px;
+  font-size: medium;
+  padding: 3px;
+  color: black;
+  // border: 1px dotted #aaa;
 }
 
-.login-switch > a:hover {
-  color: navy;
+.login-input:focus {
+  border: 2px solid #ccc;
+  background: white;
+  margin: -2px
 }
 
-.guest-login-container {
-  position: relative;
-  width: 500px;
-  margin: 5px auto;
-  padding: 5px
-}
-
-.guest-login-button {
-  float: left;
-  margin: 0 auto;
-  width: 250px;
-  background: lightyellow;
-  border: 1px solid black;
-  outline: 0;
-  padding: 5px;
-  color: steelblue;
-  font-weight: bold;
-}
-.guest-login-container form:first-child > input {
-  border-right:0;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-.guest-login-container form:last-child > input {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.guest-login-button:hover {
-  background: steelblue;
-  color: lightyellow;
+.guest-login-button:hover, .login-switch a:hover, .login-button:hover {
+  color: black;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .error-list {
-  list-style: none;
-  background: lightyellow;
-  color: steelblue;
-  border: 1px black solid;
-  width: 580px;
   margin: 0 auto;
+  padding: 10px 0;
+  background: white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  position: relative;
+  font-size: medium;
   text-align: center;
-  padding: 10px;
-  border-radius: 15px
+  width: 700px;
+  font-family: courier, monospace;
 }
