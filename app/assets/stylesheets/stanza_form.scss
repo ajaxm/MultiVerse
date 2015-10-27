@@ -1,0 +1,33 @@
+.stanza-form {
+  padding-bottom: 5px;
+  padding-top: 10px;
+  border-bottom: 1px #aaa dotted;
+  border-top: 1px #aaa dotted;
+}
+
+.stanza-input {
+  margin-left: 40px;
+  background: white;
+  width: 500px;
+  height: 100px;
+  font-size: medium;
+  padding: 3px;
+  color: black;
+  border: 2px solid #eee;
+}
+
+.stanza-input:focus {
+  border: 2px solid #ccc;
+}
+
+.stanza-submit {
+  margin: 0 0 5px 40px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.stanza-submit:hover {
+  background: steelblue;
+  color: lightyellow;
+  cursor: pointer;
+}
