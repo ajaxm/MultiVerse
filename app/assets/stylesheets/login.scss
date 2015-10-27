@@ -29,11 +29,38 @@ h2.login-header {
   border-bottom: 1px dotted #aaa;
 }
 
-.login-form, .guest-login-container,
-.login-switch, .login-spacer {
+.login-button {
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.login-form {
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+
+.login-form, .login-switch,
+.guest-login-container-1, .guest-login-container-2 {
   padding: 10px;
   padding-left: 45px;
+  font-size: medium;
+}
+
+.guest-login-container-1, .guest-login-container-2 {
+  border-top: 1px dotted #aaa;
+}
+
+.guest-login-container-2 {
   border-bottom: 1px dotted #aaa;
+}
+
+.login-switch {
+  border-top: 1px dotted #aaa;
+  border-bottom: 1px dotted #aaa;
+}
+
+.login-spacer {
+  padding: 10px;
   font-size: medium;
 }
 

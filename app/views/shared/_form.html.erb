@@ -3,7 +3,6 @@
 
 <h2 class='login-header'>The MultiVerse: Possibilities in Poetry</h2>
 <div class='login-spacer'>&nbsp;</div>
-<!-- <div class='login-subheader'><%= user_action %></div> -->
 
 <form class='login-form' action="<%= url %>" method="post">
   <%= auth_token %>
@@ -16,7 +15,7 @@
     <input class='login-button' type="submit" value="<%= user_action %>">
 </form>
 <div class='login-spacer'>&nbsp;</div>
-<div class='guest-login-container'>
+<div class='guest-login-container-1'>
   <%= button_to "Guest Account 1: Log in as Mary Oliver.",
     {controller: "sessions", action: "create",
       user: {username: "mary0liver", password: "thesummerdayoliver"}
@@ -24,7 +23,7 @@
     {class: 'guest-login-button'}
   %>
 </div>
-<div class='guest-login-container'>
+<div class='guest-login-container-2'>
   <%= button_to "Guest Account 2: Log in as Billy Collins.",
     {controller: "sessions", action: "create",
       user: {username: "billy_collins", password: "aimlesslovecollins"}
