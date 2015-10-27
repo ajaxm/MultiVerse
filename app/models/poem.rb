@@ -79,7 +79,7 @@ class Poem < ActiveRecord::Base
 
   private
   def poem_must_have_at_least_two_stanzas
-    if num_stanzas <= 1
+    if !num_stanzas || num_stanzas <= 1
       errors.add(:poem, "must have at least two stanzas")
     end
   end

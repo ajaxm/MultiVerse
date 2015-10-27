@@ -10,7 +10,7 @@ var IncompletePoem = React.createClass({
       stanzaLines = stanza.body.split("\n");
       stanzaLines.forEach(function(line) {
         lines.push(
-          <li key={idx} className='incomplete-container'>
+          <li key={idx} className='incomplete-line-container'>
             <span className='incomplete-poem-line'>{line}</span>
           </li>
         );

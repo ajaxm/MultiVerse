@@ -22,11 +22,11 @@
   white-space: pre-line;
 }
 
-.incomplete-container {
+.incomplete-line-container {
   padding: 1px 0 0 40px;
 }
 
-.incomplete-container:not(:last-child) > .incomplete-poem-line {
+.incomplete-line-container:not(:last-child) > .incomplete-poem-line {
   background: steelblue;
   color: steelblue;
   padding: 0 2px;

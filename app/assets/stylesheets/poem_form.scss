@@ -1,16 +1,57 @@
-.poem-form {
-  border: 2px black solid;
-  color: navy;
+.poem-form-container {
+  color: steelblue;
   padding: 5px;
-  background: lightgoldenrodyellow;
-  margin: 5px 0px;
+  background: lightyellow;
+  font-size: large;
+  font-family: courier, monospace;
+  position: relative;
 }
 
-.poem-form div {
-  padding: 10px;
-  margin: 10px;
+.form-title, .form-num-stanzas, .form-first-stanza {
+  padding-left: 40px;
+  padding-bottom: 10px;
+  border-bottom: 1px #aaa dotted;
+  margin-bottom: 10px;
+}
+
+.poem-form-submit {
+  margin: 0 0 5px 40px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.poem-form-submit:hover {
+  background: steelblue;
+  color: lightyellow;
+  cursor: pointer;
+}
+
+.form-heading {
+  font-weight: bold;
+  font-size: x-large;
+  margin: 5px 0px 10px 0px;
+  border-bottom: 1px black solid;
+  position: relative;
+  text-indent: 40px;
 }
 
 .poem-form label {
   display: block;
+}
+
+.form-title input, .form-num-stanzas input, .form-first-stanza textarea {
+  background: white;
+  width: 500px;
+  font-size: medium;
+  padding: 3px;
+  color: black;
+  border: 2px solid #eee;
+}
+
+.poem-form input:focus, .poem-form textarea:focus {
+  border: 2px solid #ccc;
+}
+
+.form-first-stanza textarea {
+  height: 100px;
 }
