@@ -31,11 +31,3 @@ column name | data type | details
 id          | integer   | not null, primary key
 poem_id     | integer   | not null, foreign key (references poems), indexed, unique [user_id]
 user_id     | integer   | not null, foreign key (references users), indexed
-
-## comments
-column name | data type | details
-------------|-----------|-----------------------
-id          | integer   | not null, primary key
-body        | string    | not null
-poem_id     | integer   | not null, foreign key (references poems), indexed
-user_id     | integer   | not null, foreign key (references users), indexed
