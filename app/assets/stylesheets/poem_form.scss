@@ -55,4 +55,7 @@
 
 .form-first-stanza textarea {
   height: 100px;
+  white-space: pre;
+  word-wrap: normal;
+  overflow: scroll;
 }

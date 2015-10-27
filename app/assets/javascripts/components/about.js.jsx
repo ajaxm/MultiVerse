@@ -26,9 +26,8 @@ var About = React.createClass({
             The next stanza is written based on this line.</li>
           <li>You may contribute multiple times to the same poem provided you do
             not write successive stanzas.</li>
-          <li>Stanzas must be at least two lines long, and no more than three.
-            (That is, your input must have either one linebreak or two; no more,
-            no fewer.) </li>
+          <li>Stanzas must be at least two lines long,
+            and no more than three.</li>
           <li className='about-subheader'>About:</li>
           <li>The Multiverse was created by Adithya "Ajax" Manohar using
             React.js and Rails. {githubLink}</li>
