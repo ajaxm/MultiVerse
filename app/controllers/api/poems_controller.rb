@@ -1,6 +1,6 @@
 class Api::PoemsController < ApplicationController
   before_action :ensure_login
-  
+
   def index
     @poems = Poem.get_by_status(params[:status].to_sym, params[:page].to_i)
   end
@@ -21,19 +21,7 @@ class Api::PoemsController < ApplicationController
     if @poem
       render :show
     else
-      # send error hash to error store.
       render json: 'These are not the verses you were looking for.', status: 404
-    end
-  end
-
-  def destroy
-    @poem = Poem.find_by_id(params[:id])
-    if @poem
-      title = @poem.title
-      @poem.destroy
-      render json: "#{title} deleted."
-    else
-      render json: "Poem not found.", status: :unprocessible_entity
     end
   end
 

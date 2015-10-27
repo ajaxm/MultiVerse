@@ -2405,3 +2405,4 @@
 [2015-10-27 03:38:35 -0700 Adithyas-MacBook-Pro.local (9705)] INFO : Doing deferred dependency-detection before Rack startup
 [2015-10-27 03:38:37 -0700 Adithyas-MacBook-Pro.local (9705)] ERROR : Invalid license key, please contact support@newrelic.com
 [2015-10-27 03:38:37 -0700 Adithyas-MacBook-Pro.local (9705)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2015-10-27 04:05:43 -0700 Adithyas-MacBook-Pro.local (9705)] INFO : Starting Agent shutdown

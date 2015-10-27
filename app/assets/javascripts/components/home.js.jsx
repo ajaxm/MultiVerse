@@ -33,7 +33,7 @@ var Home = React.createClass({
 
     var scrollTop = $(e.currentTarget).scrollTop();
     var containerHeight = $(document.getElementById('scroll-container')).height();
-    /// This if clause is pretty hacky: ~ total height of pages passed - container height
+    /// Height to trigger load = ~ total height of pages passed - container height
     if (scrollTop > (800 * this.state.page) - containerHeight) {
       var newPage = this.state.page + 1;
       ApiUtil.fetchPoems({ 'status': 'incomplete', page: newPage });
