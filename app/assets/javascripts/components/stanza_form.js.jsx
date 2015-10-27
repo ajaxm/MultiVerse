@@ -23,12 +23,14 @@ var StanzaForm = React.createClass({
   },
 
   render: function() {
+    var disabledClass = ((this.props.isDisabled) ? " stanza-disabled" : "");
     var form = (
       <form className='stanza-form' onSubmit={this.handleSubmit}>
         <textarea className='stanza-input' valueLink={this.linkState('body')}
                   disabled={this.props.isDisabled}
                   placeholder={this.props.placeholder}/>
-        <input className='stanza-submit' type="submit"
+        <input className={'stanza-submit' + disabledClass}
+               type="submit"
                disabled={this.props.isDisabled}
                value="Add Stanza!"/>
       </form>

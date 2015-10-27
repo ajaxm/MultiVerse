@@ -34,3 +34,13 @@
   color: lightyellow;
   cursor: pointer;
 }
+
+.stanza-disabled {
+  color: #aaa;
+  border: 1px solid #aaa;
+}
+.stanza-disabled:hover {
+  background: lightyellow;
+  color: #aaa;
+  cursor: default;
+}

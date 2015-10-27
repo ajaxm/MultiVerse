@@ -1,6 +1,7 @@
 var Navbar = React.createClass({
   handleLogOut: function() {
     ApiUtil.logOut();
+    window.currentUserName="Logging out...";
   },
 
   render: function() {

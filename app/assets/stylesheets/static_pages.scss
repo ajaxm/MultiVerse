@@ -46,10 +46,6 @@
   text-indent: 40px;
 }
 
-.contributed > .list-item-title {
-  font-weight: normal;
-}
-
 .last-contribution > .list-item-title {
   opacity: 0.5;
 }
@@ -84,6 +80,6 @@
   background: lightgoldenrodyellow;
 }​
 
-.about-container {
-  // sass error without this
+.any-selector {
+  //sass error without this
 }
