@@ -63,10 +63,6 @@
   font-size: medium;
 }
 
-.stanza:last-child {
-  padding-bottom: 10px;
-}
-
 .stanza:hover {
   color: black;
 }
@@ -85,7 +81,7 @@
   right: 5px;
   padding-right: 5px;
   color: navy;
-  font-size: small;
+  font-size: x-small;
   text-align: right;
 }
 
@@ -94,7 +90,7 @@
 }
 
 .clicked-stanza > .stanza-body {
-  max-width: 400px;
+  max-width: 450px;
 }
 
 .favorites-container {
@@ -119,4 +115,17 @@
 .favorites-list {
   font-size: small;
   margin-top: 5px;
+}
+
+.back-button {
+  text-indent: 40px;
+  text-decoration: underline;
+  margin: 5px 0 5px 0;
+  padding: 5px 0;
+  display: inline-block;
+  border-bottom: 1px #aaa dotted;
+}
+
+.back-button:hover {
+  color: black;
 }

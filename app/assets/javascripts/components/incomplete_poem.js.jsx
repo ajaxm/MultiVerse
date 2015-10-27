@@ -74,6 +74,7 @@ var IncompletePoem = React.createClass({
         <div className='stanzas-remaining'>
           {remainingMessage}
         </div>
+        <a href='/#' className='back-button'>&lt;&lt; Back to all poems.</a>
       </div>
     );
   }
