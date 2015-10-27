@@ -11,8 +11,10 @@
   font-weight: bold;
   font-size: x-large;
   margin: 5px 0px 10px 0px;
+  padding-left: 40px;
   border-bottom: 1px black solid;
   position: relative;
+  padding-right: 200px;
 }
 
 .poem-author {
@@ -25,7 +27,7 @@
   text-align: right;
 }
 
-.poem-author, .poem-title, .stanzas-remaining {
+.stanzas-remaining {
   text-indent: 40px;
 }
 
@@ -120,9 +122,9 @@
 .back-button {
   text-indent: 40px;
   text-decoration: underline;
-  margin: 5px 0 5px 0;
+  margin: 0 0 5px 0;
   padding: 5px 0;
-  display: inline-block;
+  display: block;
   border-bottom: 1px #aaa dotted;
 }
 

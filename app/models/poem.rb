@@ -55,7 +55,7 @@ class Poem < ActiveRecord::Base
   end
 
   def remaining
-    (num_stanzas - length).to_words
+    (num_stanzas - length).to_words.downcase
   end
 
   def first_stanza=(first_stanza)

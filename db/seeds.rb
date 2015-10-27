@@ -90,6 +90,45 @@ thedress = Poem.create(
     with the moon's hand on your cheek,",
   num_stanzas: 5
 )
+quarantine = Poem.create(
+  title: 'Quarantine',
+  author: eavanboland,
+  first_stanza: "In the worst hour of the worst season
+    of the worst year of a whole people
+    a man set out from the workhouse with his wife.",
+  num_stanzas: 10
+)
+happiness = Poem.create(
+  title: "Happiness",
+  author: roberthass,
+  first_stanza: "Because yesterday morning from the steamy window
+    we saw a pair of red foxes across the creek
+    eating the last windfall apples in the rain––"
+)
+wildgeese = Poem.create(
+  title: "Wild Geese",
+  author: maryoliver,
+  first_stanza: "You do not have to be good.
+    You do not have to walk on your knees
+    for a hundred miles through the desert repenting.",
+  num_stanzas: 12
+)
+fortyone = Poem.create(
+  title: "Forty-One, Alone, No Gerbil",
+  author: sharonolds,
+  first_stanza: "In the strange quiet, I realize
+    there’s no one else in the house",
+  num_stanzas: 8
+)
+scheherazade = Poem.create(
+  title: "Scheherazade",
+  author: richardsiken,
+  first_stanza: "Tell me about the dream where we pull
+    the bodies out of the lake
+    and dress them in warm clothes again.",
+  num_stanzas: 10
+)
+
 
 ############################################################
 ### STANZAS
