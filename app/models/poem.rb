@@ -18,7 +18,9 @@ class Poem < ActiveRecord::Base
   validate :poem_must_have_at_least_two_stanzas
   after_create :ensure_first_stanza
 
-  has_many :stanzas, inverse_of: :poem, dependent: :destroy
+  has_many(
+    :stanzas, -> { order("created_at") }, inverse_of: :poem, dependent: :destroy
+  )
 
   belongs_to(
     :author,
@@ -27,7 +29,7 @@ class Poem < ActiveRecord::Base
   )
   has_many :contributors, -> { uniq }, through: :stanzas, source: :author
 
-  has_many :favorites, -> { order('created_at DESC') }
+  has_many :favorites, -> { order("created_at DESC") }
   has_many :favoritors, through: :favorites, source: :user
 
   def self.get_by_status(status, page)
@@ -63,7 +65,7 @@ class Poem < ActiveRecord::Base
   end
 
   def last_stanza
-    stanzas.sort_by(&:order).last
+    stanzas.last
   end
 
   def length
