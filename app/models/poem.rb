@@ -62,6 +62,10 @@ class Poem < ActiveRecord::Base
     @first_stanza_content = first_stanza
   end
 
+  def last_stanza
+    stanzas.sort_by(&:order).last
+  end
+
   def length
     self.stanzas.count
   end

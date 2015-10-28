@@ -2445,3 +2445,23 @@
 [2015-10-27 16:35:23 -0700 Adithyas-MacBook-Pro.local (11298)] INFO : Installing Rails 4 view instrumentation
 [2015-10-27 16:35:23 -0700 Adithyas-MacBook-Pro.local (11298)] INFO : Installing Rails 4 Error instrumentation
 [2015-10-27 16:35:23 -0700 Adithyas-MacBook-Pro.local (11298)] INFO : Finished instrumentation
+[2015-10-27 16:40:05 -0700 Adithyas-MacBook-Pro.local (11099)] INFO : Starting Agent shutdown
+[2015-10-27 18:35:45 -0700 Adithyas-MacBook-Pro.local (11818)] INFO : Starting the New Relic agent in "development" environment.
+[2015-10-27 18:35:45 -0700 Adithyas-MacBook-Pro.local (11818)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2015-10-27 18:35:45 -0700 Adithyas-MacBook-Pro.local (11818)] WARN : No configuration file found. Working directory = /Users/Adi/appAcademy/MultiVerse
+[2015-10-27 18:35:45 -0700 Adithyas-MacBook-Pro.local (11818)] WARN : Looked in these locations (based on defaults): /Users/Adi/appAcademy/MultiVerse/config/newrelic.yml, /Users/Adi/appAcademy/MultiVerse/newrelic.yml, /Users/Adi/appAcademy/MultiVerse/config/newrelic.yml, /Users/Adi/appAcademy/MultiVerse/newrelic.yml, /Users/Adi/.newrelic/newrelic.yml, /Users/Adi/newrelic.yml
+[2015-10-27 18:35:45 -0700 Adithyas-MacBook-Pro.local (11818)] INFO : Environment: development
+[2015-10-27 18:35:45 -0700 Adithyas-MacBook-Pro.local (11818)] INFO : Dispatcher: webrick
+[2015-10-27 18:35:45 -0700 Adithyas-MacBook-Pro.local (11818)] INFO : Application: development
+[2015-10-27 18:35:45 -0700 Adithyas-MacBook-Pro.local (11818)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2015-10-27 18:35:45 -0700 Adithyas-MacBook-Pro.local (11818)] INFO : Installing ActiveJob instrumentation
+[2015-10-27 18:35:45 -0700 Adithyas-MacBook-Pro.local (11818)] INFO : Installing ActiveRecord 4 instrumentation
+[2015-10-27 18:35:45 -0700 Adithyas-MacBook-Pro.local (11818)] INFO : Installing Net instrumentation
+[2015-10-27 18:35:45 -0700 Adithyas-MacBook-Pro.local (11818)] INFO : Installing deferred Rack instrumentation
+[2015-10-27 18:35:45 -0700 Adithyas-MacBook-Pro.local (11818)] INFO : Installing Rack::Builder middleware instrumentation
+[2015-10-27 18:35:45 -0700 Adithyas-MacBook-Pro.local (11818)] INFO : Installing Rails 3+ middleware instrumentation
+[2015-10-27 18:35:45 -0700 Adithyas-MacBook-Pro.local (11818)] INFO : Installing Rails 4 Controller instrumentation
+[2015-10-27 18:35:46 -0700 Adithyas-MacBook-Pro.local (11818)] INFO : Installing Rails 4 view instrumentation
+[2015-10-27 18:35:46 -0700 Adithyas-MacBook-Pro.local (11818)] INFO : Installing Rails 4 Error instrumentation
+[2015-10-27 18:35:46 -0700 Adithyas-MacBook-Pro.local (11818)] INFO : Finished instrumentation
+[2015-10-27 18:35:46 -0700 Adithyas-MacBook-Pro.local (11818)] INFO : Doing deferred dependency-detection before Rack startup
