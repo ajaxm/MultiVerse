@@ -74,7 +74,7 @@ which reduces load time.
 * Rails models for Favorites
 * API Controllers for Favorites
 
-*At the end of Phase 4, users can comment on and favorite completed poems.*
+*At the end of Phase 4, users can favorite completed poems.*
 
 [Component details.](./docs/phases/phase4.md)
 
