@@ -2,7 +2,12 @@ var About = React.createClass({
   render: function() {
     var githubLink = (
       <a href='http://github.com/Ajax4778/MultiVerse'>
-        For the Github page, click here.
+        see the Github page
+      </a>
+    );
+    var personalLink = (
+      <a href='http://www.adithyamanohar.com/'>
+        Adithya "Ajax" Manohar
       </a>
     );
     var wikiLink = (
@@ -29,8 +34,8 @@ var About = React.createClass({
           <li>Stanzas must be at least two lines long,
             and no more than three.</li>
           <li className='about-subheader'>About:</li>
-          <li>The Multiverse was created by Adithya "Ajax" Manohar using
-            React.js and Rails. {githubLink}</li>
+          <li>The Multiverse was created by {personalLink} using
+            React.js and Rails. For more information, {githubLink}.</li>
         </ul>
       </div>
     );
