@@ -20,7 +20,7 @@ var About = React.createClass({
         <div className="lines"></div>
         <h2 className='about-header'>The MultiVerse</h2>
         <ul className='about-list'>
-          <li>The MultiVerse is a collaborative poetry-writing application
+          <li>The MultiVerse is a collaborative poetry-writing game
             following the {wikiLink} method.</li>
           <li className='about-subheader'>Creating Poems:</li>
           <li>On creating a poem, you write the first stanza and specify the
