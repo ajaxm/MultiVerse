@@ -46,6 +46,20 @@ var Archive = React.createClass({
         <PoemListItem status='complete' key={poem.id} {...poem}/>
       );
     });
+
+    var loading = (
+      <a>
+      <li>
+        <div className="lines"></div>
+        <div className='list-item-title'>&nbsp;</div>
+        <div className='status-message'>Loading...</div>
+      </li>
+      </a>
+    );
+    if (poemArchive.length === 0) {
+      poemArchive = loading;
+    }
+
     return poemArchive;
   },
 

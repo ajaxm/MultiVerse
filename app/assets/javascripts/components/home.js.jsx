@@ -46,6 +46,19 @@ var Home = React.createClass({
         );
       });
 
+    var loading = (
+      <a>
+      <li>
+        <div className="lines"></div>
+        <div className='list-item-title'>&nbsp;</div>
+        <div className='status-message'>Loading...</div>
+      </li>
+      </a>
+    );
+    if (poems.length === 0) {
+      poems = loading;
+    }
+
     return(
       <div id='scroll-container' className='home-container'>
         <ul onScroll={this.handleScroll} className='poem-index'>{poems}</ul>

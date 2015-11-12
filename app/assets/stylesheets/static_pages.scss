@@ -38,7 +38,7 @@
   margin-bottom: 0;
 }
 
-.list-item-title {
+.list-item-title, .loading-title {
   font-weight: bold;
   font-size: x-large;
   border-bottom: 1px black solid;
@@ -50,7 +50,7 @@
   opacity: 0.5;
 }
 
-.list-item-preview {
+.list-item-preview, .loading-text {
   padding-left: 40px;
   font-size: medium;
 }
