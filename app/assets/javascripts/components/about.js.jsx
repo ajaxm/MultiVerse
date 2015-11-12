@@ -15,6 +15,16 @@ var About = React.createClass({
         "Exquisite Corpse"
       </a>
     );
+    var homeLink = (
+      <a href='/#'>
+        Home
+      </a>
+    );
+    var archiveLink = (
+      <a href='/#archive'>
+        Archive
+      </a>
+    );
     return (
       <div className='about-container'>
         <div className="lines"></div>
@@ -22,19 +32,21 @@ var About = React.createClass({
         <ul className='about-list'>
           <li>The MultiVerse is a collaborative poetry-writing game
             following the {wikiLink} method.</li>
+          <li>The {homeLink} tab contains poems that are in progress. <br></br> Completed
+            poems live in the {archiveLink} tab.</li>
+          <li><span className='about-encourage'>Anyone can write poetry! </span>
+            Go on, add a few lines to the 'Verse!</li>
           <li className='about-subheader'>Creating Poems:</li>
           <li>On creating a poem, you write the first stanza and specify the
             number of stanzas the poem should have. When it reaches that length,
-            it is closed for contribution and added to the archive.</li>
+            it is closed for contribution and added to the Archive.</li>
           <li className='about-subheader'>Contributing Stanzas:</li>
           <li>Before a poem is completed, only its most recent line is visible.
             The next stanza is written based on this line.</li>
-          <li>You may contribute multiple times to the same poem provided you do
-            not write successive stanzas.</li>
           <li>Stanzas must be at least two lines long,
             and no more than three.</li>
           <li className='about-subheader'>About:</li>
-          <li>The Multiverse was created by {personalLink} using
+          <li>The MultiVerse was created by {personalLink} using
             React.js and Rails. For more information, {githubLink}.</li>
         </ul>
       </div>

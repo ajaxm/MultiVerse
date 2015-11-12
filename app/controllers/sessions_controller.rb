@@ -9,7 +9,11 @@ class SessionsController < ApplicationController
     )
     if @user
       log_in(@user)
-      redirect_to '/'
+      if @user.username == 'billy_collins' || @user.username == 'mary0liver'
+        redirect_to '/#about'
+      else
+        redirect_to '/'
+      end
     else
       flash.now[:msg] = ["Invalid login credentials."]
       @user = User.new(username: params[:user][:username])
