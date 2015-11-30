@@ -8,6 +8,7 @@ class Api::StanzasController < ApplicationController
     )
     if @stanza.save
       poem = @stanza.poem
+      poem.update(updated_at: Time.now)
       render '/api/poems/_poem', locals: {poem: poem}
     else
       render json: @stanza.errors.full_messages, status: :unprocessible_entity

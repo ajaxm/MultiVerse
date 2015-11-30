@@ -36,13 +36,13 @@ class Poem < ActiveRecord::Base
     if status == :complete
       Poem.joins(:stanzas).group("poems.id")
           .having("poems.num_stanzas = COUNT(stanzas.id)")
-          .order(created_at: :desc)
+          .order(updated_at: :desc)
           .preload(:author, :contributors, :favoritors, stanzas: :author)
           .page(page).per(5)
     elsif status == :incomplete
       Poem.joins(:stanzas).group("poems.id")
           .having("poems.num_stanzas > COUNT(stanzas.id)")
-          .order(created_at: :desc)
+          .order(updated_at: :desc)
           .preload(:author, :contributors, :favoritors, stanzas: :author)
           .page(page).per(5)
     end
@@ -69,13 +69,14 @@ class Poem < ActiveRecord::Base
   end
 
   def length
-    self.stanzas.count
+    stanzas.count
   end
 
   def completed?
     length == num_stanzas
   end
 
+  private
   def ensure_first_stanza
     first_stanza = Stanza.new(
       body: @first_stanza_content, order: 1, author_id: author_id, poem_id: id
@@ -83,7 +84,6 @@ class Poem < ActiveRecord::Base
     first_stanza.save!
   end
 
-  private
   def poem_must_have_at_least_two_stanzas
     if !num_stanzas || num_stanzas <= 1
       errors.add(:poem, "must have at least two stanzas")
