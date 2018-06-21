@@ -32,6 +32,8 @@ class Poem < ActiveRecord::Base
   has_many :favorites, -> { order("created_at DESC") }
   has_many :favoritors, through: :favorites, source: :user
 
+  has_many :comments, -> { order("created_at DESC") }
+
   def self.get_by_status(status, page)
     if status == :complete
       Poem.joins(:stanzas).group("poems.id")
