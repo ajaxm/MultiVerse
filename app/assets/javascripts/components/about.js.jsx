@@ -1,13 +1,13 @@
 var About = React.createClass({
   render: function() {
     var githubLink = (
-      <a href='http://github.com/Ajax4778/MultiVerse'>
+      <a href='http://github.com/ajaxm/MultiVerse'>
         see the Github page
       </a>
     );
     var personalLink = (
-      <a href='http://www.adithyamanohar.com/'>
-        Adithya "Ajax" Manohar
+      <a href='http://www.ajaxmanohar.com/'>
+        Ajax Manohar
       </a>
     );
     var wikiLink = (
